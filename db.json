@@ -1,9 +1,39 @@
 {
-  "posts": [
+  "experiences": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "authorName": "Mitesh Sakalkar",
+      "company": "Mind Tree",
+      "title": "Mind Tree Interview Experience",
+      "description": "asdasdad",
+      "id": 1
+    },
+    {
+      "authorName": "Suyog Vyas",
+      "company": "Global Logic",
+      "title": "GL Interview Experience",
+      "description": "............................",
+      "id": 2
+    },
+    {
+      "authorName": "Sudhanshu Sathwane",
+      "company": "GlobalLogic ",
+      "title": "GL Interview Experience",
+      "description": "adkfjahkjahdahsdakshdakdksahdjahskdhajkdhajdahskdajda",
+      "id": 3
+    },
+    {
+      "authorName": "suyog",
+      "company": "coditas",
+      "title": "Coditas Interview Experience",
+      "description": "Round 1:\n\n1->You are given a sorted but rotated array of integer like: 6 7 8 1 2 3 4 5 You have to search an element...\nI answered with an O(logn) solution…\nthen he asked me to write the code…\n\n2->What is the diameter of a tree?\nI answered…\nthen he asked me to write the complete code…\n\n3->He asked me a design problem “you have to design a class “DeckofCards”…with 2 operations: 1:Shuffle 2:Pick”\nPick would pick a random card from the deck and Shuffle will shuffle the cards and give you back the deck of cards.\nI answered with 2 options 1.LinkedList 2:Array…then there was a discussion around 15 mins over both the solutions…\n\nRound 2:(I guess it was the bar-raiser round)\n\n1-> My Introduction and My Projects (all 1 by 1 except the last)\n\n2-> How to compute all possible solution of A^3+B^3=C^3, where A,B,C belongs to (0 to N)?\nWrite code…\n\n3-> How to compute A^n where n<1 million Write code... 4-> A tough “matrix with a mask” problem…I took around 20 mins to solve it.\n\n5-> Why Amazon, what is scalability and questions from my answers…like how would you manage millions of requests…\n\n",
+      "id": 4
+    },
+    {
+      "authorName": "new",
+      "company": "new",
+      "title": "new",
+      "description": "1 2\n3\n3\n4\n5\n6\n7\n8\n8",
+      "id": 5
     }
   ],
   "comments": [
@@ -13,7 +43,9 @@
       "postId": 1
     }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "profile": [
+    {
+      "name": "typicode"
+    }
+  ]
 }
