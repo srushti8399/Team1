@@ -54,28 +54,28 @@
 
 <!-- 4th row -->
 
-    <div class = "row">
-        <div class= "col-md-1"></div>
-        <div class = "col-md-10">
-            <mat-form-field  appearance="fill" class = "description Row">
-                <mat-label>Description</mat-label>
-                <textarea matInput formControlName="description" class="destextarea"  placeholder="Tell about your journey"></textarea>
-              </mat-form-field>
-        </div>
-        <div class= "col-md-1"></div>
-    </div>
-    
-<!-- 5th row -->
 
-    <div class="row">
-        <div class="col-md-1"></div>
-        <div class="col-md-1">
-            <button mat-raised-button color="primary">Submit</button>
-        </div>
-        <div class="col-md-1">
-            <button mat-raised-button color="warn">Clear</button>
-        </div>
-        <div class="col-md-9"></div>
+<div class = "row">
+    <div class= "col-md-1"></div>
+    <div class = "col-md-10" style="height: 200px;">
+        <quill-editor  formControlName="description" class="content-editor" [placeholder]="''" (onEditorChanged)="editorChange($event)"> 
+
+        </quill-editor>
+        
     </div>
+    <div class= "col-md-1"></div>
+</div>
+
+<div style="margin-top: 100px;"></div>
+<div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-1">
+        <button mat-raised-button color="primary">Submit</button>
+    </div>
+    <div class="col-md-1">
+        <button mat-raised-button color="warn">Clear</button>
+    </div>
+    <div class="col-md-9"></div>
+</div>
 
 </form>

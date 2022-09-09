@@ -9,7 +9,9 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import { DescriptionPipe } from './pipe/custompipe.component';
 import { ViewComponent } from './view/view.component';
-
+import { QuillModule } from 'ngx-quill';
+import { MatIconModule } from '@angular/material/icon';
+import { EditComponent } from './edit/edit.component'
 
 @NgModule({
   declarations: [
@@ -17,6 +19,7 @@ import { ViewComponent } from './view/view.component';
     CreateintexpComponent,
     DescriptionPipe,
     ViewComponent,
+    EditComponent,
     
   ],
   imports: [
@@ -26,7 +29,8 @@ import { ViewComponent } from './view/view.component';
     MatFormFieldModule,
     MatButtonModule,
     MatCardModule,
-    
+    MatIconModule,
+    QuillModule.forRoot()
    
     
   ],

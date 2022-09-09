@@ -1,17 +1,22 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { ActivatedRoute } from '@angular/router';
 import { EditorChangeContent, EditorChangeSelection } from 'ngx-quill';
 import { InterviewExperienceDBService } from '../intexp.db.service';
 
 @Component({
-  selector: 'app-createintexp',
-  templateUrl: './createintexp.component.html',
-  styleUrls: ['./createintexp.component.css']
+  selector: 'app-edit',
+  templateUrl: './edit.component.html',
+  styleUrls: ['./edit.component.css']
 })
-export class CreateintexpComponent implements OnInit {
+export class EditComponent implements OnInit {
+
+  constructor(private _fb:FormBuilder,private _route:ActivatedRoute,private _db:InterviewExperienceDBService) { }
 
   interviewExperienceForm!:FormGroup
-  constructor(private _fb:FormBuilder,private _db:InterviewExperienceDBService) { }
+  postId:string|null = ''
+  postList:any = []
+  description:string=''
 
   ngOnInit(): void {
 
@@ -22,27 +27,22 @@ export class CreateintexpComponent implements OnInit {
       description:['',Validators.required],
 
     })
+
+    this.postId = this._route.snapshot.paramMap.get('id')
+    this._db.getPostByID(this.postId).subscribe((item)=>{
+      this.postList = item
+      this.description = this.postList.description
+    })
   }
 
   editorChange(event:EditorChangeContent|EditorChangeSelection)
   {
-    
     //console.log("editor got changed ", event)
     // console.log(event['editor']['root']['innerHTML'])
     
   }
 
   submit(){
-    console.log(this.interviewExperienceForm)
-    this._db.postInterviewExperience(this.interviewExperienceForm.value).subscribe({
-      next:(res)=>{
-        alert("added successfully")
-        console.log("array ",this.interviewExperienceForm.value)
-      }
-     
-    
-    })
-    window.location.reload();
-  }
 
+  }
 }

@@ -19,11 +19,15 @@ export class IntexpComponent implements OnInit {
     this._db.getInterviewExperience().subscribe({
       next:(res)=>{
         this.interviewExpArray=res
-        console.log(this.interviewExpArray)
+        
       }
     })
 
     
+  }
+
+  edit(id:any){
+    this._route.navigate(['/edit',id])
   }
 
   view(id:any){

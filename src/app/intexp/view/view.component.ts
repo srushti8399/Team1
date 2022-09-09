@@ -13,7 +13,6 @@ export class ViewComponent implements OnInit {
 
   postId:string|null = ''
   postList:any = []
-  description:any
 
   ngOnInit(): void {
 
@@ -21,9 +20,7 @@ export class ViewComponent implements OnInit {
     this._db.getPostByID(this.postId).subscribe((item)=>{
         this.postList = item
         
-        this.description = this.postList['description']
         
-        console.log(this.description)
     })
 
   
