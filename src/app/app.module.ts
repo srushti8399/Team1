@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { IntexpModule } from './intexp/intexp.module';
 import { InterviewExperienceDBService } from './intexp/intexp.db.service';
+import { MockModule } from './mock/mock.module';
 import { AuthService } from './auth/authservice/auth.service';
 import { NavbarComponent } from './navbar/navbar.component';
 import { NavbarModule } from './navbar/navbar.module';
@@ -33,6 +34,7 @@ import {MatSelectModule} from '@angular/material/select';
     IntexpModule,
     HttpClientModule
     ,
+    MockModule,
     AuthModule,
     NavbarModule,
     HttpClientModule,

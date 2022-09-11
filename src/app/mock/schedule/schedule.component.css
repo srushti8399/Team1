@@ -1,0 +1,146 @@
+body{
+    font-family: Muli,sans-serif;
+}
+
+.heading-container{
+    border: 1px solid;
+    margin-top: 68px;
+    height: 22%;
+    border-radius: 8px;
+    width: 94%;
+    margin-left: 34px;
+    background-color: #0A2541;
+    background-image: url(https://classroom.codingninjas.com/banner-overlay.32948467e4c0a8257463.svg);
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: auto 100%;
+
+}
+
+.banner-heading{
+    color:#FFFFFF;
+    font: 500 30px/37px Mulish,Roboto,Helvetica Neue,sans-serif;
+    margin-top: 14px;
+    margin-left: 21px;
+
+}
+.banner-para{
+    color: #e1e1e3;
+    font: 400 16px/22px Mulish,Roboto,Helvetica Neue,sans-serif;
+    margin-top: -15px;
+    margin-left: 21px;
+}
+
+/* session booking */
+.session-booking-con{
+    display: grid;
+    -moz-column-gap: 24px;
+    column-gap: 24px;
+    row-gap: 32px;
+    grid-template-columns: repeat(3,1fr);
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.wraper{
+    border: 1px solid #D2D2D6;
+    border-radius: 8px;
+    width: 80%;
+    margin-left: 37px;
+
+}
+
+.schedule-card{
+    border: 1px solid var(--color-grey-100);
+    display: flex;
+    height: 100%;
+    position: relative;
+    flex-direction: column;
+    overflow: hidden;
+}
+.schedule-card img{
+    margin-left: 29px;
+    margin-top: 10px;
+}
+.card-icon{
+    width: 60px;
+    height: 60px;
+    padding-bottom: 16px;
+    padding-right: 16px!important;
+
+}
+.card-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    margin-top: 17px;
+
+}
+.p-content{
+    font: 700 20px/32px Mulish,Roboto,Helvetica Neue,sans-serif;
+    padding-bottom: 4px;
+    margin-left: 29px;
+}
+.zen-body-2{
+    display: flex;
+    font: 400 14px/22px Mulish,Roboto,Helvetica Neue,sans-serif;
+    column-gap: 4px;
+    color: var(--color-grey-600);
+}
+.py-4{
+    padding-top: 4px!important;
+    padding-bottom: 4px!important;
+}
+.used-sessions-banner {
+    margin-top: -20px;
+    width: 108px;
+}
+.text-align-center {
+    text-align: center;
+}
+.mr-20 {
+    margin-right: 20px!important;
+}
+.align-right {
+    right: 0;
+}
+.position-absolute {
+    position: absolute;
+}
+.grey-A100 {
+    color: #fff;
+}
+.bg-violet-500 {
+    background: #292385;
+    margin-top: 13px;
+
+}
+.p-12 {
+    padding: 12px!important;
+}
+.pb-0 {
+    padding-bottom: 0!important;
+}
+.zen-subtitle-1 {
+    font: 600 16px/24px Mulish,Roboto,Helvetica Neue,sans-serif;
+}
+
+.used-sessions-banner{
+    /* margin-top: 13px; */
+}
+.used-sessions-banner #triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 54px solid transparent;
+    border-right: 54px solid transparent;
+    border-top: 36px solid;
+    color: #292385;
+}
+.sch-button{
+    background-color: #fb813e;
+  color: snow;
+  
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
