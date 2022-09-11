@@ -4,6 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { IntexpModule } from './intexp/intexp.module';
+import { InterviewExperienceDBService } from './intexp/intexp.db.service';
 import { AuthService } from './auth/authservice/auth.service';
 import { NavbarComponent } from './navbar/navbar.component';
 import { NavbarModule } from './navbar/navbar.module';
@@ -30,6 +32,9 @@ import {MatSelectModule} from '@angular/material/select';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    IntexpModule,
+    HttpClientModule
+    ,
     AuthModule,
     NavbarModule,
     HttpClientModule,
@@ -45,7 +50,7 @@ import {MatSelectModule} from '@angular/material/select';
 
     
   ],
-  providers: [NavbarComponent,AuthService,CompanyDbService],
+  providers: [NavbarComponent,AuthService,InterviewExperienceDBService,CompanyDbService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
