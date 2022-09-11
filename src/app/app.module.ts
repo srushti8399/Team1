@@ -4,16 +4,26 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AuthService } from './auth/authservice/auth.service';
+import { NavbarComponent } from './navbar/navbar.component';
+import { NavbarModule } from './navbar/navbar.module';
+import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CompaniesModule } from './companies/companies.module';
 import { HttpClientModule } from '@angular/common/http';
 import { CompanyDbService } from './companies/company.db.service';
 
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
+import { AuthModule } from './auth/auth.module';
+
+import {MatSelectModule} from '@angular/material/select';
 
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent
     
     
     
@@ -22,6 +32,14 @@ import { CompanyDbService } from './companies/company.db.service';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    AuthModule,
+    NavbarModule,
+    HttpClientModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    ReactiveFormsModule,
+    MatSelectModule,
     FormsModule,
     ReactiveFormsModule,
     CompaniesModule,
@@ -29,7 +47,7 @@ import { CompanyDbService } from './companies/company.db.service';
 
     
   ],
-  providers: [CompanyDbService],
+  providers: [NavbarComponent,AuthServiceCompanyDbService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

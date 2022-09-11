@@ -1,74 +1,54 @@
 {
-  "posts": [
+  "users": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "Companies": [
-    {
-      "cname": "Global Logic",
-      "description": "Candidate having c, c++ knowledge can apply",
-      "jobtitle": "Trainee Software Engineer",
-      "experience": "0-2 years",
-      "authorityname": "HR",
-      "package": "3-6 LPA(variable)",
-      "qualification": "BE/B.Tech",
-      "link": "https://www.naukri.com/",
-      "type": "Fresher",
-      "id": 1
+      "username": "admin@gmail.com",
+      "password": "admin"
     },
     {
-      "cname": "Capgemini",
-      "description": "Machine Learning knowledge is required",
-      "jobtitle": "Senior Engineer",
-      "experience": "3-4 years",
-      "authorityname": "HR",
-      "package": "18-24 LPA",
-      "qualification": "BE/B.Tech",
-      "link": "https://www.naukri.com/",
-      "type": "Experienced",
-      "id": 2
+      "id": 2,
+      "username": "one@gmail.com",
+      "password": "one"
     },
     {
-      "cname": "Accenture",
-      "description": "Experienced in Payroll Department",
-      "jobtitle": "Public Relation Manager",
-      "experience": "3-4 years",
-      "authorityname": "HR",
-      "package": "3-6 LPA(variable)",
-      "qualification": "Graduation ",
-      "link": "https://www.naukri.com/",
-      "type": "Experienced",
+      "id": 3,
+      "username": "two@gmail.com",
+      "password": "two"
+    },
+    {
+      "username": "ram@gmail.com",
+      "password": "ram",
       "id": 4
     },
     {
-      "cname": "Xensor",
-      "description": "Knowledge of UI/UX is required",
-      "jobtitle": "Senior Engineer",
-      "experience": "0-2 years",
-      "authorityname": "HR",
-      "package": "3-6 LPA(variable)",
-      "qualification": "BE/B.Tech in ComputerScience/InformationTechnology",
-      "link": "https://www.naukri.com/",
-      "type": "Experienced",
+      "username": "dell@gmail.com",
+      "password": "dell",
       "id": 5
     },
     {
-      "cname": "Infosys",
-      "description": "Freshers can apply",
-      "jobtitle": "System Engineer",
-      "experience": "0 years",
-      "authorityname": "HR",
-      "package": "3 LPA",
-      "qualification": "Graduation ",
-      "link": "https://www.naukri.com/",
-      "type": "Fresher",
+      "username": "tom@gmail.co",
+      "password": "tom",
       "id": 6
+    },
+    {
+      "username": "veer@gmail.com",
+      "password": "veer",
+      "id": 7
+    },
+    {
+      "username": "tem@gmail.com",
+      "password": "temp",
+      "id": 8
+    },
+    {
+      "username": "abc@gmail.com",
+      "password": "abc",
+      "id": 9
+    },
+    {
+      "username": "cat@gmail.com",
+      "password": "cat",
+      "id": 10
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
