@@ -1,95 +1,54 @@
 {
-  "experiences": [
+  "users": [
     {
-      "authorName": "Mitesh Sakalkar",
-      "company": "Mind Tree",
-      "title": "Mind Tree Interview Experience",
-      "description": "asdasdad",
-      "id": 1
+      "id": 1,
+      "username": "admin@gmail.com",
+      "password": "admin"
     },
     {
-      "authorName": "Suyog Vyas",
-      "company": "Global Logic",
-      "title": "GL Interview Experience",
-      "description": "............................",
-      "id": 2
+      "id": 2,
+      "username": "one@gmail.com",
+      "password": "one"
     },
     {
-      "authorName": "Sudhanshu Sathwane",
-      "company": "GlobalLogic ",
-      "title": "GL Interview Experience",
-      "description": "adkfjahkjahdahsdakshdakdksahdjahskdhajkdhajdahskdajda",
-      "id": 3
+      "id": 3,
+      "username": "two@gmail.com",
+      "password": "two"
     },
     {
-      "authorName": "suyog",
-      "company": "coditas",
-      "title": "Coditas Interview Experience",
-      "description": "Round 1:\n\n1->You are given a sorted but rotated array of integer like: 6 7 8 1 2 3 4 5 You have to search an element...\nI answered with an O(logn) solution…\nthen he asked me to write the code…\n\n2->What is the diameter of a tree?\nI answered…\nthen he asked me to write the complete code…\n\n3->He asked me a design problem “you have to design a class “DeckofCards”…with 2 operations: 1:Shuffle 2:Pick”\nPick would pick a random card from the deck and Shuffle will shuffle the cards and give you back the deck of cards.\nI answered with 2 options 1.LinkedList 2:Array…then there was a discussion around 15 mins over both the solutions…\n\nRound 2:(I guess it was the bar-raiser round)\n\n1-> My Introduction and My Projects (all 1 by 1 except the last)\n\n2-> How to compute all possible solution of A^3+B^3=C^3, where A,B,C belongs to (0 to N)?\nWrite code…\n\n3-> How to compute A^n where n<1 million Write code... 4-> A tough “matrix with a mask” problem…I took around 20 mins to solve it.\n\n5-> Why Amazon, what is scalability and questions from my answers…like how would you manage millions of requests…\n\n",
+      "username": "ram@gmail.com",
+      "password": "ram",
       "id": 4
     },
     {
-      "authorName": "QUILL",
-      "company": "",
-      "title": "ghjsaaaaaaaaaaaad",
-      "description": "<p>quilllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll</p>",
+      "username": "dell@gmail.com",
+      "password": "dell",
       "id": 5
     },
     {
-      "authorName": "Suyog Vyas",
-      "company": "CODITAS",
-      "title": "CD",
-      "description": "<h3><strong>Round 1: </strong></h3><h3>1-&gt;You are given a sorted but rotated array of integer like: 6 7 8 1 2 3 4 5 You have to search an element... I answered with an O(logn) solution… then he asked me to write the code…</h3><h3> 2-&gt;What is the diameter of a tree? I answered… then he asked me to write the complete code… </h3><h3>3-&gt;He asked me a design problem “you have to design a class “DeckofCards”…with 2 operations: 1:Shuffle 2:Pick” Pick would pick a random card from the deck and Shuffle will shuffle the cards and give you back the deck of cards. I answered with 2 options 1.LinkedList 2:Array…then there was a discussion around 15 mins over both the solutions…</h3><h3><br></h3><h3><strong> Round 2:</strong></h3><h3>(I guess it was the bar-raiser round) 1-&gt; My Introduction and My Projects (all 1 by 1 except the last) </h3><h3>2-&gt; How to compute all possible solution of A^3+B^3=C^3, where A,B,C belongs to (0 to N)? Write code… </h3><h3>3-&gt; How to compute A^n where n&lt;1 million Write code...</h3><h3> 4-&gt; A tough “matrix with a mask” problem…I took around 20 mins to solve it. 5-&gt; Why Amazon, what is scalability and questions from my answers…like how would you manage millions of requests…</h3><p><br></p>",
+      "username": "tom@gmail.co",
+      "password": "tom",
+      "id": 6
+    },
+    {
+      "username": "veer@gmail.com",
+      "password": "veer",
+      "id": 7
+    },
+    {
+      "username": "tem@gmail.com",
+      "password": "temp",
       "id": 8
     },
     {
-      "authorName": "ddas",
-      "company": "ewrw",
-      "title": "werwr",
-      "description": "<p>fasfadsfsfd</p>",
+      "username": "abc@gmail.com",
+      "password": "abc",
       "id": 9
     },
     {
-      "authorName": "",
-      "company": "",
-      "title": "",
-      "description": "",
+      "username": "cat@gmail.com",
+      "password": "cat",
       "id": 10
-    },
-    {
-      "authorName": "",
-      "company": "",
-      "title": "",
-      "description": "",
-      "id": 11
-    },
-    {
-      "authorName": "",
-      "company": "",
-      "title": "",
-      "description": "",
-      "id": 12
-    },
-    {
-      "authorName": "",
-      "company": "",
-      "title": "",
-      "description": "",
-      "id": 13
-    },
-    {
-      "authorName": "",
-      "company": "",
-      "title": "",
-      "description": "",
-      "id": 14
-    }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
     }
   ],
   "profile": [
