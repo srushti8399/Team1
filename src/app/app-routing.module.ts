@@ -27,7 +27,7 @@ const routes: Routes = [
   {path:'experiencelist',component:IntexpComponent},
   {path:'view/:id',component:ViewComponent},
   {path:'edit/:id',component:EditComponent},
-  {path:'',redirectTo:'experiencelist',pathMatch:'full'}
+ // {path:'',redirectTo:'experiencelist',pathMatch:'full'}
 
   // {
   //   path: 'experience',
