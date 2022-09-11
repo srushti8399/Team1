@@ -4,18 +4,19 @@ import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProfileComponent } from './dashboard/profile/profile.component';
-
-const routes: Routes = [
-  {path:"login",component:LoginComponent},
-  {path:"register",component:RegisterComponent},
-  {path:"dashboard",component:DashboardComponent},
-  {path:"profile",component:ProfileComponent},
 import { CreateintexpComponent } from './intexp/createintexp/createintexp.component';
 import { EditComponent } from './intexp/edit/edit.component';
 import { IntexpComponent } from './intexp/intexp.component';
 import { ViewComponent } from './intexp/view/view.component';
 
 const routes: Routes = [
+  {path:"login",component:LoginComponent},
+  {path:"register",component:RegisterComponent},
+  {path:"dashboard",component:DashboardComponent},
+  {path:"profile",component:ProfileComponent},
+
+
+
   {path:'create',component:CreateintexpComponent},
   {path:'experiencelist',component:IntexpComponent},
   {path:'view/:id',component:ViewComponent},
