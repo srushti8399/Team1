@@ -1,0 +1,131 @@
+<h2 class="text-uppercase text-center mb-5 padding">Job Details</h2>
+<form class="center padding-table" [formGroup]="companyForm" (ngSubmit)="submit()" >
+   
+ <div class="row">
+  <div class="col-md-2"></div>
+   <div class="col-md-3 mb-4">
+     <div class="form-outline">
+        <mat-form-field appearance="fill" class="example-full-width">
+            <mat-label> Company Name</mat-label>
+            <input formControlName="cname" required id="cname"  matInput placeholder="Enter Company name"   name="cname"    />
+              <mat-error *ngIf="companyForm.get('cname')!.errors!==null && companyForm.get('cname')!.errors!['required']">
+              Company name is <strong>required</strong>
+            </mat-error>
+        </mat-form-field>
+    </div>
+  </div> 
+  <div class="col-md-3 mb-4">
+    <div class="form-outline">
+       <mat-form-field appearance="fill" class="example-full-width">
+           <mat-label> Description</mat-label>
+           <input formControlName="description" required id="description"  matInput placeholder="Enter job description"   name="description"    />
+             <mat-error *ngIf="companyForm.get('description')!.errors!==null && companyForm.get('description')!.errors!['required']">
+             Description is <strong>required</strong>
+           </mat-error>
+       </mat-form-field>
+   </div>
+ </div> 
+ <div class="col-md-3 mb-4">
+    <div class="form-outline">
+       <mat-form-field appearance="fill" class="example-full-width">
+           <mat-label> Job Title</mat-label>
+           <input formControlName="jobtitle" required id="jobtitle"  matInput placeholder="Enter Company name"   name="jobtitle"    />
+             <mat-error *ngIf="companyForm.get('jobtitle')!.errors!==null && companyForm.get('jobtitle')!.errors!['required']">
+             Job title is <strong>required</strong>
+           </mat-error>
+       </mat-form-field>
+   </div>
+ </div> 
+ </div>
+ <div class="row">
+    <div class="col-md-2"></div>
+     <div class="col-md-3 mb-4">
+       <div class="form-outline">
+          <mat-form-field appearance="fill" class="example-full-width">
+              <mat-label> Experience</mat-label>
+              <input formControlName="experience" required id="experience"  matInput placeholder="Enter required experience"   name="experience"    />
+                <mat-error *ngIf="companyForm.get('experience')!.errors!==null && companyForm.get('experience')!.errors!['required']">
+                Experience is <strong>required</strong>
+              </mat-error>
+          </mat-form-field>
+      </div>
+    </div> 
+    <div class="col-md-3 mb-4">
+      <div class="form-outline">
+         <mat-form-field appearance="fill" class="example-full-width">
+             <mat-label> Hiring Authority</mat-label>
+             <input formControlName="authorityname" required id="authorityname"  matInput placeholder="Enter hiring authority name"   name="authorityname"    />
+               <mat-error *ngIf="companyForm.get('authorityname')!.errors!==null && companyForm.get('authorityname')!.errors!['required']">
+               Hiring Authority name is <strong>required</strong>
+             </mat-error>
+         </mat-form-field>
+     </div>
+   </div> 
+   <div class="col-md-3 mb-4">
+      <div class="form-outline">
+         <mat-form-field appearance="fill" class="example-full-width">
+             <mat-label>Offered Package</mat-label>
+             <input formControlName="package" required id="package"  matInput placeholder="Enter Company name"   name="package"    />
+               <mat-error *ngIf="companyForm.get('package')!.errors!==null && companyForm.get('package')!.errors!['required']">
+               Package is <strong>required</strong>
+             </mat-error>
+         </mat-form-field>
+     </div>
+   </div> 
+   </div>
+   <div class="row">
+    <div class="col-md-2"></div>
+     <div class="col-md-3 mb-4">
+       <div class="form-outline">
+          <mat-form-field appearance="fill" class="example-full-width">
+              <mat-label>Required Qualification</mat-label>
+              <input formControlName="qualification" required id="qualification"  matInput placeholder="Enter required Qualification"   name="qualification"    />
+                <mat-error *ngIf="companyForm.get('qualification')!.errors!==null && companyForm.get('qualification')!.errors!['required']">
+                Qualification is <strong>required</strong>
+              </mat-error>
+          </mat-form-field>
+      </div>
+    </div> 
+    <div class="col-md-3 mb-4">
+      <div class="form-outline">
+         <mat-form-field appearance="fill" class="example-full-width">
+             <mat-label>Registration Link</mat-label>
+             <input formControlName="link" required id="link"  matInput placeholder="Enter job description"   name="link"    />
+               <mat-error *ngIf="companyForm.get('link')!.errors!==null && companyForm.get('link')!.errors!['required']">
+               Field is <strong>required</strong>
+             </mat-error>
+         </mat-form-field>
+     </div>
+   </div> 
+   <div class="col-md-3 mb-4">
+      <div class="form-outline">
+         <mat-form-field appearance="fill"  class="example-full-width">
+            <mat-label>Candidate type</mat-label>
+            <mat-select required  name="candidates"  formControlName="type">
+              <mat-option *ngFor="let g of candidates" [value]="g.Text">
+                {{g.Text}}
+              </mat-option>
+            </mat-select>
+            <mat-error>
+                Category is required  
+
+               </mat-error>
+          
+          </mat-form-field>
+     </div>
+   </div> 
+   </div>
+   
+ <div class="container" style="text-align:center;">
+  
+  
+ <button class="btn btn-success btn-lg" type="submit" name="submitbutton" >Create</button>
+ <div class="space"></div>
+ <button class="btn btn-outline-dark btn-lg"  name="submitbutton" (click)="BackToCompany()" >Back</button>
+  
+  
+  
+ </div>
+ 
+</form> 
+

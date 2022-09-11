@@ -11,9 +11,11 @@ import { AuthService } from './auth/authservice/auth.service';
 import { NavbarComponent } from './navbar/navbar.component';
 import { NavbarModule } from './navbar/navbar.module';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CompaniesModule } from './companies/companies.module';
+import { CompanyDbService } from './companies/company.db.service';
 
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { AuthModule } from './auth/auth.module';
 
@@ -42,9 +44,15 @@ import {MatSelectModule} from '@angular/material/select';
     MatFormFieldModule,
     MatInputModule,
     ReactiveFormsModule,
-    MatSelectModule
+    MatSelectModule,
+    FormsModule,
+    ReactiveFormsModule,
+    CompaniesModule,
+    HttpClientModule,
+
+    
   ],
-  providers: [NavbarComponent,AuthService,InterviewExperienceDBService],
+  providers: [NavbarComponent,AuthService,InterviewExperienceDBService,CompanyDbService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

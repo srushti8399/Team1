@@ -1,0 +1,8 @@
+.example-full-width {
+    width: 100%;
+  }
+  .space {
+    width: 4px;
+    height: auto;
+    display: inline-block;
+    }

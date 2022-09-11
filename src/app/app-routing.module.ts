@@ -10,6 +10,12 @@ import { CreateintexpComponent } from './intexp/createintexp/createintexp.compon
 import { EditComponent } from './intexp/edit/edit.component';
 import { IntexpComponent } from './intexp/intexp.component';
 import { ViewComponent } from './intexp/view/view.component';
+import { AddCompanyComponent } from './companies/add-company/add-company.component';
+import { CompaniesComponent } from './companies/companies.component';
+import { DeleteCompanyComponent } from './companies/delete-company/delete-company.component';
+import { DialogDeleteComponent } from './companies/delete-company/delete_dialogue';
+import { EditCompanyComponent } from './companies/edit-company/edit-company.component';
+import { ViewCompanyComponent } from './companies/view-company/view-company.component';
 
 const routes: Routes = [
   {path:"login",component:LoginComponent},
@@ -30,13 +36,22 @@ const routes: Routes = [
   {path:'experiencelist',component:IntexpComponent},
   {path:'view/:id',component:ViewComponent},
   {path:'edit/:id',component:EditComponent},
-  {path:'',redirectTo:'experiencelist',pathMatch:'full'}
+ // {path:'',redirectTo:'experiencelist',pathMatch:'full'}
 
   // {
   //   path: 'experience',
   //   loadChildren: () => import('./intexp/intexp.module').then(x => x.IntexpModule)
 
   // },
+
+
+  {path:'addcompany',component:AddCompanyComponent},
+  {path:'company',component:CompaniesComponent},
+  {path:'viewcompany/:id',component:ViewCompanyComponent},
+  {path:'editcompany/:id',component:EditCompanyComponent},
+  {path:'deletecompany/:id',component:DeleteCompanyComponent},
+  {path:'deletecompanydialogue/:id',component:DialogDeleteComponent},
+   //{path:"**",component:LoginComponent}
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
