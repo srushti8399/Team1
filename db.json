@@ -6,11 +6,66 @@
       "author": "typicode"
     }
   ],
-  "comments": [
+  "Companies": [
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "cname": "Global Logic",
+      "description": "Candidate having c, c++ knowledge can apply",
+      "jobtitle": "Trainee Software Engineer",
+      "experience": "0-2 years",
+      "authorityname": "HR",
+      "package": "3-6 LPA(variable)",
+      "qualification": "BE/B.Tech",
+      "link": "https://www.naukri.com/",
+      "type": "Fresher",
+      "id": 1
+    },
+    {
+      "cname": "Capgemini",
+      "description": "Machine Learning knowledge is required",
+      "jobtitle": "Senior Engineer",
+      "experience": "3-4 years",
+      "authorityname": "HR",
+      "package": "18-24 LPA",
+      "qualification": "BE/B.Tech",
+      "link": "https://www.naukri.com/",
+      "type": "Experienced",
+      "id": 2
+    },
+    {
+      "cname": "Accenture",
+      "description": "Experienced in Payroll Department",
+      "jobtitle": "Public Relation Manager",
+      "experience": "3-4 years",
+      "authorityname": "HR",
+      "package": "3-6 LPA(variable)",
+      "qualification": "Graduation ",
+      "link": "https://www.naukri.com/",
+      "type": "Experienced",
+      "id": 4
+    },
+    {
+      "cname": "Xensor",
+      "description": "Knowledge of UI/UX is required",
+      "jobtitle": "Senior Engineer",
+      "experience": "0-2 years",
+      "authorityname": "HR",
+      "package": "3-6 LPA(variable)",
+      "qualification": "BE/B.Tech in ComputerScience/InformationTechnology",
+      "link": "https://www.naukri.com/",
+      "type": "Experienced",
+      "id": 5
+    },
+    {
+      "cname": "Infosys",
+      "description": "Freshers can apply",
+      "jobtitle": "System Engineer",
+      "experience": "0 years",
+      "authorityname": "HR",
+      "package": "3 LPA",
+      "qualification": "Graduation ",
+      "link": "https://www.naukri.com/",
+      "type": "Fresher",
+      "id": 6
     }
   ],
   "profile": {

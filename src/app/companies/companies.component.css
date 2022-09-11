@@ -1,0 +1,39 @@
+
+.aspect-16to9 {
+    height: auto;
+    width: 100%;
+  }
+  
+  .p-16to9 {
+    position: relative;
+    padding-bottom: 56%;
+    overflow: hidden;
+  }
+  
+  .card-body-content {
+    position: absolute;
+    top: 1rem;
+    bottom: 1rem;
+    right: 1rem;
+    left: 1rem;
+    overflow: hidden;
+  }
+  .red{
+    color: red;
+  }
+  .blue{
+    color: rgb(45, 144, 236);
+  }
+  .warn{
+    background-color: rgb(241, 116, 241);
+    color:black
+  }
+  .green{
+    color:rgb(5, 5, 5);
+    background-color: rgb(119, 245, 119);
+  }
+  .space {
+	width: 2px;
+	height: auto;
+	display: inline-block;
+  }

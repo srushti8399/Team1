@@ -1,1 +1,56 @@
-<p>companies works!</p>
+<!-- <button class="btn btn-success btn-block btn-lg gradient-custom-4 text-body" (click)="GoToAdd()" name="button" >Are you receuiter</button> -->
+<!-- <div class="row">
+    
+    
+    <div class="col-sm-4"><button class="btn btn-success btn-block btn-lg gradient-custom-4 text-body" (click)="GoToAdd()" name="button" >Are you receuiter</button></div>--> 
+    <div class="container">
+  
+        <div class="jumbotron">
+            <div class="row col-md-12">
+                <div class="col-md-5">
+          <h1 ><strong>Job Opportunites</strong></h1>
+        </div>
+        <div class="col-md-5"></div>
+        <div class="col-md-2"> <button mat-raised-button class="btn btn-outline-success" (click)="GoToAdd()"><strong>Add Jobs</strong></button></div>
+        </div>
+    </div>
+    <div class="content">
+    <div fxLayout="row wrap" fxLayoutGap="16px grid">
+      <div fxFlex="50%" *ngFor="let com of Companyarray">
+        <div class="shadow p-2 mb-2 bg-white rounded">
+      <mat-card class="example-card">
+    <mat-card-title>{{com.jobtitle}}</mat-card-title>
+    <mat-card-subtitle>{{com.cname}}</mat-card-subtitle>
+    <mat-card-content>
+      <p>Package {{com.package}}</p>
+      <p>Required Qualification {{com.qualification}}</p>
+    </mat-card-content>
+    <mat-card-actions>
+        <div class="row col-md-12">
+            <div class="col-md-3">
+            <button mat-raised-button  class="btn btn-outline-info" (click)="viewCompany(com.id)">View</button>
+        </div>
+        <div class="col-md-6"></div>
+        <div class="col-md-3">
+            <button mat-icon-button color="accent" class="blue" class="btn btn-outline-primary" (click)="editCompany(com.id)">
+                <mat-icon>edit</mat-icon>
+              </button>
+              <div class="space"></div>
+            <!-- </div> -->
+            <!-- <div class="col-md-1"> -->
+                <button mat-icon-button color="accent" class="red" class="btn btn-outline-danger" (click)="deleteCompany(com.id)">
+                    <mat-icon>delete</mat-icon>
+                  </button>
+              
+             </div> 
+              
+            </div>
+    </mat-card-actions>
+  </mat-card>
+        </div>
+</div>
+    </div>
+</div> 
+    </div>
+
+
