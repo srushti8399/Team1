@@ -1,1 +1,143 @@
-<p>navbar works!</p>
+
+
+<div  *ngIf="checkUserLoginStatus.status">
+
+
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:lightslategray;position: absolute;width:100%;">
+    <a class="navbar-brand" style="margin-left:3vw ;font-weight: bold;color: aliceblue;" href="#">OffCampus</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon">
+
+        <div class="dropstart" role="group">
+          <svg
+          id="dropdownMenuButton"
+          data-mdb-toggle="dropdown"
+          
+          aria-expanded="false"
+          class="dropdown-toggle"
+          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+
+          
+         
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Home</a></li>
+            <li><a routerLink="profile" class="dropdown-item">Profile</a></li>
+            <li><a routerLink="courses" class="dropdown-item">My Courses</a></li>
+            <li><a routerLink="product/prodlist" class="dropdown-item" >Products</a></li>
+            <li><a routerLink="department" class="dropdown-item">Department</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a routerLink="login" (click)="performLogOut()" class="dropdown-item">Logtt Out</a></li>
+          </ul>
+        </div>
+      </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav" style="width: 90%;">
+        <li class="nav-item active">
+          <a routerLink="dashboard" class="nav-link" style="color: aliceblue;">Dashboard </a>
+        </li>
+        
+      
+      </ul>
+      
+      <ul class="navbar-nav" style="width: 100%;margin-left:30vw;">
+        <li class="nav-item">
+          <a  class="nav-link" style="font-weight: bolder;color: aliceblue;">{{checkUserLoginStatus.username}}</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="companies" class="nav-link" style="color: aliceblue;">Companies</a>
+        </li>
+        <li class="nav-item ">
+          <a routerLink="mock" class="nav-link" href="#" style="color: aliceblue;">Mock</a>
+        </li>
+        <li class="nav-item ">
+          <a routerLink="interviewexp" class="nav-link"  style="color: aliceblue;">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">
+
+            <!-- <div class=""> -->
+              <div class="dropstart" role="group">
+
+                <svg
+                id="dropdownMenuButton"
+                data-mdb-toggle="dropdown"
+                style="background-color: aliceblue;"
+                aria-expanded="false"
+                class="dropdown-toggle"
+                xmlns="http://www.w3.org/2000/svg" style="width:25px ;cursor: pointer;" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M224 256c70.7 0 128-57.31 128-128s-57.3-128-128-128C153.3 0 96 57.31 96 128S153.3 256 224 256zM274.7 304H173.3C77.61 304 0 381.6 0 477.3c0 19.14 15.52 34.67 34.66 34.67h378.7C432.5 512 448 496.5 448 477.3C448 381.6 370.4 304 274.7 304z"/></svg>
+               
+                <ul class="dropdown-menu">
+                  <li><a routerLink="profile" class="dropdown-item" >Profile</a></li>
+                  <li><a routerLink="prodlist" class="dropdown-item" >Products</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a routerLink="login" (click)="performLogOut()" class="dropdown-item">Log Out</a></li>
+                </ul>
+              </div>
+            <!-- </div> -->
+
+
+          
+          </a>
+        </li>
+      </ul>
+
+     
+      
+    </div>
+  </nav>
+
+</div>
+
+<div *ngIf="!checkUserLoginStatus.status">
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:lightslategray;">
+    <a class="navbar-brand" style="margin-left:3vw ;font-weight: bold;color: aliceblue;" href="#">OffCampus</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon">
+
+        <div class="dropstart" role="group">
+          <svg
+          id="dropdownMenuButton"
+          data-mdb-toggle="dropdown"
+          
+          aria-expanded="false"
+          class="dropdown-toggle"
+          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+
+          
+         
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Register</a></li>
+            <li><a routerLink="login" class="dropdown-item">Login</a></li>
+            
+          </ul>
+        </div>
+      </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+     
+      <ul class="navbar-nav ttt float-right" style="width: 100%;margin-left:91%;">
+       
+        <li class="nav-item ">
+          <a routerLink="register" class="nav-link"  style="color: aliceblue;">Register</a>
+        </li>
+        <li class="nav-item ">
+          <a routerLink="login" class="nav-link"  style="color: aliceblue;">Login</a>
+        </li>
+        
+      </ul>
+
+     
+      
+    </div>
+  </nav>
+
+
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+

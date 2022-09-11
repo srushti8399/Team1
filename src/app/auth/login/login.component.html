@@ -1,0 +1,78 @@
+
+<div class="test">
+	
+<div class="container" id="container">
+
+
+
+	<div class="form-container sign-up-container">
+		<form action="#">
+			<h1>Create Account</h1>
+			<div class="social-container">
+				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+			</div>
+			<span>or use your email for bfbregistration</span>
+			<input type="text" placeholder="Name" />
+			<input type="email" placeholder="Email" />
+			<input type="password" placeholder="Password" />
+			<button>Sign Up</button>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form #personForm="ngForm" (ngSubmit)="savePerson(personForm)">
+			
+			<mat-form-field class="user"  >
+				<mat-label>Email Id</mat-label>
+				<input required id="username" email type="email" #emailControl="ngModel"  name="username" [(ngModel)]="username" matInput >
+				<mat-error *ngIf="emailControl.invalid && emailControl.value==''">
+					Email is <strong>required</strong>
+				  </mat-error>
+				  <mat-error *ngIf="emailControl.errors?.['email']">
+					Email is <strong>incorrect</strong>
+				  </mat-error>
+			  </mat-form-field>
+			  <mat-form-field  >
+				<mat-label>Password</mat-label>
+				<input required id="password" email type="password" #passwordControl="ngModel"  name="password" [(ngModel)]="password" matInput >
+				<mat-error *ngIf="passwordControl.invalid && passwordControl.value==''">
+					Password is <strong>required</strong>
+				  </mat-error>
+				 
+			  </mat-form-field>
+			<!-- test -->
+			<button>Sign In</button>
+			
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>Welcome Back!</h1>
+				<p>To keep connected with us please login with your personal info</p>
+				<button class="ghost" id="signIn">Sign In</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>Hello, Friend!</h1>
+				<p>Enter your personal details and start journey with us</p>
+				<button routerLink="register" class="ghost"  id="signUp">
+					
+						<a style="color:white" href="/register">
+							Sign Up
+						</a>
+						
+					</button>
+			</div>
+		</div>
+	</div> 
+	
+</div>
+
+
+</div>
+
+<div style="height:80px ;">
+
+</div>
+
