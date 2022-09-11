@@ -1,0 +1,20 @@
+.example-card {
+    max-width: 400px;
+  }
+
+.break {
+    word-break: break-all;
+  }
+
+.Row{
+  margin-top: 20px;
+}
+
+.card{
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.button1{
+  margin-right: 5px;
+}

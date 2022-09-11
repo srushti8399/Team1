@@ -1,0 +1,81 @@
+<form [formGroup]="interviewExperienceForm" (ngSubmit)="submit()">
+
+<!-- 1st row -->
+
+    <div class = "row">
+        <div class="col-md-1"></div>
+        <div class="col-md-11">
+            <h1 >ADD YOUR INTERVIEW EXPERIENCE</h1>
+        </div>
+    </div>
+
+<!-- 2nd row -->
+
+    <div class = "row">
+        <div class="col-md-1"></div>
+        <div class="col-md-5">
+            <mat-form-field appearance="fill" class="names Row">
+                <mat-label>Author Name</mat-label>
+                <input formControlName="authorName" matInput value = "">
+                <mat-error *ngIf = "interviewExperienceForm.controls['authorName']!.errors!=null && interviewExperienceForm.controls['authorName']!.errors!['required']">
+                  <span>Author Name is required</span>
+              </mat-error>
+              </mat-form-field>
+        </div>
+
+        <div class="col-md-5">
+            <mat-form-field appearance="fill" class="names Row">
+                <mat-label>Company Name</mat-label>
+                <input formControlName="company" matInput value = "">
+                <mat-error *ngIf = "interviewExperienceForm.controls['company']!.errors!=null && interviewExperienceForm.controls['company']!.errors!['required']">
+                  <span>Company Name is required</span>
+              </mat-error>
+              </mat-form-field>
+        </div>
+        <div class = "col-md-1"></div>
+    </div>
+
+<!-- 3rd row -->
+
+    <div class = "row">
+        <div class= "col-md-1"></div>
+        <div class = "col-md-10">
+            <mat-form-field  appearance="fill" class = "description Row">
+                <mat-label>Title</mat-label>
+                <input formControlName="title" matInput placeholder="For e.g TCS Interview Experience">
+                <mat-error *ngIf = "interviewExperienceForm.controls['title']!.errors!=null && interviewExperienceForm.controls['title']!.errors!['required']">
+                    <span>Title is required</span>
+                </mat-error>
+              </mat-form-field>
+        </div>
+        <div class= "col-md-1"></div>
+    </div>
+
+
+<!-- 4th row -->
+
+
+<div class = "row">
+    <div class= "col-md-1"></div>
+    <div class = "col-md-10" style="height: 200px;">
+        <quill-editor  formControlName="description" class="content-editor" [placeholder]="''" (onEditorChanged)="editorChange($event)"> 
+
+        </quill-editor>
+        
+    </div>
+    <div class= "col-md-1"></div>
+</div>
+
+<div style="margin-top: 100px;"></div>
+<div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-1">
+        <button mat-raised-button color="primary">Submit</button>
+    </div>
+    <div class="col-md-1">
+        <button mat-raised-button color="warn">Clear</button>
+    </div>
+    <div class="col-md-9"></div>
+</div>
+
+</form>
