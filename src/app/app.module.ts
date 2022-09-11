@@ -10,11 +10,9 @@ import { NavbarModule } from './navbar/navbar.module';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CompaniesModule } from './companies/companies.module';
-import { HttpClientModule } from '@angular/common/http';
 import { CompanyDbService } from './companies/company.db.service';
 
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { AuthModule } from './auth/auth.module';
 
@@ -47,7 +45,7 @@ import {MatSelectModule} from '@angular/material/select';
 
     
   ],
-  providers: [NavbarComponent,AuthServiceCompanyDbService],
+  providers: [NavbarComponent,AuthService,CompanyDbService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

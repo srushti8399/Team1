@@ -4,18 +4,19 @@ import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProfileComponent } from './dashboard/profile/profile.component';
-
-const routes: Routes = [
-  {path:"login",component:LoginComponent},
-  {path:"register",component:RegisterComponent},
-  {path:"dashboard",component:DashboardComponent},
-  {path:"profile",component:ProfileComponent},
 import { AddCompanyComponent } from './companies/add-company/add-company.component';
 import { CompaniesComponent } from './companies/companies.component';
 import { DeleteCompanyComponent } from './companies/delete-company/delete-company.component';
 import { DialogDeleteComponent } from './companies/delete-company/delete_dialogue';
 import { EditCompanyComponent } from './companies/edit-company/edit-company.component';
 import { ViewCompanyComponent } from './companies/view-company/view-company.component';
+
+const routes: Routes = [
+  {path:"login",component:LoginComponent},
+  {path:"register",component:RegisterComponent},
+  {path:"dashboard",component:DashboardComponent},
+  {path:"profile",component:ProfileComponent},
+
 
 
   {path:'addcompany',component:AddCompanyComponent},
@@ -24,7 +25,7 @@ import { ViewCompanyComponent } from './companies/view-company/view-company.comp
   {path:'editcompany/:id',component:EditCompanyComponent},
   {path:'deletecompany/:id',component:DeleteCompanyComponent},
   {path:'deletecompanydialogue/:id',component:DialogDeleteComponent},
-   {path:"**",component:CompaniesComponent}
+   //{path:"**",component:LoginComponent}
 ];
 
 @NgModule({
