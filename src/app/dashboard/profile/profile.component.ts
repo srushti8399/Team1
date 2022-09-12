@@ -110,10 +110,14 @@ export class ProfileComponent implements OnInit {
   }
 
   
-genders:any[]=[
-  {viewValue:-1,Text:"Select Category"},
-  {viewValue:1,Text:"Electronics"},
-  {viewValue:2,Text:"Fashion"} 
+BatchesArr:any[]=[
+  {viewValue:-1,Text:"Select Batch"},
+  {viewValue:1,Text:"2018"},
+  {viewValue:2,Text:"2019"}, 
+  {viewValue:2,Text:"2020"}, 
+  {viewValue:2,Text:"2021"}, 
+  {viewValue:2,Text:"2022"}, 
+  {viewValue:2,Text:"2023"}, 
 ];
 
 

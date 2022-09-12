@@ -1,5 +1,5 @@
 
-
+<!-- 
 <div class="row">
     <div class="col-md-1"></div>
     <div class="col-md-8">
@@ -9,12 +9,12 @@
         
         <button mat-flat-button color="accent" (click)="create()" class="Row">Create</button>
     </div>
-</div>
+</div> -->
 
-<div class="row"*ngFor="let obj of interviewExpArray" >    
+<div class="row" style="width:100%;" *ngFor="let obj of interviewExpArray" >    
     <div class="col-md-1"></div>
     <div class="col-md-9" >
-        <mat-card class="example-card" class="card">
+        <mat-card class="card">
             <mat-card-title>
                 {{obj.title}}
                 <mat-icon style="float: right;" (click)="edit(obj.id)">edit</mat-icon>

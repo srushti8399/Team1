@@ -147,3 +147,105 @@ section{
           
           </a>
         </li>
+
+
+
+        *************
+
+        <div class="container h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+        
+      <div class="col-12 col-md-10 col-lg-6 col-xl-8">
+        <div class="shadow mb-3 bg-white rounded">
+        <div class="card" style="border-radius: 15px;">
+          <div class="card-body p-5">
+            <h2 class="text-uppercase  mb-3">Job Details</h2>
+            
+            
+    
+      
+        <div class="row">
+    
+          <div class="col-sm-3">
+            <h4 class="mb-0">Job Title</h4>
+          </div>
+          <div class="col-sm-9 text-secondary">
+            {{viewCompany.jobtitle}}
+        </div>
+          </div>
+    
+         <hr> 
+          <div class="row">  
+        
+          <div class="col-sm-3">
+            <h4 class="mb-0">Company Name</h4>
+          </div>
+          <div class="col-sm-9 text-secondary">
+            {{viewCompany.cname}}
+          </div>
+        </div>
+        <hr>
+    
+        <div class="row">
+          <div class="col-sm-3">
+            <h4 class="mb-0">Package</h4>
+          </div>
+          <div class="col-sm-9 text-secondary">
+            {{viewCompany.package}}
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-sm-3">
+            <h4 class="mb-0">Required Qualification</h4>
+          </div>
+          <div class="col-sm-9 text-secondary">
+            {{viewCompany.qualification}}
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-sm-3">
+              <h4 class="mb-0">Experience required</h4>
+            </div>
+            <div class="col-sm-9 text-secondary">
+              {{viewCompany.experience}}
+            </div>
+          </div>
+          <hr>
+        <div class="row">
+            <div class="col-sm-3">
+              <h4 class="mb-0">Candidate Type</h4>
+            </div>
+            <div class="col-sm-9 text-secondary">
+              {{viewCompany.type}}
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-sm-3">
+              <h4 class="mb-0">Description</h4>
+            </div>
+            <div class="col-sm-9 text-secondary">
+              {{viewCompany.description}}
+            </div>
+          </div>
+          <hr>
+        <div class="row">
+          <div class="col-md-2">
+          <div class="col-sm-12">
+            <button mat-raised-button  class="btn btn-danger" (click)="deleteCompanyDetails(viewCompany.id)">Delete</button>
+          </div> </div>
+          <div class="col-md-8"></div>
+          <div class="col-md-2">
+            <div class="col-sm-12">
+          <button class="btn btn-outline-dark"  name="submitbutton" (click)="BackToCompany()" >Back</button>
+        </div>
+          </div>
+      
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+</div>
