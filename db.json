@@ -63,6 +63,18 @@
       "link": "https://www.naukri.com/",
       "type": "Experienced",
       "id": 1
+    },
+    {
+      "cname": "Capgemini",
+      "description": "Experienced in Payroll Department",
+      "jobtitle": "Public Relation Manager",
+      "experience": "0 years",
+      "authorityname": "HR",
+      "package": "3 LPA",
+      "qualification": "Graduation ",
+      "link": "https://www.naukri.com/",
+      "type": "Fresher",
+      "id": 2
     }
   ],
   "experiences": [
