@@ -1,8 +1,8 @@
-<form [formGroup]="interviewExperienceForm" (ngSubmit)="submit()">
+<form [formGroup]="interviewExperienceForm">
 
     <!-- 1st row -->
     
-        <div class = "row" style="width:100% ;">
+        <div class = "row" style="width: 100%;">
             <div class="col-md-1"></div>
             <div class="col-md-11">
                 <h1>EDIT</h1>
@@ -11,12 +11,12 @@
     
     <!-- 2nd row -->
     
-        <div class = "row" style="width:100% ;">
+        <div class = "row" style="width: 100%;">
             <div class="col-md-1"></div>
             <div class="col-md-5">
                 <mat-form-field appearance="fill" class="names Row">
                     <mat-label>Author Name</mat-label>
-                    <input formControlName="authorName" matInput value = "{{postList.authorName}}">
+                    <input formControlName="authorName" matInput [(ngModel)]="postList.authorName">
                     <mat-error *ngIf = "interviewExperienceForm.controls['authorName']!.errors!=null && interviewExperienceForm.controls['authorName']!.errors!['required']">
                       <span>Author Name is required</span>
                   </mat-error>
@@ -26,7 +26,7 @@
             <div class="col-md-5">
                 <mat-form-field appearance="fill" class="names Row">
                     <mat-label>Company Name</mat-label>
-                    <input formControlName="company" matInput value = "{{postList.company}}">
+                    <input formControlName="company" matInput [(ngModel)]="postList.company">
                     <mat-error *ngIf = "interviewExperienceForm.controls['company']!.errors!=null && interviewExperienceForm.controls['company']!.errors!['required']">
                       <span>Company Name is required</span>
                   </mat-error>
@@ -37,12 +37,12 @@
     
     <!-- 3rd row -->
     
-        <div class = "row" style="width:100% ;">
+        <div class = "row" style="width: 100%;">
             <div class= "col-md-1"></div>
             <div class = "col-md-10">
                 <mat-form-field  appearance="fill" class = "description Row">
                     <mat-label>Title</mat-label>
-                    <input formControlName="title" value="{{postList.title}}" matInput placeholder="For e.g TCS Interview Experience">
+                    <input formControlName="title" [(ngModel)]="postList.title" matInput placeholder="For e.g TCS Interview Experience">
                     <mat-error *ngIf = "interviewExperienceForm.controls['title']!.errors!=null && interviewExperienceForm.controls['title']!.errors!['required']">
                         <span>Title is required</span>
                     </mat-error>
@@ -55,7 +55,7 @@
     <!-- 4th row -->
     
     
-    <div class = "row" style="width:100% ;">
+    <div class = "row" style="width: 100%;">
         <div class= "col-md-1"></div>
         <div class = "col-md-10" style="height: 200px;">
             <quill-editor [(ngModel)]="description" formControlName="description" class="content-editor"  [placeholder]="''" (onEditorChanged)="editorChange($event)">                 
@@ -67,14 +67,13 @@
     
     <div style="margin-top: 100px;"></div>
 
-    
-    <div class="row" style="width:100% ;">
+    <div class="row" style="width: 100%;">
         <div class="col-md-1"></div>
         <div class="col-md-1">
-            <button mat-raised-button color="primary">Save</button>
+            <button type="button" (click)="submit()" mat-raised-button color="primary">Save</button>
         </div>
         <div class="col-md-1">
-            <button mat-raised-button color="warn">Clear</button>
+            <button class="btn btn-outline-dark"  name="submitbutton" (click)="BackToList()" >Back</button>
         </div>
         <div class="col-md-9"></div>
     </div>

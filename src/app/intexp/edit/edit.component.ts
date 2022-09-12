@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { EditorChangeContent, EditorChangeSelection } from 'ngx-quill';
 import { InterviewExperienceDBService } from '../intexp.db.service';
 
@@ -11,12 +11,14 @@ import { InterviewExperienceDBService } from '../intexp.db.service';
 })
 export class EditComponent implements OnInit {
 
-  constructor(private _fb:FormBuilder,private _route:ActivatedRoute,private _db:InterviewExperienceDBService) { }
+  constructor(private _fb:FormBuilder,private _route:ActivatedRoute,private _db:InterviewExperienceDBService
+    ,private _router:Router) { }
 
   interviewExperienceForm!:FormGroup
   postId:string|null = ''
   postList:any = []
   description:string=''
+
 
   ngOnInit(): void {
 
@@ -35,6 +37,10 @@ export class EditComponent implements OnInit {
     })
   }
 
+  BackToList(){
+    this._router.navigate(['/experiencelist'])
+  }
+
   editorChange(event:EditorChangeContent|EditorChangeSelection)
   {
     //console.log("editor got changed ", event)
@@ -43,6 +49,11 @@ export class EditComponent implements OnInit {
   }
 
   submit(){
-
+    this._db.editInterviewExperience(this.interviewExperienceForm.value,this.postId).subscribe({
+      next:(res)=>{
+        alert("Edited Successfully")
+        
+      }
+    })
   }
 }

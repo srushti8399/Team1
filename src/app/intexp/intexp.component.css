@@ -2,6 +2,12 @@
     max-width: 400px;
   } */
 
+.materialcard{
+  box-shadow: 10px 10px 5px lightblue;
+  border: 1px solid grey;
+  
+}
+
 .break {
     word-break: break-all;
   }
