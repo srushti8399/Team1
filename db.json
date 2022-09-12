@@ -53,18 +53,6 @@
   ],
   "companies": [
     {
-      "cname": "Global Logic",
-      "description": "Experienced ",
-      "jobtitle": "Trainee Software Engineer",
-      "experience": "3-4 years",
-      "authorityname": "HR",
-      "package": "3-6 LPA(variable)",
-      "qualification": "Graduation ",
-      "link": "https://www.naukri.com/",
-      "type": "Experienced",
-      "id": 1
-    },
-    {
       "cname": "Capgemini",
       "description": "Experienced in Payroll Department",
       "jobtitle": "Public Relation Manager",
