@@ -7,3 +7,18 @@
 	  margin-left: 85% !important;
 	}
   } 
+
+  .image-cont{
+	background-color: ghostwhite;
+    /* width: 100%;
+    height: 100%; */
+	margin-left: 13px;
+	border-radius: 3px;
+  }
+  .image-cont img{
+	height: 2rem;
+    width: 9rem;
+	padding: 3px;
+  }
+
+  
