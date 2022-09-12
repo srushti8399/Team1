@@ -1,27 +1,37 @@
-<!-- <div> -->
-    
-    <input type="checkbox" id="check">
-    <label for="check">
-      <i class="fas fa-bars" id="btn"></i>
-      <i style="color:white;" class="fas fa-times" id="cancel"></i>
-    </label>
+
 
     
-    <div class="sidebar">
-    <header>My App</header>
-    <ul>
-     <li><a href="#"><i class="fas fa-qrcode"></i>Dashboard</a></li>
-     <li><a href="#"><i class="fas fa-link"></i>Shortcuts</a></li>
-     <li><a href="#"><i class="fas fa-stream"></i>Overview</a></li>
-     <li><a href="#"><i class="fas fa-calendar-week"></i>Events</a></li>
-     <!-- <li><a href="#"><i class="far fa-question-circle"></i>About</a></li>
-     <li><a href="#"><i class="fas fa-sliders-h"></i>Services</a></li>
-     <li><a href="#"><i class="far fa-envelope"></i>Contact</a></li> -->
-    </ul>
-   </div>
-   <section>
-    <div class="container mt-5">
-        <div class="row">
+    <div class="container" style="display:flex;align-items: center;">
+        <div class="remove" style="height:400px ;width: 20%;background-color:rgb(21, 109, 196);">
+            <ul style="list-style:none;margin-top:34%;color:aliceblue ;">
+                <li  style="margin-bottom:10%;" ><a routerLink="/viewprofile"style="text-decoration: none;color:aliceblue ;"><i class="fas fa-qrcode" style="margin-right:5px ;"></i>View Profile</a></li>
+                <li style="margin-bottom:10%;"><a routerLink="/editprofile" style="text-decoration: none;color:aliceblue ;"><i class="fas fa-link" style="margin-right:5px ;"></i>Edit Profile</a></li>
+                <li style="margin-bottom:10%;"><a href="#" style="text-decoration: none;color:aliceblue ;"><i class="fas fa-stream" style="margin-right:5px ;"></i>Forgot Password</a></li>
+                <li><a href="#" style="text-decoration: none;color:aliceblue ;"><i class="fas fa-calendar-week" style="margin-right:5px ;"></i>My Interviews</a></li>
+                
+               </ul>
+        </div> 
+        <div  style="height:400px ;width: 80%;">
+
+             <!-- test  -->
+             <div class="remove-top" style="background-color:rgb(21, 109, 196);display: flex;width: 100%;">
+                <ul style="list-style:none;color:aliceblue;width: 100%;">
+                    <li style="margin-top: 2%;margin-bottom: 2%;"  ><a routerLink="/viewprofile" style="text-decoration: none;color:aliceblue ;"><i class="fas fa-qrcode" style="margin-right:2% ;" ></i>View Profile</a></li>
+                     <li style="margin-bottom: 2%;"><a routerLink="/editprofile" style="text-decoration: none;color:aliceblue ;"><i class="fas fa-link" style="margin-right:2% ;" ></i>Edit Profile</a></li>
+                    <li style="margin-bottom: 2%;"><a href="#" style="text-decoration: none;color:aliceblue ;"><i class="fas fa-stream" style="margin-right:2% ;" ></i>Forgot Password</a></li>
+                    <li style="margin-bottom: 2%;"><a href="#" style="text-decoration: none;color:aliceblue ;"><i class="fas fa-calendar-week" style="margin-right:2% ;" ></i>My Interviews</a></li>
+                    
+                   </ul>
+             </div>
+       
+        <!-- test  -->
+            
+    <div class="container mt-3">
+
+        <div class="row" style="width:30% ;">
+           
+        </div>
+        <div class="row" >
             <div class="col-md-1">
 
             </div>
@@ -46,54 +56,54 @@
                             </div>
                             <div class="col-md-4 col-sm-6">
                                 <mat-form-field class="example-form-field extra" appearance="fill">
-                                    <mat-label class="extral">Description</mat-label>
+                                    <mat-label class="extral">College</mat-label>
                                     <input required matInput type="text" formControlName="description">
                                     <mat-error>
-                                        Description is required  
+                                        College is required  
                                     </mat-error>
                                   </mat-form-field>
                             </div>
                             <div class="col-md-4 col-sm-6">
                                 <mat-form-field class="example-form-field extra" appearance="fill">
-                                    <mat-label class="extral" >Color</mat-label>
+                                    <mat-label class="extral" >Branch</mat-label>
                                     <input required matInput type="text" formControlName="color">
                                     <mat-error>
-                                        Color is required  
+                                        Branch is required  
                                     </mat-error>
                                   </mat-form-field>
                             </div>
                             <div class="col-md-4 col-sm-6">
                                 <mat-form-field class="example-form-field" appearance="fill">
-                                    <mat-label>Price</mat-label>
+                                    <mat-label>Mobile</mat-label>
                                     <input required matInput type="text" formControlName="price">
                                     <mat-error *ngIf="personForm.get('price')!.errors!==null && personForm.get('price')!.errors!['required']">
-                                        price is required  
+                                        Mobile is required  
                                     </mat-error>
                                     <mat-error *ngIf="personForm.get('price')!.errors!==null && personForm.get('price')!.errors?.['max']">
-                                       price must be less than 100
+                                       Mobile must be less than 100
                                         </mat-error>
                                   </mat-form-field>
                             </div>
                             <div class="col-md-4 col-sm-6">
                                 <mat-form-field class="example-form-field extra" appearance="fill">
-                                    <mat-label class="extral">In Stock Quantity</mat-label>
+                                    <mat-label class="extral">Skills</mat-label>
                                     <input required matInput type="text" formControlName="inStockQuantity">
                                     <mat-error>
-                                       quantity is required  
+                                       Skills is required  
                    
                                       </mat-error>
                                   </mat-form-field>
                             </div> 
                             <div class="col-md-4 col-sm-6">
                                  <mat-form-field appearance="fill" class="extra">
-                                    <mat-label class="extral">Category</mat-label>
+                                    <mat-label class="extral">Batch</mat-label>
                                     <mat-select required selectValidate name="gender"  formControlName="category">
-                                      <mat-option *ngFor="let g of genders" [value]="g.Text">
+                                      <mat-option *ngFor="let g of BatchesArr" [value]="g.Text">
                                         {{g.Text}}
                                       </mat-option>
                                     </mat-select>
                                     <mat-error>
-                                        Category is required  
+                                        Batch is required  
                     
                                        </mat-error>
                                   
@@ -117,7 +127,7 @@
                         </div>
                         <div class="row">
                             <div class="col-md-3">
-                                <button class="btn btn-sm" mat-raised-button color="accent">Submit</button>
+                                <button class="btn btn-sm" style="background-color:rgb(65, 140, 214);color: aliceblue;" mat-raised-button color="accent">Submit</button>
                 
                             </div>
                         </div>
@@ -129,7 +139,12 @@
             </div>
         </div>
     </div>
+        </div>
+    </div>
+  
 
-   </section>
- 
-<!-- </div> -->
+
+   
+
+
+

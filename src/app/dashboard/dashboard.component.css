@@ -21,11 +21,12 @@ html,body{
   background: #f2f2f2;
   text-align: center;
 }
-.container{
+.container{ 
   padding: 0 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  
 }
 .card{
   height: 280px;
@@ -103,3 +104,20 @@ html,body{
     margin: 20px 0;
   }
 }
+
+.content {
+  display: flex;
+  align-items: center;
+}
+
+.content-inner{
+  padding: 4%;
+}
+
+
+
+@media only screen and (min-width: 800px) {
+	.container {
+    margin-left: 5% !important; 
+	}
+  } 

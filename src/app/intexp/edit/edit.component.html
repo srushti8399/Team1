@@ -2,7 +2,7 @@
 
     <!-- 1st row -->
     
-        <div class = "row">
+        <div class = "row" style="width:100% ;">
             <div class="col-md-1"></div>
             <div class="col-md-11">
                 <h1>EDIT</h1>
@@ -11,7 +11,7 @@
     
     <!-- 2nd row -->
     
-        <div class = "row">
+        <div class = "row" style="width:100% ;">
             <div class="col-md-1"></div>
             <div class="col-md-5">
                 <mat-form-field appearance="fill" class="names Row">
@@ -37,7 +37,7 @@
     
     <!-- 3rd row -->
     
-        <div class = "row">
+        <div class = "row" style="width:100% ;">
             <div class= "col-md-1"></div>
             <div class = "col-md-10">
                 <mat-form-field  appearance="fill" class = "description Row">
@@ -55,7 +55,7 @@
     <!-- 4th row -->
     
     
-    <div class = "row">
+    <div class = "row" style="width:100% ;">
         <div class= "col-md-1"></div>
         <div class = "col-md-10" style="height: 200px;">
             <quill-editor [(ngModel)]="description" formControlName="description" class="content-editor"  [placeholder]="''" (onEditorChanged)="editorChange($event)">                 
@@ -66,7 +66,9 @@
     </div>
     
     <div style="margin-top: 100px;"></div>
-    <div class="row">
+
+    
+    <div class="row" style="width:100% ;">
         <div class="col-md-1"></div>
         <div class="col-md-1">
             <button mat-raised-button color="primary">Save</button>
