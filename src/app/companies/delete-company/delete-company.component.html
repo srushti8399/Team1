@@ -1,124 +1,97 @@
-<div class="container h-100">
-  <div class="row d-flex justify-content-center align-items-center h-100">
+<div class="container h-80">
+    <div class="row d-flex  text-align: left h-100" style="width:100% ;">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        
+      <!-- <div class="col-12 col-md-12 col-lg-0 col-xl-6"> -->
+        <div class="shadow mb-3 bg-white rounded">
+        <div class="card" style="border-radius: 15px; width: 100% !important;">
+          <div class="card-body p-1">
+            <h2 class="text-uppercase  mb-3" style="margin-left: 40px !important;">Job Details</h2>
+            
+            
+            <div class="row col-md-12" style="width:100% ;">
 
-    <div class="col-12 col-md-10 col-lg-6 col-xl-8">
-      <div class="shadow mb-3 bg-white rounded">
-        <div class="card" style="border-radius: 15px;">
-          <div class="card-body p-5">
-            <h2 class="text-uppercase  mb-3">Job Details</h2>
-
-
-
-
-            <div class="row">
-
-              <div class="col-md-6">
-
-              <div class="row">
-                <div class="col-md-3">
-
-                  <h4 class="mb-0">Job Title</h4>
-
-                </div>
-
-                <div class="col-md-9 text-secondary">
-                  {{viewCompany.jobtitle}}
-                </div>
-              </div>
-
-              </div>
-
-
-              <div class="col-md-6">
-
-               <div class="row">
+             
                 <div class="col-md-6">
 
-                  <h4 class="mb-0">Company Name</h4>
+                  <h3 class="mb-4" style="margin-left: 40px !important;"><strong> Title:</strong> {{viewCompany.jobtitle}}</h3>
 
                 </div>
 
-                <div class="col-md-6 text-secondary">
+               
+                <div class="col-md-6">
 
-                  {{viewCompany.cname}}
+                  <h3 class="mb-4"><strong>Company Name:</strong> {{viewCompany.cname}}</h3>
 
                 </div>
-               </div>
 
-              </div>
+                
+              
+            </div>
+              <div class="row col-md-12" style="width:100% ;">
 
+                <div class="col-md-6">
+  
+                
+                
+  
+                    <h3 class="mb-4" style="margin-left: 40px !important;"><strong>Package:</strong> {{viewCompany.package}}</h3>
+  
+                  </div>
+  
+                  <div class="col-md-6">
+  
+                    <h3 class="mb-4"><strong>Qualification:</strong>{{viewCompany.qualification}}</h3>
+  
+                  </div>
+  
+                  
+                 </div>
+  
+                 <div class="row col-md-12">
 
+                  <div class="col-md-6">
+    
+                  
+                  
+    
+                      <h3 class="mb-4" style="margin-left: 40px !important;"><strong>Experience:</strong> {{viewCompany.experience}}</h3>
+    
+                    </div>
+    
+                    <div class="col-md-6">
+    
+                      <h3 class="mb-4"><strong>Candidate Type:</strong>{{viewCompany.type}}</h3>
+    
+                    </div>
+    
+                    
+                   </div>
+    
+       <div class="row" style="width:100% ;">
+            <div class="col-md-12">
+              <h3 class="mb-4" style="margin-left: 40px !important;"><strong>Description:</strong>{{viewCompany.description}}</h3>
             </div>
-
-            <hr> 
-            <!-- <div class="row">  
-        
-         
-        </div> -->
-            <!-- <hr> -->
-
-            <div class="row">
-              <div class="col-sm-3">
-                <h4 class="mb-0">Package</h4>
-              </div>
-              <div class="col-sm-9 text-secondary">
-                {{viewCompany.package}}
-              </div>
-            </div>
-            <hr>
-            <div class="row">
-              <div class="col-sm-3">
-                <h4 class="mb-0">Required Qualification</h4>
-              </div>
-              <div class="col-sm-9 text-secondary">
-                {{viewCompany.qualification}}
-              </div>
-            </div>
-            <hr>
-            <div class="row">
-              <div class="col-sm-3">
-                <h4 class="mb-0">Experience required</h4>
-              </div>
-              <div class="col-sm-9 text-secondary">
-                {{viewCompany.experience}}
-              </div>
-            </div>
-            <hr>
-            <div class="row">
-              <div class="col-sm-3">
-                <h4 class="mb-0">Candidate Type</h4>
-              </div>
-              <div class="col-sm-9 text-secondary">
-                {{viewCompany.type}}
-              </div>
-            </div>
-            <hr>
-            <div class="row">
-              <div class="col-sm-3">
-                <h4 class="mb-0">Description</h4>
-              </div>
-              <div class="col-sm-9 text-secondary">
-                {{viewCompany.description}}
-              </div>
-            </div>
-            <hr>
-            <div class="row">
-              <div class="col-md-2">
-                <div class="col-sm-12">
-                  <button mat-raised-button class="btn btn-danger"
-                    (click)="deleteCompanyDetails(viewCompany.id)">Delete</button>
-                </div>
-              </div>
-              <div class="col-md-8"></div>
-              <div class="col-md-2">
-                <div class="col-sm-12">
-                  <button class="btn btn-outline-dark" name="submitbutton" (click)="BackToCompany()">Back</button>
-                </div>
-              </div>
-
-            </div>
+            
+          </div>
+           
+        <div class="row">
+          <div class="col-md-2">
+          <div class="col-sm-12">
+            <button mat-raised-button  class="btn btn-danger" (click)="deleteCompanyDetails(viewCompany.id)">Delete</button>
+          </div> </div>
+          <div class="col-md-8"></div>
+          <div class="col-md-2">
+            <div class="col-sm-12">
+          <button class="btn btn-outline-dark"  name="submitbutton" (click)="BackToCompany()" >Back</button>
+        </div>
+          </div>
+      
           </div>
         </div>
       </div>
     </div>
-  </div>
+    </div>
+    <div class="col-md-1"></div>
+</div> 
