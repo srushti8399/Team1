@@ -251,7 +251,8 @@ footer a {
 }
 
 .overlay-panel{
-	background-color:#333;
+	/* background-color:#333; */
+	background-color:rgb(21, 109, 196);
 }
 
 

@@ -22,10 +22,16 @@ export class IntexpComponent implements OnInit {
         
       }
     })
-
-    
   }
 
+ 
+  like(id:any){
+    console.log("id "+ id)
+    this.interviewExpArray[id-1].like = this.interviewExpArray[id-1].like +1;
+    
+  
+  }
+  
   edit(id:any){
     this._route.navigate(['/edit',id])
   }

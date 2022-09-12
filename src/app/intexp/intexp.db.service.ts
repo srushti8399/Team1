@@ -19,6 +19,10 @@ export class InterviewExperienceDBService{
         return this._http.get<any>("http://localhost:3000/experiences/")
     }
 
+    editInterviewExperience(data:any,id:any){
+        return this._http.put<any>("http://localhost:3000/experiences/"+id,data)
+    }
+
     getPostByID(id:any)
     {
         let subject = new ReplaySubject();

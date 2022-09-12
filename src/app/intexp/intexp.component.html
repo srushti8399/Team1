@@ -1,41 +1,75 @@
 
-
-<div class="row">
+<div class="heading-container mb-24">
+    <h1 class="banner-heading mb-4">
+        INTERVIEW EXPERIENCES
+    </h1>
+    <p class="banner-para">
+        Learn from experienced and make yourself ready to crack interviews.
+    </p>
+</div>
+<!-- 
+ <!-- <div class="row " style="width: 100%;">
     <div class="col-md-1"></div>
-    <div class="col-md-8">
-        <h1 class="Row">INTERVIEW EXPERIENCES</h1>
-    </div>
-    <div class="col-md-2">
+    <div class="col-md-9 col-md-head mb-5 heading-container"> -->
+        <!-- <div class="heading-container "> -->
+            <!-- <h1 class="banner-heading p-2">
+                INTERVIEW EXPERIENCES
+            </h1>
+            <p class="banner-para p-2">
+                Live 1:1 Online Sessions with Industry Experts will help you groom for your dream job. Just schedule expert
+                mentoring & <br>feedback sessions.
+            </p> -->
+        <!-- </div> -->
+    <!-- </div>
+    <div class="col-md-2"> -->
+        
+        <!-- <button mat-flat-button color="accent" (click)="create()" class="">Create</button> -->
+    <!-- </div>
+</div>  -->
+
+
+    
+    <!-- <button mat-flat-button color="accent" (click)="create()" class="">Create</button> -->
+<div class="exp-body">
+    <div class="col-md-2 creat-but"> 
         
         <button mat-flat-button color="accent" (click)="create()" class="Row">Create</button>
     </div>
 </div>
 
-<div class="row"*ngFor="let obj of interviewExpArray" >    
+
+<div class="row" style="width: 100%;margin-bottom: 20px;" *ngFor="let obj of interviewExpArray" >    
     <div class="col-md-1"></div>
     <div class="col-md-9" >
-        <mat-card class="example-card" class="card">
-            <mat-card-title>
-                {{obj.title}}
-                <mat-icon style="float: right;" (click)="edit(obj.id)">edit</mat-icon>
-            </mat-card-title>
+            <mat-card class="materialcard" >
+                <div class="row">
+                    <div class="col-md-1"><i class="fas fa-caret-up fa-lg" style="float:initial;" (click)="like(obj.id)" ></i><p>{{obj.like}}</p></div>
+                    <div class="col-md-11">
+                        <mat-card-title>
+                            {{obj.title}}
+                            <button mat-icon-button  class="blue" style="float: right;" class="btn btn-outline-primary" (click)="edit(obj.id)">
+                                <mat-icon>edit</mat-icon>
+                              </button>
+                        </mat-card-title>
+                        
+                        <mat-card-subtitle>Created By {{obj.authorName}}</mat-card-subtitle>
+                        
+                        <mat-card-content>
+                        
+                          <p class="break" [innerHtml]="obj.description|Description:obj.description"></p>
+                          <a href="/view/{{obj.id}}" (click)="view(obj.id)">Read more</a>
+                              
+                        </mat-card-content>
+                        <mat-card-footer style="float: right;margin-right: 10px;">
+                            <p >Published On:- {{obj.date|date:'yyyy-MM-dd'}}</p>  
+                        </mat-card-footer>
+        
+                    </div>
+                </div>
+                
+            </mat-card>
             
-            <mat-card-subtitle>Created By {{obj.authorName}}</mat-card-subtitle>
-            
-            <mat-card-content>
-            
-              <p class="break" [innerHtml]="obj.description|Description:obj.description"></p>
-              <a href="/view/{{obj.id}}" (click)="view(obj.id)">Read more</a>
-            
-            </mat-card-content>
-           
-            <!-- <mat-card-actions>
-                <button class="button1" mat-flat-button color="primary" >View</button>
-                <button class="button1" mat-flat-button color="accent">Edit</button>
-              
-            </mat-card-actions> -->
-            
-          </mat-card>
+       
 
     </div>
    
@@ -47,44 +81,4 @@
 
 
 
-    <!-- <div class="container" *ngFor="let obj of interviewExpArray">
-        <div class="card mt-5 border-5 pt-2 active pb-0 px-3">
-            <div class="card-body ">
-                <div class="row">
-                    <div class="col-12 ">
-                        <h2 class="card-title "><b>{{obj.title}}</b></h2>
-
-                    </div>
-                    <div class="col">
-                        <h6 class="card-subtitle mb-2 text-muted">
-                            <p>
-                                Created by {{obj.authorName}}</p>
-                        </h6>
-                    </div>
-
-                    <div class="row">
-                        <h6 >
-                            <h4>
-                                <span class="font-weight-bold">{{obj.description}}</span></h4>
-                        </h6>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="card-footer bg-white px-0 ">
-                <div class="row">
-
-                    <div class=" col-md-auto ">
-                        <button mat-button>View</button>
-                        <button mat-button>Edit</button>
-                    </div>
-
-                   
-                </div>
-            </div>
-        </div>
-        
-
-    </div>
- -->
+    

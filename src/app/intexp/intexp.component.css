@@ -1,20 +1,73 @@
-.example-card {
+/* .example-card {
     max-width: 400px;
-  }
+  } */
+
+.materialcard{
+  box-shadow: 10px 10px 5px lightblue;
+  border: 1px solid grey;
+  
+}
 
 .break {
     word-break: break-all;
   }
 
 .Row{
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .card{
   width: 100%;
   margin-bottom: 10px;
+  
 }
 
 .button1{
   margin-right: 5px;
+}
+
+
+.heading-container{
+  border: 1px solid;
+  margin-top: 2px;
+  height: 22%;
+  border-radius: 8px;
+  width: 90%;
+  margin-left: 59px;
+  background-color: #0A2541;
+  background-image: url(https://classroom.codingninjas.com/banner-overlay.32948467e4c0a8257463.svg);
+  background-repeat: no-repeat;
+  background-position: 100%;
+  background-size: auto 100%;
+
+}
+
+.banner-heading{
+  color:#FFFFFF;
+  font: 500 30px/37px Mulish,Roboto,Helvetica Neue,sans-serif;
+  margin-top: 14px;
+  margin-left: 21px;
+
+}
+.banner-para{
+  color: #e1e1e3;
+  font: 400 16px/22px Mulish,Roboto,Helvetica Neue,sans-serif;
+  margin-top: -15px;
+  margin-left: 21px;
+}
+
+.exp-body{
+  margin-top: 30px;
+  margin-left: 62px;
+  /* margin-left: 10px; */
+}
+.creat-but{
+  margin-left: 65%;
+}
+
+
+/* card wrapper */
+
+.card-wrapper{
+  margin-top: 30px;
 }

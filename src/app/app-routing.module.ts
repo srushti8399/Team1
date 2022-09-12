@@ -16,14 +16,19 @@ import { DeleteCompanyComponent } from './companies/delete-company/delete-compan
 import { DialogDeleteComponent } from './companies/delete-company/delete_dialogue';
 import { EditCompanyComponent } from './companies/edit-company/edit-company.component';
 import { ViewCompanyComponent } from './companies/view-company/view-company.component';
+import { AuthService } from './auth/authservice/auth.service';
+import { ViewProfileComponent } from './dashboard/view/view.component';
 
 const routes: Routes = [
   {path:"login",component:LoginComponent},
   {path:"register",component:RegisterComponent},
-  {path:"dashboard",component:DashboardComponent},
-  {path:"profile",component:ProfileComponent},
+  {path:"dashboard",component:DashboardComponent,canActivate:[AuthService]},
+  {path:"editprofile",component:ProfileComponent},
+  {path:"viewprofile",component:ViewProfileComponent},
+
   {path:'mock', component:MockComponent},
   {path:'mock/schedule', component:ScheduleComponent},
+
 // const routes: Routes = [
 //   {path:'mock', component:MockComponent},
 //   {path:'mock/schedule', component:ScheduleComponent},
@@ -51,7 +56,7 @@ const routes: Routes = [
   {path:'editcompany/:id',component:EditCompanyComponent},
   {path:'deletecompany/:id',component:DeleteCompanyComponent},
   {path:'deletecompanydialogue/:id',component:DialogDeleteComponent},
-   //{path:"**",component:LoginComponent}
+   {path:"**",component:DashboardComponent,canActivate:[AuthService]}
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

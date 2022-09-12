@@ -20,6 +20,7 @@ import { MatInputModule } from '@angular/material/input';
 import { AuthModule } from './auth/auth.module';
 
 import {MatSelectModule} from '@angular/material/select';
+import { FooterModule } from './footer/footer.module';
 
 
 @NgModule({
@@ -49,7 +50,7 @@ import {MatSelectModule} from '@angular/material/select';
     ReactiveFormsModule,
     CompaniesModule,
     HttpClientModule,
-
+    FooterModule
     
   ],
   providers: [NavbarComponent,AuthService,InterviewExperienceDBService,CompanyDbService],
