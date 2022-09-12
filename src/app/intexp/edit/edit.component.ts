@@ -52,6 +52,7 @@ export class EditComponent implements OnInit {
     this._db.editInterviewExperience(this.interviewExperienceForm.value,this.postId).subscribe({
       next:(res)=>{
         alert("Edited Successfully")
+        
       }
     })
   }
