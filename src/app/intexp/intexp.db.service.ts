@@ -23,6 +23,10 @@ export class InterviewExperienceDBService{
         return this._http.put<any>("http://localhost:3000/experiences/"+id,data)
     }
 
+    deleteInterviewExperience(id:any){
+        return this._http.delete<any>("http://localhost:3000/experiences/"+id)
+    }
+
     getPostByID(id:any)
     {
         let subject = new ReplaySubject();
