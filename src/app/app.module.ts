@@ -21,6 +21,7 @@ import { AuthModule } from './auth/auth.module';
 
 import {MatSelectModule} from '@angular/material/select';
 import { FooterModule } from './footer/footer.module';
+import { HomeModule } from './home/home.module';
 
 
 @NgModule({
@@ -50,7 +51,8 @@ import { FooterModule } from './footer/footer.module';
     ReactiveFormsModule,
     CompaniesModule,
     HttpClientModule,
-    FooterModule
+    FooterModule,
+    HomeModule
     
   ],
   providers: [NavbarComponent,AuthService,InterviewExperienceDBService,CompanyDbService],

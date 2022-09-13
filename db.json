@@ -49,6 +49,11 @@
       "username": "cat@gmail.com",
       "password": "cat",
       "id": 10
+    },
+    {
+      "username": "admin@gmail.com",
+      "password": "admin",
+      "id": 11
     }
   ],
   "companies": [
@@ -63,6 +68,18 @@
       "link": "https://www.naukri.com/",
       "type": "Fresher",
       "id": 2
+    },
+    {
+      "cname": "Capgemini",
+      "description": "Experienced in Data Science",
+      "jobtitle": "Senior Engineer",
+      "experience": "3-4 years",
+      "authorityname": "HR",
+      "package": "18-24 LPA",
+      "qualification": "BE/B.Tech in ComputerScience",
+      "link": "https://www.naukri.com/",
+      "type": "Experienced",
+      "id": 3
     }
   ],
   "experiences": [
@@ -97,6 +114,15 @@
       "date": "2022-09-12T07:37:53.649Z",
       "like": null,
       "id": 4
+    },
+    {
+      "authorName": "Srushti deshpande",
+      "company": "gl",
+      "title": "traineee",
+      "description": "",
+      "date": "2022-09-13T04:57:38.252Z",
+      "like": 0,
+      "id": 5
     }
   ]
 }
