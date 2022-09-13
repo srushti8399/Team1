@@ -40,10 +40,7 @@ export class CreateintexpComponent implements OnInit {
     this._db.postInterviewExperience(this.interviewExperienceForm.value).subscribe({
       next:(res)=>{
         alert("added successfully")
-        console.log("array ",this.interviewExperienceForm.value)
       }
-     
-    
     })
     window.location.reload();
   }
