@@ -49,6 +49,30 @@
       "username": "cat@gmail.com",
       "password": "cat",
       "id": 10
+    },
+    {
+      "id": 11,
+      "skills": "java, angular",
+      "mobile": "8888888888",
+      "batch": "2019",
+      "name": "tom",
+      "college": "iit hyd",
+      "branch": "cse",
+      "username": "raj@gmail.com",
+      "password": "raj",
+      "email": "raj@gmail.com"
+    },
+    {
+      "id": 12,
+      "username": "dell@gmail.com",
+      "password": "dell",
+      "skills": "ajax jquery",
+      "mobile": "9988998899",
+      "batch": "2020",
+      "name": "dell test",
+      "college": "vnit nagpur",
+      "branch": "cse",
+      "email":"dell@gmail.com"
     }
   ],
   "companies": [
