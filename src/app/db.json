@@ -1,0 +1,46 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "companies": [
+    {
+      "cname": "adfaef",
+      "description": "adfa",
+      "jobtitle": "dfa",
+      "experience": "3",
+      "authorityname": "af",
+      "package": "3",
+      "qualification": "33",
+      "link": "dfad",
+      "type": "Fresher",
+      "id": 1
+    },
+    {
+      "cname": "mfrjaeri",
+      "description": "fdfa",
+      "jobtitle": "fafdfafdf",
+      "experience": "jhhj",
+      "authorityname": "fd",
+      "package": "5",
+      "qualification": "be",
+      "link": "hhjjkk",
+      "type": "Experienced",
+      "id": 2
+    }
+  ],
+  "mocks": []
+}

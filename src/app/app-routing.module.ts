@@ -18,6 +18,7 @@ import { EditCompanyComponent } from './companies/edit-company/edit-company.comp
 import { ViewCompanyComponent } from './companies/view-company/view-company.component';
 import { AuthService } from './auth/authservice/auth.service';
 import { ViewProfileComponent } from './dashboard/view/view.component';
+import { BookSessionComponent } from './mock/book-session/book-session.component';
 
 const routes: Routes = [
   {path:"login",component:LoginComponent},
@@ -28,6 +29,7 @@ const routes: Routes = [
 
   {path:'mock', component:MockComponent},
   {path:'mock/schedule', component:ScheduleComponent},
+  {path:'mock/schedule/book-session', component:BookSessionComponent},
 
 // const routes: Routes = [
 //   {path:'mock', component:MockComponent},

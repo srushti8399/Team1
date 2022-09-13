@@ -1,0 +1,157 @@
+<!-- <p>book-session works!</p> -->
+<div class=" p-2 text-dark bg-opacity-10 high">
+
+
+  
+
+
+
+    <!-- <form class="example-form m-5"> -->
+      <!-- <div class=" row m-4"> -->
+        <!-- <div class="col-md-4 field-box "> -->
+  
+          <div class="row">
+            <div class="col col-head">
+            <h1 style="font-size: 30px; font-weight: bold;" class="m-3 d-flex ">Create Product
+            </h1>
+            </div>
+            </div>
+          <form class="example-form" [formGroup]="bookSession" (ngSubmit)="submit()">
+            <div class="row">
+              
+              
+              <div class="col ">
+                 
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>First Name</mat-label>
+                    <input matInput placeholder="Ex. Pizza" value="" formControlName="fistName">
+                    <mat-error *ngIf="bookSession.get('fistName')!.errors!==null && bookSession.get('fistName')!.errors!['required']">
+                      Name is required
+                      </mat-error>
+                  </mat-form-field>
+                <!-- <mat-form-field class="example-full-width" appearance="fill">
+                  <mat-label>Category</mat-label>
+                  <input matInput placeholder="Ex. joy" value="{{product.category}}" >
+                </mat-form-field> -->
+  
+                <!-- <mat-form-field class="example-full-width" appearance="fill">
+                  <mat-label>Category</mat-label>
+                  <mat-select>
+                    <mat-option  [value]=""> -->
+                      <!-- {{product.category}} -->
+                    <!-- </mat-option>
+                  </mat-select>
+                </mat-form-field> -->
+                
+              </div>
+  
+              <div class="col col1">
+  
+                <mat-form-field class="example-full-width" appearance="fill">
+                  <mat-label>Middle Name</mat-label>
+                  <input matInput placeholder="Ex. Pizza" value="" formControlName="middleName">
+                  <mat-error *ngIf="bookSession.get('middleName')!.errors!==null && bookSession.get('middleName')!.errors!['required']">
+                    Name is required
+                    </mat-error>
+                </mat-form-field>
+              </div>
+  
+              <div class="col col1">
+                <mat-form-field class="example-full-width" appearance="fill">
+                  <mat-label>Last Name</mat-label>
+                  <input matInput placeholder="Ex. Pizza" value="" formControlName="code">
+                  <mat-error *ngIf="bookSession.get('code')!.errors!==null && bookSession.get('code')!.errors!['required']">
+                    code is required
+                    </mat-error>
+                </mat-form-field>
+              </div>
+            </div>
+  
+  
+            <div class="row row2">
+              <div class="col">
+                <mat-form-field style="width: 70%;" appearance="fill">
+                    <mat-label>Designation</mat-label>
+                    <mat-select>
+                      <mat-option *ngFor="let food of foods" [value]="food.value">
+                        {{food.viewValue}}
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+            </div>
+  
+            <div class="col col1">
+            <mat-form-field class="example-full-width" appearance="fill">
+              <mat-label>College Name</mat-label>
+              <input matInput placeholder="Ex. Pizza" value="" formControlName="description">
+            </mat-form-field>
+             </div>
+  
+             <div class="col col1">
+            <mat-form-field class="example-full-width" appearance="fill">
+              <mat-label>Branch</mat-label>
+              <input matInput placeholder="Ex. Pizza" value="" formControlName="color">
+            </mat-form-field>
+          </div>
+          </div>
+  
+          <div class="row row2">
+            <div class="col ">
+                <!-- <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="customFileLang" lang="es">
+                    <label class="custom-file-label" for="customFileLang">Seleccionar Archivo</label>
+                  </div> -->
+                  <mat-form-field style="width: 70%;" appearance="fill">
+                    <mat-label>Topic</mat-label>
+                    <mat-select>
+                      <mat-option *ngFor="let food of foods" [value]="food.value">
+                        {{food.viewValue}}
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+
+                </div>
+
+                <div class="col col1">
+                    <!-- <mat-form-field appearance="fill">
+                        <mat-label>Choose Time for Interview</mat-label>
+                        <input matInput [matDatepicker]="picker">
+                        <mat-hint>MM/DD/YYYY</mat-hint>
+                        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                        <mat-datepicker #picker></mat-datepicker>
+                      </mat-form-field> -->
+                      <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Interview Slot</mat-label>
+                        <input matInput placeholder="Ex. Pizza" value="" formControlName="color">
+                      </mat-form-field>
+                </div>
+
+                <div class="col col1">
+                    
+                    <mat-radio-group aria-label="Select an option">
+                        <mat-radio-button value="1">Morning</mat-radio-button>
+                        <mat-radio-button value="2">Evening</mat-radio-button>
+                      </mat-radio-group>
+                </div>
+                </div>
+
+  
+            <!-- <input type="text" value="{{EmployeeId}}" *ngIf="editMode"/> -->
+            <!-- <button  (click)="openDialog()">Update</button>
+                   -->
+            <button mat-raised-button type="submit" (click)="submit()" color="primary" class="btn">Create</button>
+  
+  
+          </form>
+  
+  
+          <!-- <h4>Student Name: {{firstName}}</h4> -->
+          <!-- <h4>Student department: {{department}}</h4> -->
+  
+  
+        <!-- </div> -->
+      <!-- </div> -->
+  
+  
+    <!-- </form> -->
+  </div>

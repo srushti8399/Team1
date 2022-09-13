@@ -21,7 +21,9 @@ import { AuthModule } from './auth/auth.module';
 
 import {MatSelectModule} from '@angular/material/select';
 import { FooterModule } from './footer/footer.module';
-
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatRadioModule} from '@angular/material/radio';
+import { MockDbService } from './mock/mock.db.service';
 
 @NgModule({
   declarations: [
@@ -50,10 +52,10 @@ import { FooterModule } from './footer/footer.module';
     ReactiveFormsModule,
     CompaniesModule,
     HttpClientModule,
-    FooterModule
+    FooterModule,MatDatepickerModule,MatRadioModule
     
   ],
-  providers: [NavbarComponent,AuthService,InterviewExperienceDBService,CompanyDbService],
+  providers: [NavbarComponent,AuthService,InterviewExperienceDBService,CompanyDbService,MockDbService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
