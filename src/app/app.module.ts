@@ -21,6 +21,7 @@ import { AuthModule } from './auth/auth.module';
 
 import {MatSelectModule} from '@angular/material/select';
 import { FooterModule } from './footer/footer.module';
+import { HomeModule } from './home/home.module';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatRadioModule} from '@angular/material/radio';
 import { MockDbService } from './mock/mock.db.service';
@@ -52,7 +53,8 @@ import { MockDbService } from './mock/mock.db.service';
     ReactiveFormsModule,
     CompaniesModule,
     HttpClientModule,
-    FooterModule,MatDatepickerModule,MatRadioModule
+    FooterModule,
+    HomeModule,MatDatepickerModule,MatRadioModule
     
   ],
   providers: [NavbarComponent,AuthService,InterviewExperienceDBService,CompanyDbService,MockDbService],

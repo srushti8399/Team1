@@ -19,6 +19,7 @@ import { ViewCompanyComponent } from './companies/view-company/view-company.comp
 import { AuthService } from './auth/authservice/auth.service';
 import { ViewProfileComponent } from './dashboard/view/view.component';
 import { BookSessionComponent } from './mock/book-session/book-session.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   {path:"login",component:LoginComponent},
@@ -26,6 +27,7 @@ const routes: Routes = [
   {path:"dashboard",component:DashboardComponent,canActivate:[AuthService]},
   {path:"editprofile",component:ProfileComponent},
   {path:"viewprofile",component:ViewProfileComponent},
+  {path:"home",component:HomeComponent},
 
   {path:'mock', component:MockComponent},
   {path:'mock/schedule', component:ScheduleComponent},
