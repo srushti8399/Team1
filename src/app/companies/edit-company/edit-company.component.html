@@ -7,7 +7,7 @@
      <div class="form-outline">
         <mat-form-field appearance="fill" class="example-full-width">
             <mat-label> Company Name</mat-label>
-            <input formControlName="cname" required id="cname" value={{viewCompany.cname}} matInput placeholder="Enter Company name"   name="cname"    />
+            <input formControlName="cname" required id="cname" [(ngModel)]=viewCompany.cname matInput placeholder="Enter Company name"   name="cname"    />
               <mat-error *ngIf="companyForm.get('cname')!.errors!==null && companyForm.get('cname')!.errors!['required']">
               Company name is <strong>required</strong>
             </mat-error>
@@ -18,7 +18,7 @@
     <div class="form-outline">
        <mat-form-field appearance="fill" class="example-full-width">
            <mat-label> Description</mat-label>
-           <input formControlName="description" required id="description" value={{viewCompany.description}} matInput placeholder="Enter job description"   name="description"    />
+           <input formControlName="description" required id="description" [(ngModel)]=viewCompany.description matInput placeholder="Enter job description"   name="description"    />
              <mat-error *ngIf="companyForm.get('description')!.errors!==null && companyForm.get('description')!.errors!['required']">
              Description is <strong>required</strong>
            </mat-error>
@@ -29,7 +29,7 @@
     <div class="form-outline">
        <mat-form-field appearance="fill" class="example-full-width">
            <mat-label> Job Title</mat-label>
-           <input formControlName="jobtitle" required id="jobtitle" value={{viewCompany.jobtitle}}  matInput placeholder="Enter Company name"   name="jobtitle"    />
+           <input formControlName="jobtitle" required id="jobtitle" [(ngModel)]=viewCompany.jobtitle matInput placeholder="Enter Company name"   name="jobtitle"    />
              <mat-error *ngIf="companyForm.get('jobtitle')!.errors!==null && companyForm.get('jobtitle')!.errors!['required']">
              Job title is <strong>required</strong>
            </mat-error>
@@ -43,7 +43,7 @@
        <div class="form-outline">
           <mat-form-field appearance="fill" class="example-full-width">
               <mat-label> Experience</mat-label>
-              <input formControlName="experience" required id="experience" value={{viewCompany.experience}}  matInput placeholder="Enter required experience"   name="experience"    />
+              <input formControlName="experience" required id="experience" [(ngModel)]=viewCompany.experience  matInput placeholder="Enter required experience"   name="experience"    />
                 <mat-error *ngIf="companyForm.get('experience')!.errors!==null && companyForm.get('experience')!.errors!['required']">
                 Experience is <strong>required</strong>
               </mat-error>
@@ -54,7 +54,7 @@
       <div class="form-outline">
          <mat-form-field appearance="fill" class="example-full-width">
              <mat-label> Hiring Authority</mat-label>
-             <input formControlName="authorityname" required id="authorityname" value={{viewCompany.authorityname}} matInput placeholder="Enter hiring authority name"   name="authorityname"    />
+             <input formControlName="authorityname" required id="authorityname" [(ngModel)]=viewCompany.authorityname matInput placeholder="Enter hiring authority name"   name="authorityname"    />
                <mat-error *ngIf="companyForm.get('authorityname')!.errors!==null && companyForm.get('authorityname')!.errors!['required']">
                Hiring Authority name is <strong>required</strong>
              </mat-error>
@@ -65,7 +65,7 @@
       <div class="form-outline">
          <mat-form-field appearance="fill" class="example-full-width">
              <mat-label>Offered Package</mat-label>
-             <input formControlName="package" required id="package" value={{viewCompany.package}} matInput placeholder="Enter Company name"   name="package"    />
+             <input formControlName="package" required id="package" [(ngModel)]=viewCompany.package matInput placeholder="Enter Company name"   name="package"    />
                <mat-error *ngIf="companyForm.get('package')!.errors!==null && companyForm.get('package')!.errors!['required']">
                Package is <strong>required</strong>
              </mat-error>
@@ -79,7 +79,7 @@
        <div class="form-outline">
           <mat-form-field appearance="fill" class="example-full-width">
               <mat-label>Required Qualification</mat-label>
-              <input formControlName="qualification" required id="qualification" value={{viewCompany.qualification}}  matInput placeholder="Enter required Qualification"   name="qualification"    />
+              <input formControlName="qualification" required id="qualification" [(ngModel)]=viewCompany.qualification  matInput placeholder="Enter required Qualification"   name="qualification"    />
                 <mat-error *ngIf="companyForm.get('qualification')!.errors!==null && companyForm.get('qualification')!.errors!['required']">
                 Qualification is <strong>required</strong>
               </mat-error>
@@ -90,7 +90,7 @@
       <div class="form-outline">
          <mat-form-field appearance="fill" class="example-full-width">
              <mat-label>Registration Link</mat-label>
-             <input formControlName="link" required id="link"  value={{viewCompany.link}} matInput placeholder="Enter job description"   name="link"    />
+             <input formControlName="link" required id="link"  [(ngModel)]=viewCompany.link matInput placeholder="Enter job description"   name="link"    />
                <mat-error *ngIf="companyForm.get('link')!.errors!==null && companyForm.get('link')!.errors!['required']">
                Field is <strong>required</strong>
              </mat-error>
