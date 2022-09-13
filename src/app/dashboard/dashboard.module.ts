@@ -10,6 +10,7 @@ import { MatInputModule } from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
 import { ViewProfileComponent } from './view/view.component';
 import { RouterModule } from '@angular/router';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { RouterModule } from '@angular/router';
     ReactiveFormsModule,
     MatInputModule,
     MatSelectModule,
-    RouterModule
+    RouterModule,
+    MatIconModule
   ]
 })
 export class DashboardModule { }

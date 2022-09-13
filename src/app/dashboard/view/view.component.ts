@@ -8,7 +8,13 @@ import { CustomValidators } from '../validations/validators';
   styleUrls: ['./view.component.css']
 })
 export class ViewProfileComponent implements OnInit {
+
+  dataTofill: any = {};
+
+
   ngOnInit(){
+    this.dataTofill =  localStorage.getItem("profile");
+    this.dataTofill = JSON.parse(this.dataTofill);
     
   }
 
