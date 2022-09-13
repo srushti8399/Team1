@@ -26,6 +26,8 @@ const routes: Routes = [
   {path:"dashboard",component:DashboardComponent,canActivate:[AuthService]},
   {path:"editprofile",component:ProfileComponent},
   {path:"viewprofile",component:ViewProfileComponent},
+
+  
   {path:"home",component:HomeComponent},
 
   {path:'mock', component:MockComponent},
@@ -58,6 +60,7 @@ const routes: Routes = [
   {path:'editcompany/:id',component:EditCompanyComponent},
   {path:'deletecompany/:id',component:DeleteCompanyComponent},
   {path:'deletecompanydialogue/:id',component:DialogDeleteComponent},
+  {path:'',component:HomeComponent},
    {path:"**",component:DashboardComponent,canActivate:[AuthService]}
 ];
 @NgModule({

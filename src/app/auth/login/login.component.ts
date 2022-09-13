@@ -18,8 +18,8 @@ import { ErrorStateMatcher } from '@angular/material/core';
 export class LoginComponent implements OnInit {
 
 
-  username: string = "";
-  password: string = "";
+  username: string = "dell@gmail.com";
+  password: string = "dell";
 
 
 
