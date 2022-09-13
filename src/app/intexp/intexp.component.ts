@@ -19,22 +19,31 @@ export class IntexpComponent implements OnInit {
     this._db.getInterviewExperience().subscribe({
       next:(res)=>{
         this.interviewExpArray=res
-        
+  
       }
     })
   }
 
- 
+
+  // needs to fix it
   like(id:any){
     console.log("id "+ id)
     this.interviewExpArray[id-1].like = this.interviewExpArray[id-1].like +1;
-    
-  
   }
   
+  delete(id:any){
+    this._db.deleteInterviewExperience(id).subscribe({
+      next:(res)=>{
+        alert("deleted successfully")
+      }
+    })
+    window.location.reload()
+  }
+
   edit(id:any){
     this._route.navigate(['/edit',id])
   }
+
 
   view(id:any){
     this._route.navigate(['/view',id])

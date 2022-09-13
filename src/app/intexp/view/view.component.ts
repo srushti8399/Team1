@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { InterviewExperienceDBService } from '../intexp.db.service';
 
 @Component({
@@ -9,14 +9,14 @@ import { InterviewExperienceDBService } from '../intexp.db.service';
 })
 export class ViewComponent implements OnInit {
 
-  constructor(private _route:ActivatedRoute,private _db:InterviewExperienceDBService) { }
+  constructor(private _router:Router,private _route:ActivatedRoute,private _db:InterviewExperienceDBService) { }
 
   postId:string|null = ''
   postList:any = []
 
   ngOnInit(): void {
 
-    this.postId = this._route.snapshot.paramMap.get('id')
+    this.postId= this._route.snapshot.paramMap.get('id')
     this._db.getPostByID(this.postId).subscribe((item)=>{
         this.postList = item
         
@@ -27,6 +27,13 @@ export class ViewComponent implements OnInit {
     
   }
 
+  edit(id:any){
+    this._router.navigate(['/edit',this.postId])
+  }
+
+  BackToList(){
+    this._router.navigate(['/experiencelist'])
+  }
 
  
 }
