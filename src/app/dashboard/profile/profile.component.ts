@@ -1,6 +1,9 @@
 import { Component, OnInit,ViewChildren } from '@angular/core';
 import { FormBuilder, FormGroup, NgForm, Validators } from '@angular/forms';
+import { AuthService } from 'src/app/auth/authservice/auth.service';
 import { CustomValidators } from '../validations/validators';
+
+
 
 @Component({
   selector: 'app-profile',
@@ -11,9 +14,9 @@ export class ProfileComponent implements OnInit {
 
  
   personForm!:FormGroup;
-  @ViewChildren('personForm') createPersonForm!:NgForm;
+  // @ViewChildren('personForm') createPersonForm!:NgForm;
 
-  constructor(private _fb:FormBuilder) { }
+  constructor(private _fb:FormBuilder,private auth:AuthService) { }
  
   // ngOnInit(): void {
   //   this.personForm= new FormGroup({
@@ -24,49 +27,60 @@ export class ProfileComponent implements OnInit {
   //       experience:new FormControl()
   //     })
   //   });
+
+  dataTofill: any = {};
  
   ngOnInit(): void {
-    // this.personForm= new FormGroup({
-    //   name:new FormControl(),
-    //   price:new FormControl(),
-    //   color:new FormControl(),
-    //   category:new FormControl(),
-    //   imageURL:new FormControl(),
-    //   description:new FormControl(),
-    //   inStockQuantity:new FormControl(),
-      
-    // });
+
+   
+
+   
+    
+   
+  
 
     this.personForm= this._fb.group({
       name:['',[Validators.required,Validators.maxLength(6)]],
-      price:[null,[Validators.min(1),Validators.max(100),Validators.required]],
-      color:[''],
-      category:[''],
-      imageURL:[''],
-      description:[''],
-      inStockQuantity:[],
-
-       //validation withour parameter
-      //email:['',[Validators.required,CustomValidators.emailCheck]],
-      // validation with parameter
-      email:['',[Validators.required,CustomValidators.emailCheckParam('gmail')]],
+      mobile:[null,[Validators.min(1),Validators.max(9999999999),Validators.required]],
+      college:[''],
+      branch:[''],
+      skills:[''],
+      batch:[null],
+      id:[''],
+      email:["",[Validators.required,CustomValidators.emailCheckParam('gmail')]],
      
     });
 
-    // this.personForm= this._fb.group({
-    //   name:[''],
-    //   age:[],
-    //   skills:this._fb.group({
-    //     skillName:[''],
-    //     experience:[]
-    //   })
-    // });
+   
+    this.dataTofill =  localStorage.getItem("profile");
+    // console.log(JSON.parse(this.dataTofill.email));
+    console.log(this.personForm);
+
+    this.dataTofill = JSON.parse(this.dataTofill);
+
+    this.personForm.patchValue({
+      email:this.dataTofill.email,
+      name:this.dataTofill.name,
+      college:this.dataTofill.college,
+      mobile:this.dataTofill.mobile,
+      branch:this.dataTofill.branch,
+      skills:this.dataTofill.skills,
+      batch:this.dataTofill.batch,
+      id:this.dataTofill.id
+    })
+
   }
   submit(){
     console.log(this.personForm);
     console.log(this.personForm.value);
     console.log(this.personForm.value.category);
     console.log(this.personForm.get('name')!.errors?.['maxlength']);
+
+    this.auth.storeProfiletoDB(this.personForm.value).subscribe((res)=>{
+      console.log(res);
+      alert("profile edited successfully")
+    })
+
     // console.log(this.personForm.get('name')!.errors!['maxLength']);
     // console.log(this.personForm.invalid);
 

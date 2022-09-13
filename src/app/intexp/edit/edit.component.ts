@@ -19,7 +19,7 @@ export class EditComponent implements OnInit {
   postList:any = []
   description:string=''
 
-
+  mydate = new Date()
   ngOnInit(): void {
 
     this.interviewExperienceForm = this._fb.group({
@@ -27,7 +27,7 @@ export class EditComponent implements OnInit {
       company:['',Validators.required],
       title:['',Validators.required],
       description:['',Validators.required],
-
+      date:[this.mydate]
     })
 
     this.postId = this._route.snapshot.paramMap.get('id')

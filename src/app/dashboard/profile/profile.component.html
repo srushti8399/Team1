@@ -1,13 +1,16 @@
 
 
-    
-    <div class="container" style="display:flex;align-items: center;">
-        <div class="remove" style="height:400px ;width: 20%;background-color:rgb(21, 109, 196);">
+     
+    <div class="container-fluid" style="display:flex;align-items:flex-start;height: 100vh;">
+        <div class="remove box" style="height:100%;width: 20%;background-color:rgb(21, 109, 196);">
             <ul style="list-style:none;margin-top:34%;color:aliceblue ;">
-                <li  style="margin-bottom:10%;" ><a routerLink="/viewprofile"style="text-decoration: none;color:aliceblue ;"><i class="fas fa-qrcode" style="margin-right:5px ;"></i>View Profile</a></li>
-                <li style="margin-bottom:10%;"><a routerLink="/editprofile" style="text-decoration: none;color:aliceblue ;"><i class="fas fa-link" style="margin-right:5px ;"></i>Edit Profile</a></li>
-                <li style="margin-bottom:10%;"><a href="#" style="text-decoration: none;color:aliceblue ;"><i class="fas fa-stream" style="margin-right:5px ;"></i>Forgot Password</a></li>
-                <li><a href="#" style="text-decoration: none;color:aliceblue ;"><i class="fas fa-calendar-week" style="margin-right:5px ;"></i>My Interviews</a></li>
+                <li  style="margin-bottom:10%;" ><a class="txt" routerLink="/viewprofile"style="text-decoration: none;color:aliceblue ;"><i class="fas fa-qrcode" style="margin-right:5px ;"></i>View Profile</a></li>
+                <hr style="margin-bottom:10% ;">
+                <li style="margin-bottom:10%;"><a class="txt" routerLink="/editprofile" style="text-decoration: none;color:aliceblue ;"><i class="fas fa-link" style="margin-right:5px ;"></i>Edit Profile</a></li>
+                <hr style="margin-bottom:10% ;">
+                <li style="margin-bottom:10%;"><a class="txt" href="#" style="text-decoration: none;color:aliceblue ;"><i class="fas fa-stream" style="margin-right:5px ;"></i>Forgot Password</a></li>
+                <hr style="margin-bottom:10% ;">
+                <li><a class="txt" style="text-decoration: none;color:aliceblue ;"><i class="fas fa-calendar-week" style="margin-right:5px ;"></i>My Interviews</a></li>
                 
                </ul>
         </div> 
@@ -26,7 +29,7 @@
        
         <!-- test  -->
             
-    <div class="container mt-3">
+    <div class="container">
 
         <div class="row" style="width:30% ;">
            
@@ -41,8 +44,8 @@
                     <div class="container">
                  
                         <div class="row">
-                            <div class="col-md-4 col-sm-6">
-                                <mat-form-field class="example-form-field" appearance="fill">
+                            <div class="mb-3 col-md-6 col-sm-12">
+                                <mat-form-field style="width:70% ;" class="example-form-field" appearance="fill">
                                     <mat-label >Name</mat-label>
                                     <input required matInput type="text" formControlName="name">
                                     <mat-error *ngIf="personForm.get('name')!.errors!==null && personForm.get('name')!.errors!['required']">
@@ -54,50 +57,49 @@
                                    
                                   </mat-form-field>
                             </div>
-                            <div class="col-md-4 col-sm-6">
-                                <mat-form-field class="example-form-field extra" appearance="fill">
+                            <div class="mb-3 col-md-6 col-sm-12">
+                                <mat-form-field style="width:70% ;"  class="example-form-field extra" appearance="fill">
                                     <mat-label class="extral">College</mat-label>
-                                    <input required matInput type="text" formControlName="description">
+                                    <input required matInput type="text" formControlName="college">
                                     <mat-error>
                                         College is required  
                                     </mat-error>
                                   </mat-form-field>
                             </div>
-                            <div class="col-md-4 col-sm-6">
-                                <mat-form-field class="example-form-field extra" appearance="fill">
+                            <div class="mb-3 col-md-6 col-sm-12">
+                                <mat-form-field style="width:70% ;"  class="example-form-field extra" appearance="fill">
                                     <mat-label class="extral" >Branch</mat-label>
-                                    <input required matInput type="text" formControlName="color">
+                                    <input required matInput type="text" formControlName="branch">
                                     <mat-error>
                                         Branch is required  
                                     </mat-error>
                                   </mat-form-field>
                             </div>
-                            <div class="col-md-4 col-sm-6">
-                                <mat-form-field class="example-form-field" appearance="fill">
+                            <div class="mb-3 col-md-6 col-sm-12">
+                                <mat-form-field style="width:70% ;"  class="example-form-field" appearance="fill">
                                     <mat-label>Mobile</mat-label>
-                                    <input required matInput type="text" formControlName="price">
-                                    <mat-error *ngIf="personForm.get('price')!.errors!==null && personForm.get('price')!.errors!['required']">
+                                    <input required matInput type="text" formControlName="mobile">
+                                    <mat-error *ngIf="personForm.get('mobile')!.errors!==null && personForm.get('mobile')!.errors!['required']">
                                         Mobile is required  
                                     </mat-error>
-                                    <mat-error *ngIf="personForm.get('price')!.errors!==null && personForm.get('price')!.errors?.['max']">
-                                       Mobile must be less than 100
+                                    <mat-error *ngIf="personForm.get('mobile')!.errors!==null && personForm.get('mobile')!.errors?.['max']">
+                                       Mobile must be of 10 digits
                                         </mat-error>
                                   </mat-form-field>
                             </div>
-                            <div class="col-md-4 col-sm-6">
-                                <mat-form-field class="example-form-field extra" appearance="fill">
-                                    <mat-label class="extral">Skills</mat-label>
-                                    <input required matInput type="text" formControlName="inStockQuantity">
-                                    <mat-error>
-                                       Skills is required  
-                   
-                                      </mat-error>
+                            <div class="mb-3 col-md-6 col-sm-12">
+                                <mat-form-field style="width:70% ;"  class="example-form-field extra" appearance="fill">
+                                    <mat-label class="extral">Email</mat-label>
+                                    <input required matInput type="text"  formControlName="email"    >
+                                    <mat-error *ngIf="personForm.get('email')!.errors!==null && personForm.get('email')!.errors!['emailmismatch']">
+                                        Email is invalid.
+                                        </mat-error>
                                   </mat-form-field>
                             </div> 
-                            <div class="col-md-4 col-sm-6">
-                                 <mat-form-field appearance="fill" class="extra">
+                            <div class="mb-3 col-md-6 col-sm-12">
+                                 <mat-form-field style="width:70% ;"  appearance="fill" class="extra">
                                     <mat-label class="extral">Batch</mat-label>
-                                    <mat-select required selectValidate name="gender"  formControlName="category">
+                                    <mat-select required selectValidate name="gender"  formControlName="batch">
                                       <mat-option *ngFor="let g of BatchesArr" [value]="g.Text">
                                         {{g.Text}}
                                       </mat-option>
@@ -109,13 +111,15 @@
                                   
                                   </mat-form-field> 
                             </div>
-                            <div class="col-md-4 col-sm-6">
-                                <mat-form-field class="example-form-field " appearance="fill">
-                                    <mat-label>Email</mat-label>
-                                    <input matInput type="text" formControlName="email">
-                                    <mat-error *ngIf="personForm.get('email')!.errors!==null && personForm.get('email')!.errors!['emailmismatch']">
-                                      Email is invalid.
-                                      </mat-error>
+                            <div class="mb-3 col-md-6 col-sm-12">
+                                <mat-form-field style="width:70% ;"  class="example-form-field " appearance="fill">
+                                    <mat-label>Skills</mat-label>
+                                    <input matInput type="text" formControlName="skills">
+                                    <mat-error>
+                                        Skills is required  
+                    
+                                       </mat-error>
+                                    
                                   </mat-form-field>
                             </div>
                         </div>
@@ -127,7 +131,7 @@
                         </div>
                         <div class="row">
                             <div class="col-md-3">
-                                <button class="btn btn-sm" style="background-color:rgb(65, 140, 214);color: aliceblue;" mat-raised-button color="accent">Submit</button>
+                                <button (click)="submit()" class="btn btn-sm p-3" style="background-color:rgb(65, 140, 214);color: aliceblue;" mat-raised-button color="accent">Submit</button>
                 
                             </div>
                         </div>

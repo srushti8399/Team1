@@ -1,9 +1,9 @@
 
 
-<div  *ngIf="checkUserLoginStatus.status">
+<div  *ngIf="checkUserLoginStatus.status" >
 
 
-  <nav class="navbar navbar-expand-lg navbar-light" style="background:linear-gradient(135deg, #6249c5 0%, #9882f3 100%);position: absolute;width:100%;">
+  <nav class="navbar navbar-expand-lg navbar-light box" style="background:linear-gradient(135deg, #6249c5 0%, #9882f3 100%);position: absolute;width:100%;">
     <!-- <a class="navbar-brand" style="margin-left:3vw ;font-weight: bold;color: aliceblue;" href="#">OffCampus</a> -->
     <div class="image-cont">
       <img src="https://uploads-ssl.webflow.com/6209eec94ae14d8343731fcd/620b2de1bd235d0874b83a8d_interviewkickstart-logo.svg" alt="">
@@ -40,7 +40,7 @@
           <a routerLink="dashboard" class="nav-link" style="color: aliceblue;">Dashboard </a>
         </li> -->
         <li class="nav-item">
-          <a class="nav-link" style="font-weight: bolder;color: aliceblue;padding-left: 17px;" ><i style="padding-right:5px" class="fas fa-tachometer-alt"></i>DASHBOARD</a>
+          <a routerLink="dashboard" class="nav-link" style="font-weight: bolder;color: aliceblue;padding-left: 17px;" ><i style="padding-right:5px" class="fas fa-tachometer-alt"></i>DASHBOARD</a>
       </li>
         
       
@@ -116,17 +116,20 @@
           
          
           <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Home</a></li>
             <li><a class="dropdown-item" href="#">REGISTER</a></li>
             <li><a routerLink="login" class="dropdown-item">LOGIN</a></li>
             
           </ul>
         </div>
       </span>
-    </button>
+    </button> 
     <div class="collapse navbar-collapse" id="navbarNav">
      
-      <ul class="navbar-nav ttt float-right" style="width: 100%;margin-left:91%;">
-       
+      <ul class="navbar-nav ttt " style="width: 100%;margin-left:50%;">
+        <li class="nav-item ">
+          <a routerLink="home" class="nav-link"  style="color: aliceblue;">Home</a>
+        </li>
         <li class="nav-item ">
           <a routerLink="register" class="nav-link"  style="color: aliceblue;">REGISTER</a>
         </li>

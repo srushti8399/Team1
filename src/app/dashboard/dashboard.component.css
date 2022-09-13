@@ -84,7 +84,7 @@ html,body{
 }
 .card .bottom-text .btn a{
   text-decoration: none;
-  background: #e74c3c;
+  /* background: #e74c3c; */
   color: #f2f2f2;
   padding: 5px 8px;
   border-radius: 3px;
@@ -121,3 +121,11 @@ html,body{
     margin-left: 5% !important; 
 	}
   } 
+
+  .btn a{
+    background-color: rgb(21, 109, 196) !important;
+  }
+
+  .colorchange{
+    color:rgb(21, 109, 196) !important ;
+  }

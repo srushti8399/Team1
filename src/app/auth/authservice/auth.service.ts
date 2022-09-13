@@ -3,6 +3,7 @@ import { ActivatedRouteSnapshot, CanActivate, Router, RouterStateSnapshot } from
 import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http';
 import { Observable, catchError, throwError, Subject, ReplaySubject } from 'rxjs';
 import { PeriodicElement } from "./model/user.model"
+import { JsonPipe } from "@angular/common";
 
 @Injectable({
     providedIn: "root"
@@ -56,22 +57,21 @@ export class AuthService implements CanActivate {
     //  private isUserLogin:boolean=false;
 
 
-    register(username:string,password:string)
-    {
+    register(username: string, password: string) {
 
         let subject = new ReplaySubject<PeriodicElement>();
-        this._http.post<PeriodicElement>(this.userlongURL,{username:username,password:password},
+        this._http.post<PeriodicElement>(this.userlongURL, { username: username, password: password, skills: "", mobile: null, batch: null, name: "", college: "", branch: "", email: username },
             {
-                headers:new HttpHeaders({
-                    'Content-Type':'application/json'
+                headers: new HttpHeaders({
+                    'Content-Type': 'application/json'
                 })
-            }            
-            ).subscribe((data) => {
-                console.log(data);
-                subject.next(data);
-                subject.complete();
+            }
+        ).subscribe((data) => {
+            console.log(data);
+            subject.next(data);
+            subject.complete();
         })
-        
+
         return subject;
 
     }
@@ -86,6 +86,8 @@ export class AuthService implements CanActivate {
         this._http.get<PeriodicElement[]>(this.userlongURL).subscribe((data) => {
             data.map(item => {
 
+                // console.log(data);
+
                 let un = item.username
                 let pw = item.password
                 if (username == un && password == pw) {
@@ -95,6 +97,25 @@ export class AuthService implements CanActivate {
                         localStorage.setItem("userM", username)
                     localStorage.setItem("passM", password)
                     localStorage.setItem("islogin", "true")
+
+                    let obj: any = {
+                        name: item.name,
+                        email: item.email,
+                        batch: item.batch,
+                        branch: item.branch,
+                        college: item.college,
+                        skills: item.skills,
+                        mobile: item.mobile,
+                        id: item.id
+                    };
+
+                    localStorage.setItem("profile", JSON.stringify(obj));
+
+                    let mm = localStorage.getItem("profile");
+
+                    console.log(mm);
+
+
 
                     flag = 1;
                     this.status = true;
@@ -120,6 +141,43 @@ export class AuthService implements CanActivate {
         });
         return subject
     }
+
+
+    storeProfiletoDB(info: any) {
+
+        let user = localStorage.getItem("userM");
+        let pass = localStorage.getItem("passM");
+
+        let subject = new ReplaySubject<PeriodicElement>();
+        this._http.put<PeriodicElement>(this.userlongURL+info.id, {id:info.id,username:user,password:pass,skills: info.skills, mobile: info.mobile, batch: info.batch, name: info.name, college: info.college, branch: info.branch, email: info.email },
+            {
+                headers: new HttpHeaders({
+                    'Content-Type': 'application/json'
+                })
+            }
+        ).subscribe((data) => {
+            let obj: any = {
+                name: data.name,
+                email: data.email,
+                batch: data.batch,
+                branch: data.branch,
+                college: data.college,
+                skills: data.skills,
+                mobile: data.mobile,
+                id: data.id
+            };
+
+            localStorage.setItem("profile", JSON.stringify(obj));
+            console.log(data);
+            subject.next(data);
+            subject.complete();
+        })
+
+        return subject;
+
+    }
+
+
 
     async setCredentials(userM: string, passM: string) {
         this.userM = userM;
