@@ -49,6 +49,11 @@
       "username": "cat@gmail.com",
       "password": "cat",
       "id": 10
+    },
+    {
+      "username": "admin@gmail.com",
+      "password": "admin",
+      "id": 11
     }
   ],
   "companies": [
@@ -65,28 +70,16 @@
       "id": 2
     },
     {
-      "cname": "TCS",
-      "description": "",
-      "jobtitle": "",
-      "experience": "",
-      "authorityname": "",
-      "package": "",
-      "qualification": "",
-      "link": "",
-      "type": "",
+      "cname": "Capgemini",
+      "description": "Experienced in Data Science",
+      "jobtitle": "Senior Engineer",
+      "experience": "3-4 years",
+      "authorityname": "HR",
+      "package": "18-24 LPA",
+      "qualification": "BE/B.Tech in ComputerScience",
+      "link": "https://www.naukri.com/",
+      "type": "Experienced",
       "id": 3
-    },
-    {
-      "cname": "TCS",
-      "description": "",
-      "jobtitle": "",
-      "experience": "",
-      "authorityname": "",
-      "package": "",
-      "qualification": "",
-      "link": "",
-      "type": "",
-      "id": 4
     }
   ],
   "experiences": [
