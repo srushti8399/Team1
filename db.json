@@ -82,15 +82,15 @@
   ],
   "companies": [
     {
-      "cname": "Capgemini",
+      "cname": "Global Logic",
       "description": "Experienced in Payroll Department",
-      "jobtitle": "Public Relation Manager",
-      "experience": "0 years",
+      "jobtitle": "Trainee Software Engineer",
+      "experience": "2 years",
       "authorityname": "HR",
-      "package": "3 LPA",
+      "package": "3-6 LPA(variable)",
       "qualification": "Graduation ",
       "link": "https://www.naukri.com/",
-      "type": "Fresher",
+      "type": "Experienced",
       "id": 2
     },
     {
@@ -104,6 +104,30 @@
       "link": "https://www.naukri.com/",
       "type": "Experienced",
       "id": 3
+    },
+    {
+      "cname": "Goldman Sachs",
+      "description": "Freshers can apply",
+      "jobtitle": " Analyst",
+      "experience": "0 years",
+      "authorityname": "HR",
+      "package": "18-24 LPA",
+      "qualification": "BE/B.Tech",
+      "link": "https://www.naukri.com/",
+      "type": "Fresher",
+      "id": 4
+    },
+    {
+      "cname": "TCS",
+      "description": "Freshers can apply",
+      "jobtitle": "Trainee Software Engineer",
+      "experience": "0 years",
+      "authorityname": "HR",
+      "package": "3 LPA",
+      "qualification": "Graduation ",
+      "link": "https://www.naukri.com/",
+      "type": "Fresher",
+      "id": 5
     }
   ],
   "experiences": [
