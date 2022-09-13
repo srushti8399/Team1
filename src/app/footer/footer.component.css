@@ -1,14 +1,14 @@
 .site-footer
 {
-  background-color:#26272b;
+  background-color:rgb(21, 109, 196);
   padding:45px 0 20px;
   font-size:15px;
   line-height:24px;
-  color:#737373;
+  color:whitesmoke;
 }
 .site-footer hr
 {
-  border-top-color:#bbb;
+  border-top-color:whitesmoke;
   opacity:0.5
 }
 .site-footer hr.small
@@ -25,7 +25,7 @@
 }
 .site-footer a
 {
-  color:#737373;
+  color:whitesmoke;
 }
 .site-footer a:hover
 {
@@ -43,7 +43,7 @@
 }
 .footer-links a
 {
-  color:#737373
+  color:whitesmoke
 }
 .footer-links a:active,.footer-links a:focus,.footer-links a:hover
 {
@@ -111,7 +111,7 @@
 }
 .social-icons a{
   background-color:#eceeef;
-  color:#818a91;
+  color:whitesmoke;
   font-size:16px;
   display:inline-block;
   line-height:44px;

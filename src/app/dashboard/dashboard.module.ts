@@ -11,6 +11,7 @@ import {MatSelectModule} from '@angular/material/select';
 import { ViewProfileComponent } from './view/view.component';
 import { RouterModule } from '@angular/router';
 import { MatIconModule } from '@angular/material/icon';
+import { FooterModule } from '../footer/footer.module';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,7 @@ import { MatIconModule } from '@angular/material/icon';
     MatInputModule,
     MatSelectModule,
     RouterModule,
-    MatIconModule
+    MatIconModule,
   ]
 })
 export class DashboardModule { }
