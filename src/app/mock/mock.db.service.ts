@@ -15,6 +15,11 @@ export class MockDbService {
     return this.http.post<any>("http://localhost:3000/mocks/",data)
   }
 
+  getPastBooking(){
+    return this.http.get<any>("http://localhost:3000/mocks/")
+}
+
+
 
 
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MockDbService } from '../mock.db.service';
 
 @Component({
   selector: 'app-schedule',
@@ -7,9 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ScheduleComponent implements OnInit {
 
-  constructor() { }
+  pastBook:any[] = [];
+  constructor(private _db:MockDbService) { }
 
   ngOnInit(): void {
+    this._db.getPastBooking().subscribe({
+      next:(res)=>{
+        this.pastBook=res
+  
+      }
+    })
+  }
+  
+  click(){
+    console.log(this.pastBook);
   }
 
+  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol','actions'];
+  dataSource = this.pastBook;
 }

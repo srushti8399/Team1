@@ -1,4 +1,31 @@
 {
+  "users": [
+    {
+      "id": 1,
+      "username": "admin@gmail.com",
+      "password": "admin"
+    },
+    {
+      "id": 2,
+      "username": "one@gmail.com",
+      "password": "one"
+    },
+    {
+      "id": 3,
+      "username": "two@gmail.com",
+      "password": "two"
+    },
+    {
+      "username": "ram@gmail.com",
+      "password": "ram",
+      "id": 4
+    },
+    {
+      "username": "dell@gmail.com",
+      "password": "dell",
+      "id": 5
+    }
+  ],
   "posts": [
     {
       "id": 1,
@@ -42,5 +69,9 @@
       "id": 2
     }
   ],
-  "mocks": []
+  "mocks": [
+    
+    
+  ]
+  
 }

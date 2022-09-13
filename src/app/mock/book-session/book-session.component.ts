@@ -27,10 +27,12 @@ export class BookSessionComponent implements OnInit {
     this.bookSession = new FormGroup({
       fistName: new FormControl(null, Validators.required),
       middleName: new FormControl('', Validators.required),
-      code: new FormControl('', Validators.required),
-      color: new FormControl(),
-      description: new FormControl(),
-      inStock: new FormControl()
+      lastName: new FormControl('', Validators.required),
+      designation: new FormControl(),
+      college: new FormControl(),
+      branch: new FormControl(),
+      topic: new FormControl(),
+      slot: new FormControl()
 
     });
   }
