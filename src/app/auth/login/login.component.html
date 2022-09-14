@@ -22,10 +22,12 @@
 	</div>
 	<div class="form-container sign-in-container">
 		<form #personForm="ngForm" (ngSubmit)="savePerson(personForm)">
-			
+			<h1 style="margin-top:3% ;margin-left:11%;color: rgb(21, 109, 196);">Login</h1>
+
 			<mat-form-field class="user"  >
-				<mat-label>Email Id</mat-label>
-				<input required id="username" email type="email" #emailControl="ngModel"  name="username" [(ngModel)]="username" matInput >
+				<mat-label style="color: rgb(21, 109, 196);">Email Id</mat-label>
+				<br>
+				<input class="inneruser" required id="username" email type="email" #emailControl="ngModel"  name="username" [(ngModel)]="username" matInput >
 				<mat-error *ngIf="emailControl.invalid && emailControl.value==''">
 					Email is <strong>required</strong>
 				  </mat-error>
@@ -34,8 +36,9 @@
 				  </mat-error>
 			  </mat-form-field>
 			  <mat-form-field  >
-				<mat-label>Password</mat-label>
-				<input required id="password" email type="password" #passwordControl="ngModel"  name="password" [(ngModel)]="password" matInput >
+				<mat-label  style="color: rgb(21, 109, 196);">Password</mat-label>
+				<br>
+				<input class="inneruser" required id="password" email type="password" #passwordControl="ngModel"  name="password" [(ngModel)]="password" matInput >
 				<mat-error *ngIf="passwordControl.invalid && passwordControl.value==''">
 					Password is <strong>required</strong>
 				  </mat-error>
@@ -44,7 +47,7 @@
 			<!-- test -->
 			<button>Sign In</button>
 			
-		</form>
+		</form> 
 	</div>
 	<div class="overlay-container">
 		<div class="overlay">
@@ -61,11 +64,20 @@
 						<a style="color:white" href="/register">
 							Sign Up
 						</a>
-						
-					</button>
+                    </button>
+					
+					
+
+					
 			</div>
+			
+			
 		</div>
+		
+		<br>
+				
 	</div> 
+	
 	
 </div>
 

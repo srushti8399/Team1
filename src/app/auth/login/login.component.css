@@ -13,6 +13,7 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	height: 100vh;
 	margin: -20px 0 50px;
+
 }
 
 h1 {
@@ -78,6 +79,7 @@ form {
 	padding: 0 50px;
 	height: 100%;
 	text-align: center;
+	
 }
 
 input {
@@ -90,7 +92,7 @@ input {
 
 .container {
 	background-color: #fff;
-	border-radius: 10px;
+	border-radius: 50px;
   	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
 			0 10px 10px rgba(0,0,0,0.22);
 	position: relative;
@@ -105,12 +107,19 @@ input {
 	top: 0;
 	height: 100%;
 	transition: all 0.6s ease-in-out;
+	
 }
+
+
+	
+
 
 .sign-in-container {
 	left: 0;
 	width: 50%;
 	z-index: 2;
+	background-image: url( 'https://assets.interviewbit.com/assets/ibpp/SAT-2a8bf1f7f36e5528324b05cba08730e687a5c6a1db6449b2e25e497b2da43771.svg.gz' ) !important;
+    background-repeat: no-repeat;
 }
 
 .container.right-panel-active .sign-in-container {
@@ -253,6 +262,8 @@ footer a {
 .overlay-panel{
 	/* background-color:#333; */
 	background-color:rgb(21, 109, 196);
+	background-image: url( 'https://assets.interviewbit.com/assets/ibpp/banner-large-figure-b0a3ed9907d90e08b1c0132cf6cca0ddb5fae5ad74fe96bc3551b0f6dc1e7333.svg.gz' );
+	background-repeat: no-repeat;
 }
 
 
@@ -280,3 +291,13 @@ footer a {
 	margin-top: 10%;
 	}
   } 
+
+  .inneruser{
+	border: 2px solid rgb(21, 109, 196) !important; 
+	background-color:whitesmoke ;
+	border-radius: 20px;
+}
+
+::ng-deep .mat-form-field-underline {
+    display: none;
+}
