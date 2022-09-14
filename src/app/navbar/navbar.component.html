@@ -3,8 +3,11 @@
 <div  *ngIf="checkUserLoginStatus.status" >
 
 
-  <nav class="navbar navbar-expand-lg navbar-light box" style="background-color:rgb(21, 109, 196);position: absolute;width:100%;">
-    <a class="navbar-brand" style="margin-left:3vw ;font-weight: bold;color: aliceblue;" href="#">OffCampus</a>
+  <nav class="navbar navbar-expand-lg navbar-light box" style="background:linear-gradient(135deg, #6249c5 0%, #9882f3 100%);position: absolute;width:100%;">
+    <!-- <a class="navbar-brand" style="margin-left:3vw ;font-weight: bold;color: aliceblue;" href="#">OffCampus</a> -->
+    <div class="image-cont">
+      <img src="https://uploads-ssl.webflow.com/6209eec94ae14d8343731fcd/620b2de1bd235d0874b83a8d_interviewkickstart-logo.svg" alt="">
+    </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon">
 
@@ -93,7 +96,7 @@
 </div>
 
 <div *ngIf="!checkUserLoginStatus.status">
-  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#4d4899;">
+  <nav class="navbar navbar-expand-lg navbar-light box" style="background-color:#4d4899;">
     <div class="image-cont">
       <img src="https://uploads-ssl.webflow.com/6209eec94ae14d8343731fcd/620b2de1bd235d0874b83a8d_interviewkickstart-logo.svg" alt="">
     </div>
