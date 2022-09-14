@@ -18,20 +18,22 @@ import { EditCompanyComponent } from './companies/edit-company/edit-company.comp
 import { ViewCompanyComponent } from './companies/view-company/view-company.component';
 import { AuthService } from './auth/authservice/auth.service';
 import { ViewProfileComponent } from './dashboard/view/view.component';
+import { BookSessionComponent } from './mock/book-session/book-session.component';
 import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   {path:"login",component:LoginComponent},
   {path:"register",component:RegisterComponent},
   {path:"dashboard",component:DashboardComponent,canActivate:[AuthService]},
-  {path:"editprofile",component:ProfileComponent},
-  {path:"viewprofile",component:ViewProfileComponent},
+  {path:"editprofile",component:ProfileComponent,canActivate:[AuthService]},
+  {path:"viewprofile",component:ViewProfileComponent,canActivate:[AuthService]},
 
   
   {path:"home",component:HomeComponent},
 
-  {path:'mock', component:MockComponent},
-  {path:'mock/schedule', component:ScheduleComponent},
+  {path:'mock', component:MockComponent,canActivate:[AuthService]},
+  {path:'mock/schedule', component:ScheduleComponent,canActivate:[AuthService]},
+  {path:'mock/schedule/book-session', component:BookSessionComponent,canActivate:[AuthService]},
 
 // const routes: Routes = [
 //   {path:'mock', component:MockComponent},
@@ -41,10 +43,10 @@ const routes: Routes = [
 //   },
 
 
-  {path:'create',component:CreateintexpComponent},
-  {path:'experiencelist',component:IntexpComponent},
-  {path:'view/:id',component:ViewComponent},
-  {path:'edit/:id',component:EditComponent},
+  {path:'create',component:CreateintexpComponent,canActivate:[AuthService]},
+  {path:'experiencelist',component:IntexpComponent,canActivate:[AuthService]},
+  {path:'view/:id',component:ViewComponent,canActivate:[AuthService]},
+  {path:'edit/:id',component:EditComponent,canActivate:[AuthService]},
  // {path:'',redirectTo:'experiencelist',pathMatch:'full'}
 
   // {
@@ -54,12 +56,12 @@ const routes: Routes = [
   // },
 
 
-  {path:'addcompany',component:AddCompanyComponent},
-  {path:'company',component:CompaniesComponent},
-  {path:'viewcompany/:id',component:ViewCompanyComponent},
-  {path:'editcompany/:id',component:EditCompanyComponent},
-  {path:'deletecompany/:id',component:DeleteCompanyComponent},
-  {path:'deletecompanydialogue/:id',component:DialogDeleteComponent},
+  {path:'addcompany',component:AddCompanyComponent,canActivate:[AuthService]},
+  {path:'company',component:CompaniesComponent,canActivate:[AuthService]},
+  {path:'viewcompany/:id',component:ViewCompanyComponent,canActivate:[AuthService]},
+  {path:'editcompany/:id',component:EditCompanyComponent,canActivate:[AuthService]},
+  {path:'deletecompany/:id',component:DeleteCompanyComponent,canActivate:[AuthService]},
+  {path:'deletecompanydialogue/:id',component:DialogDeleteComponent,canActivate:[AuthService]},
   {path:'',component:HomeComponent},
    {path:"**",component:DashboardComponent,canActivate:[AuthService]}
 ];
