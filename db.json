@@ -133,10 +133,10 @@
   "experiences": [
     {
       "authorName": "Suyog Vyas",
-      "company": "Global Logic",
+      "company": "Global Logic OffCampus",
       "title": "GL INTERVIEW EXPERIENCE",
       "description": "<h3><strong>Round-1</strong></h3><ul><li>The first round comprised of 50 MCQ questions including aptitude, logical, C output questions, and technical portions (Test Duration: 1 hour):</li><li>Quantitative aptitude and Logical part were much more predominant, the questions were more intuitive and not typical paper pen/formula based. They were not very difficult but were very tricky.</li><li><strong>Suggestion</strong>: I would suggest doing practice from sites like GeeksforGeeks, Indiabix, etc. as it will give the confidence to solve problems.</li><li>The technical aptitude part covered questions from computer networks, operating systems, data structures (particularly tree), digital electronics, and questions from microprocessors &amp; other electronics topics. C output questions were also there.</li><li><strong>Suggestion</strong>: I would suggest doing quizzes from GeeksforGeeks to get in touch with all concepts of C and other subjects.</li></ul><p><strong>Tips:</strong>&nbsp;Solve the questions with a calm mind. Don’t stress yourself during the test because you have to do 50 questions in 60 minutes. Don’t spend too much time on any question if you are not able to do it on the first attempt.</p><h3>Round-2 (Technical Interview Round-1)</h3><ul><li>Questions from the project. My project was on REST, so he asked various typical questions on REST (Why, How, etc). He later asked me to design a REST API for a part of my project.</li><li>He asked me to design an Uber Cab service. He gave me an instant scenario that there are 5 lakh drivers, and they all are sending a request to the server &amp; database at a particular time. He asked how can you manage these requests efficiently. I gave answers by using the concepts of Load Balancer, Sharding, Master-Slave, etc. and he was pretty much happy to listen to the concepts.</li><li>He asked me to write code from the front end to the back end of a particular request from any driver (say sending the information of his current location) of the above-designed Uber using technologies like JavaScript, Ajax, JSON, jquery, servlet, Mysql, etc. I wrote a 2-page code and he was satisfied.</li><li>Later he gave me an instant of the above-designed Uber where sorting was the answer. So I gave him an answer using Comparator of java and wrote code for the same.</li><li>Discussions on MVC architecture. He said suppose you click weather.com on any browser what happens if you use MVC architecture behind and what happens if you haven’t used MVC. We had a good discussion over the use of a Controller in MVC.</li></ul><p><strong>Tips</strong>: Explain using more diagrams. (I used 4-5 total pages in this interview)</p><h3>Round-3 (Technical Interview Round-2)</h3><ul><li>Again discussion on all projects.</li><li>Discussion over REST and SOAP.</li><li>I have used eXist-db (Native XML Database) as a database in one of my projects and MySQL in another. From there we went to discussions over SQL vs NoSQL. He kept on giving me instances one after other and asked which suits best on each of them(SQL or NoSQL)</li><li>What happens when one ajax call is still running, and you send another ajax call before the data of the first ajax call comes back?</li><li>He asked to write a JavaScript code of simple form comprising login and password info.</li></ul><p><strong>Tips</strong>: You should know each and every word of your Resume.</p><h3>Round-4 (Managerial Round)</h3><ul><li>Basic questions about team management and team conflict.</li><li>What problems did you face in doing projects technologically wise and managing wisely too?</li><li>He gave me instants which can arise during working in a team and asked what will you do in them.</li><li>Some discussions over what technologies I know.</li><li>Which project do you like the most and why?</li></ul><h3>Round-5 (HR Round)</h3><ul><li>Tell me something about yourself.</li><li>What differentiates yourself from others.</li><li>Little discussions over my extracurricular activities are written in my resume.</li><li>Team Conflict questions.</li><li>What are your future plans related to further studies?</li><li>Do you have any Location constraints?</li></ul><p><strong>Tips</strong>: Know yourself before any interview. Be calm &amp; answer politely.</p>",
-      "date": "2022-09-13T10:41:40.349Z",
+      "date": "2022-09-14T04:28:54.379Z",
       "id": 1
     },
     {
@@ -154,45 +154,25 @@
       "fistName": "Mitesh",
       "middleName": "Sandeep",
       "lastName": "Sakalkar",
-      "designation": null,
-      "college": null,
-      "branch": null,
-      "topic": null,
-      "slot": null,
-      "id": 1
+      "designation": "student",
+      "college": "ssgmce",
+      "branch": "cse",
+      "mentor": "Srushti Deshpande",
+      "slot": "2022-09-14",
+      "topic": "System design",
+      "id": 8
     },
     {
       "fistName": "Mitesh",
       "middleName": "Sandeep",
       "lastName": "Sakalkar",
-      "designation": null,
-      "college": null,
-      "branch": null,
-      "topic": null,
-      "slot": null,
-      "id": 2
-    },
-    {
-      "fistName": "aman",
-      "middleName": "chandra",
-      "lastName": "sahu",
-      "designation": null,
-      "college": null,
-      "branch": null,
-      "topic": null,
-      "slot": null,
-      "id": 3
-    },
-    {
-      "fistName": "aman",
-      "middleName": "chandra",
-      "lastName": "sahu",
-      "designation": null,
-      "college": null,
-      "branch": null,
-      "topic": null,
-      "slot": null,
-      "id": 4
+      "designation": "student",
+      "college": "ssgmce",
+      "branch": "cse",
+      "mentor": "Suyog vyas",
+      "slot": "2022-09-14",
+      "topic": "System design",
+      "id": 9
     }
   ]
 }

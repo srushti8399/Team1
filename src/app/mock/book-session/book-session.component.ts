@@ -14,6 +14,26 @@ export class BookSessionComponent implements OnInit {
     { value: 'pizza-1', viewValue: 'Pizza' },
     { value: 'tacos-2', viewValue: 'Tacos' },
   ];
+
+  designations: any[] = [
+    { value: 'student', viewValue: 'student' },
+    { value: 'Professional', viewValue: 'Professional' },
+    
+  ];
+  topics: any[] = [
+    { value: 'DSA', viewValue: 'DSA' },
+    { value: 'System design', viewValue: 'System design' },
+    { value: 'frontend', viewValue: 'Frontend' },
+    { value: 'backend', viewValue: 'Backend' },
+    
+  ];
+  mentors: any[] = [
+    { value: 'Suyog Vyas', viewValue: 'Suyog Vyas' },
+    { value: 'Srushti Deshpande', viewValue: 'Srushti Deshpande' },
+    { value: 'Vivek Bohra', viewValue: 'Vivek Bohra' },
+    { value: 'Mitesh Sakalkar', viewValue: 'Mitesh Sakalkar' },
+    
+  ];
   product!: any;
   bookSession!: FormGroup
   constructor(private _route: ActivatedRoute, private mockdbService: MockDbService) { }
@@ -31,8 +51,10 @@ export class BookSessionComponent implements OnInit {
       designation: new FormControl(),
       college: new FormControl(),
       branch: new FormControl(),
+      mentor: new FormControl(),
+      slot: new FormControl(),
       topic: new FormControl(),
-      slot: new FormControl()
+      
 
     });
   }
