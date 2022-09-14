@@ -13,6 +13,7 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	height: 100vh;
 	margin: -20px 0 50px;
+	
 }
 
 h1 {
@@ -46,7 +47,7 @@ a {
 button {
 	border-radius: 20px;
 	border: 1px solid #FF4B2B;
-	background-color: #FF4B2B;
+	background-color:rgb(21, 109, 196);
 	color: #FFFFFF;
 	font-size: 12px;
 	font-weight: bold;
@@ -78,6 +79,7 @@ form {
 	padding: 0 50px;
 	height: 100%;
 	text-align: center;
+	
 }
 
 input {
@@ -90,7 +92,7 @@ input {
 
 .container {
 	background-color: #fff;
-	border-radius: 10px;
+	border-radius: 50px;
   	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
 			0 10px 10px rgba(0,0,0,0.22);
 	position: relative;
@@ -107,10 +109,12 @@ input {
 	transition: all 0.6s ease-in-out;
 }
 
-.sign-in-container {
+.sign-up-container {
 	left: 0;
 	width: 50%;
 	z-index: 2;
+
+	
 }
 
 .container.right-panel-active .sign-in-container {
@@ -176,6 +180,7 @@ input {
 
 .container.right-panel-active .overlay {
   	transform: translateX(50%);
+	 
 }
 
 .overlay-panel {
@@ -191,6 +196,7 @@ input {
 	width: 50%;
 	transform: translateX(0);
 	transition: transform 0.6s ease-in-out;
+	
 }
 
 .overlay-left {
@@ -214,7 +220,7 @@ input {
 	margin: 20px 0;
 }
 
-.social-container a {
+.social-container a { 
 	border: 1px solid #DDDDDD;
 	border-radius: 50%;
 	display: inline-flex;
@@ -235,6 +241,7 @@ footer {
     right: 0;
     text-align: center;
     z-index: 999;
+	
 }
 
 footer p {
@@ -276,5 +283,17 @@ footer a {
 	  display: flex;
 	justify-content: center;
 	color: green;
+	margin-top: 10%;
 	}
   } 
+
+  
+  .inneruser{
+	border: 2px solid rgb(21, 109, 196) !important; 
+	background-color:whitesmoke ;
+	border-radius: 20px;
+}
+
+::ng-deep .mat-form-field-underline {
+    display: none;
+}
