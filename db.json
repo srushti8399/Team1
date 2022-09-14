@@ -154,45 +154,25 @@
       "fistName": "Mitesh",
       "middleName": "Sandeep",
       "lastName": "Sakalkar",
-      "designation": null,
-      "college": null,
-      "branch": null,
-      "topic": null,
-      "slot": null,
-      "id": 1
+      "designation": "student",
+      "college": "ssgmce",
+      "branch": "cse",
+      "mentor": "Srushti Deshpande",
+      "slot": "2022-09-14",
+      "topic": "System design",
+      "id": 8
     },
     {
       "fistName": "Mitesh",
       "middleName": "Sandeep",
       "lastName": "Sakalkar",
-      "designation": null,
-      "college": null,
-      "branch": null,
-      "topic": null,
-      "slot": null,
-      "id": 2
-    },
-    {
-      "fistName": "aman",
-      "middleName": "chandra",
-      "lastName": "sahu",
-      "designation": null,
-      "college": null,
-      "branch": null,
-      "topic": null,
-      "slot": null,
-      "id": 3
-    },
-    {
-      "fistName": "aman",
-      "middleName": "chandra",
-      "lastName": "sahu",
-      "designation": null,
-      "college": null,
-      "branch": null,
-      "topic": null,
-      "slot": null,
-      "id": 4
+      "designation": "student",
+      "college": "ssgmce",
+      "branch": "cse",
+      "mentor": "Suyog vyas",
+      "slot": "2022-09-14",
+      "topic": "System design",
+      "id": 9
     }
   ]
 }

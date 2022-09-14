@@ -16,7 +16,12 @@ body{margin-top:20px;
     align-items: center;
 
     max-width: 130rem;
-    margin: 5rem;
+    /* margin: 5rem; */
+    height: 334px;
+    margin-top: 50px;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 5rem;
     padding: 6rem 5rem;
     border-radius: 1.6rem;
     background: #fff;
