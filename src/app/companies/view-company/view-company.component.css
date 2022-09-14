@@ -51,3 +51,8 @@ body{
 .shadow-none {
     box-shadow: none!important;
 }
+.space {
+    width: 4px;
+    height: auto;
+    display: inline-block;
+    }
