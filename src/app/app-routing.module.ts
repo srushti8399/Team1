@@ -18,6 +18,7 @@ import { EditCompanyComponent } from './companies/edit-company/edit-company.comp
 import { ViewCompanyComponent } from './companies/view-company/view-company.component';
 import { AuthService } from './auth/authservice/auth.service';
 import { ViewProfileComponent } from './dashboard/view/view.component';
+import { BookSessionComponent } from './mock/book-session/book-session.component';
 import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
@@ -32,6 +33,7 @@ const routes: Routes = [
 
   {path:'mock', component:MockComponent,canActivate:[AuthService]},
   {path:'mock/schedule', component:ScheduleComponent,canActivate:[AuthService]},
+  {path:'mock/schedule/book-session', component:BookSessionComponent},
 
 // const routes: Routes = [
 //   {path:'mock', component:MockComponent},

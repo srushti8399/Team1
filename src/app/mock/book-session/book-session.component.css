@@ -1,0 +1,80 @@
+.example-full-width{
+    /* padding: 10px; */
+    width: 70%;
+}
+.example-form{
+  margin: auto;
+  margin-left: 6%;
+}
+.col1{
+  margin-left: -10%;
+}
+.btn{
+  margin-top: 12px;
+}
+.col-head{
+  margin-left: 53px;
+    padding-bottom: 11px;
+}
+
+.row2{
+  margin-top: 14px;
+}
+
+  
+  .title {
+    color: grey;
+    font-size: 18px;
+  }
+  
+  
+  
+  a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+  }
+  
+  button:hover, a:hover {
+    opacity: 0.7;
+  }
+
+/* nav bar */
+nav{
+  background-color: #2F23AE;
+  background-image: linear-gradient(-134deg, #2F23AE  0%, #A11AD7  92%, #C86DD7  100%);
+  color: #fff;
+}
+.navbar-brand{
+    /* margin-bottom: 6px; */
+    font-weight: 400;
+  }
+  .logo{
+    /* font-weight: 600; */
+  }
+
+  .font{
+    font-size: large;
+  }
+
+  .twelve a {
+    font-size:26px; font-weight:700;  letter-spacing:1px; text-transform:uppercase; width:160px; text-align:center; margin:auto; white-space:nowrap; padding-bottom:13px;
+  }
+  .twelve a:before {
+      background-color: #c50000;
+      content: '';
+      display: block;
+      height: 3px;
+      width: 75px;
+      margin-bottom: 5px;
+  }
+  .twelve a:after {
+      background-color: #c50000;
+      content: '';
+      display: block;
+    position:absolute; bottom:0;
+      height: 3px;
+      width: 75px;
+      margin-left: 57px;
+      margin-bottom: 0.25em;
+  }
