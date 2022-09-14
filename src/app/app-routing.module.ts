@@ -33,7 +33,7 @@ const routes: Routes = [
 
   {path:'mock', component:MockComponent,canActivate:[AuthService]},
   {path:'mock/schedule', component:ScheduleComponent,canActivate:[AuthService]},
-  {path:'mock/schedule/book-session', component:BookSessionComponent},
+  {path:'mock/schedule/book-session', component:BookSessionComponent,canActivate:[AuthService]},
 
 // const routes: Routes = [
 //   {path:'mock', component:MockComponent},
