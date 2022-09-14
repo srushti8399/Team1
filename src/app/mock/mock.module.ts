@@ -18,6 +18,9 @@ import { ReactiveFormsModule } from '@angular/forms';
 import {MatSelectModule} from '@angular/material/select';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatRadioModule} from '@angular/material/radio';
+import { MatNativeDateModule } from '@angular/material/core';
+import { AppRoutingModule } from '../app-routing.module';
+
 @NgModule({
   declarations: [
     MockComponent,
@@ -27,7 +30,8 @@ import {MatRadioModule} from '@angular/material/radio';
   ],
   imports: [
     CommonModule,FormsModule,MatSelectModule,ReactiveFormsModule,
-    MatInputModule,MatButtonModule,MatTableModule,MatDatepickerModule,MatRadioModule
+    MatInputModule,MatButtonModule,MatTableModule,MatDatepickerModule,MatRadioModule,
+    MatNativeDateModule,AppRoutingModule
   ],
   exports:[
     MockComponent,ScheduleComponent,BookSessionComponent

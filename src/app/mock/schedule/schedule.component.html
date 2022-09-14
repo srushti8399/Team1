@@ -25,7 +25,7 @@
                         <li class="py-4 zen-body-2">Prepare for Job Interviews</li>
                     </ul>
                 </div>
-                <button class="sch-button" mat-button color="primary">Schedule Session</button>
+                <button class="sch-button" [routerLink]="['/mock/schedule/book-session']" mat-button color="primary">Schedule Session</button>
             </div>
             <div class="used-sessions-banner position-absolute align-right text-align-center grey-A100 mr-20">
                 <div class="bg-violet-500 p-12 pb-0">
@@ -53,12 +53,12 @@
                         <li class="py-4 zen-body-2">Prepare for Job Interviews</li>
                     </ul>
                 </div>
-                <button class="sch-button" mat-button color="primary">Schedule Session</button>
+                <button class="sch-button" [routerLink]="['/mock/schedule/book-session']" mat-button color="primary">Schedule Session</button>
             </div>
             <div class="used-sessions-banner position-absolute align-right text-align-center grey-A100 mr-20">
                 <div class="bg-violet-500 p-12 pb-0">
                     <span class="zen-subtitle-1">1</span>
-                    <p class="zen-caption-1 p-0 m-0">Project Guidance</p>
+                    <p class="zen-caption-1 p-0 m-0">Session taken</p>
                 </div>
                 <div id="triangle-down">
 
@@ -74,14 +74,14 @@
 
             <div class="card-content">
                 <div>
-                    <p class="p-content">Mock Interview</p>
+                    <p class="p-content">Project Guidance</p>
                     <ul>
                         <li class="py-4 zen-body-2">Get your technical knowledge assessed from Hiring Managers
                             </li>
                         <li class="py-4 zen-body-2">Prepare for Job Interviews</li>
                     </ul>
                 </div>
-                <button class="sch-button" mat-button color="primary">Schedule Session</button>
+                <button class="sch-button" [routerLink]="['/mock/schedule/book-session']" mat-button color="primary">Schedule Session</button>
             </div>
             <div class="used-sessions-banner position-absolute align-right text-align-center grey-A100 mr-20">
                 <div class="bg-violet-500 p-12 pb-0">
@@ -103,7 +103,7 @@
     <hr style="width: 93%;margin-left:38px">
     <div class="past-booking-table">
         <table mat-table [dataSource]="pastBook" style="width: 93%;
-        margin-left: 38px;" class="mat-elevation-z8">
+        margin-left: 38px;" class="mat-elevation-z8" >
 
             <!--- Note that these columnscan be defined in any order.
                   The actual rendered columns are set as a property on the row definition" -->
@@ -111,19 +111,19 @@
             <!-- Position Column -->
             <ng-container matColumnDef="position">
               <th mat-header-cell *matHeaderCellDef> Discussion Topic & Time </th>
-              <td mat-cell *matCellDef="let element"> {{element.fistName}} </td>
+              <td mat-cell *matCellDef="let element"> {{element.topic}} <br><small>{{element.slot}}</small> </td>
             </ng-container>
           
             <!-- Name Column -->
             <ng-container matColumnDef="name">
               <th mat-header-cell *matHeaderCellDef> Mentor </th>
-              <td mat-cell *matCellDef="let element"> {{element.middleName}} </td>
+              <td mat-cell *matCellDef="let element"> {{element.mentor}} </td>
             </ng-container>
           
             <!-- Weight Column -->
             <ng-container matColumnDef="weight">
               <th mat-header-cell *matHeaderCellDef> Session Type </th>
-              <td mat-cell *matCellDef="let element"> {{element.lastName}} </td>
+              <td mat-cell *matCellDef="let element"> {{element.topic}} </td>
             </ng-container>
           
             <!-- Symbol Column -->
@@ -143,6 +143,5 @@
     </div>
 </div>
 
-<!-- <button (click)="click()">click</button> -->
-<!-- <h1>{{userId}}</h1> -->
+
 </body>
