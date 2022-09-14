@@ -9,9 +9,9 @@
           Job Opportunites
       </h1>
       <p class="banner-para">
-          Not enough placement opportunites at your college? 
-          <br>Stay in know for all off-campus opportunites with us.<br>
+          Not enough placement opportunites at your college? Stay in know for all off-campus opportunites with us.<br>
           Are you a recruiter? <a href="/addcompany" routerLink="/addcompany">Add Jobs here</a>
+          
       </p>
   </div>
   <div style="margin-top: 25px;"></div>
@@ -40,17 +40,17 @@
     <mat-card-actions>
         <div class="row col-md-12">
             <div class="col-md-3">
-            <button mat-raised-button  class="btn btn-outline-info" (click)="viewCompany(com.id)">View</button>
+            <button mat-raised-button  class="btn btn-info" (click)="viewCompany(com.id)">View</button>
         </div>
         <div class="col-md-6"></div>
         <div class="col-md-3">
-            <button mat-icon-button  class="blue" class="btn btn-outline-primary" (click)="editCompany(com.id)">
+            <button mat-icon-button  class="blue" class="btn btn-primary" (click)="editCompany(com.id)">
                 <mat-icon>edit</mat-icon>
               </button>
               <div class="space"></div>
             <!-- </div> -->
             <!-- <div class="col-md-1"> -->
-                <button mat-icon-button color="accent" class="red" class="btn btn-outline-danger" (click)="deleteCompany(com.id)">
+                <button mat-icon-button color="accent" class="red" class="btn btn-danger" (click)="deleteCompany(com.id)">
                     <mat-icon>delete</mat-icon>
                   </button>
               
