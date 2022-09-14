@@ -101,8 +101,16 @@ body{
 .shadow-none {
   box-shadow: none!important;
 }
-/* code by srushti  */
+/* code by srushti  */ 
 
 .blue{
   color: rgb(45, 144, 236);
+}
+
+h3{
+  color: rgb(25, 134, 236) !important;
+}
+
+h2{
+  color: rgb(12, 122, 225);
 }
