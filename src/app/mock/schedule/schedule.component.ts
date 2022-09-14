@@ -23,7 +23,8 @@ export class ScheduleComponent implements OnInit {
   click(){
     console.log(this.pastBook);
   }
-
+   
+  userId:string=localStorage.getItem('userM')!;
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol','actions'];
   dataSource = this.pastBook;
 }
