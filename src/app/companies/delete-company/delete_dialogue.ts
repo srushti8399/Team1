@@ -25,11 +25,16 @@ export class DialogDeleteComponent {
   confirmDelete(){
     this.companyService.DeleteCompany(this.data).subscribe({
       next:(res)=>{
-        alert("Details deleted Successfully")
+        //alert("Details deleted Successfully")
+        this.router.navigate(['/company'])
       },
       error:()=>{
        alert("Error while deleting the details")}
     })
+    this.dialog.closeAll()
+  }
+  Nobutton(){
+    this.router.navigate(['/company'])
     this.dialog.closeAll()
   }
 }

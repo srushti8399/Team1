@@ -82,22 +82,10 @@
   ],
   "companies": [
     {
-      "cname": "Global Logic",
-      "description": "Experienced in Payroll Department",
-      "jobtitle": "Trainee Software Engineer",
-      "experience": "2 years",
-      "authorityname": "HR",
-      "package": "3-6 LPA(variable)",
-      "qualification": "Graduation ",
-      "link": "https://www.naukri.com/",
-      "type": "Experienced",
-      "id": 2
-    },
-    {
       "cname": "Capgemini",
       "description": "Experienced in Data Science",
       "jobtitle": "Senior Engineer",
-      "experience": "3-4 years",
+      "experience": "5-4 years",
       "authorityname": "HR",
       "package": "18-24 LPA",
       "qualification": "BE/B.Tech in ComputerScience",
@@ -116,18 +104,6 @@
       "link": "https://www.naukri.com/",
       "type": "Fresher",
       "id": 4
-    },
-    {
-      "cname": "TCS",
-      "description": "Freshers can apply",
-      "jobtitle": "Trainee Software Engineer",
-      "experience": "0 years",
-      "authorityname": "HR",
-      "package": "3 LPA",
-      "qualification": "Graduation ",
-      "link": "https://www.naukri.com/",
-      "type": "Fresher",
-      "id": 5
     }
   ],
   "experiences": [
