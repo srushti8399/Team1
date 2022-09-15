@@ -38,8 +38,7 @@ import { MockDbService } from './mock/mock.db.service';
     AppRoutingModule,
     BrowserAnimationsModule,
     IntexpModule,
-    HttpClientModule
-    ,
+    HttpClientModule,
     MockModule,
     AuthModule,
     NavbarModule,
