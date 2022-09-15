@@ -249,3 +249,17 @@ border: 1px solid #D2D2D6;
 .colorchange{
   padding: 17px;
 }
+
+.text{
+  color:rgb(21, 109, 196) !important ;
+
+}
+
+.name{
+  color:rgb(81, 157, 233) !important ;
+
+}
+
+.high{
+  height:470px !important;
+}
