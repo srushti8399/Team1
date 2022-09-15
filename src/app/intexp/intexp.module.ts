@@ -12,6 +12,12 @@ import { ViewComponent } from './view/view.component';
 import { QuillModule } from 'ngx-quill';
 import { MatIconModule } from '@angular/material/icon';
 import { EditComponent } from './edit/edit.component'
+import {MatDialogModule} from '@angular/material/dialog';
+import { DeleteDialogueComponent } from './dialog/delete.dialogue';
+import { AddSuccessDialogComponent } from './dialog/add-success.dialogue';
+import { AddErrorDialogComponent } from './dialog/add-error.dialogue';
+import { EditSuccessDialogComponent } from './dialog/edit-success.dialogue';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +26,10 @@ import { EditComponent } from './edit/edit.component'
     DescriptionPipe,
     ViewComponent,
     EditComponent,
-    
+    DeleteDialogueComponent,
+    AddSuccessDialogComponent,
+    AddErrorDialogComponent,
+    EditSuccessDialogComponent,
   ],
   imports: [
     CommonModule,
@@ -29,6 +38,7 @@ import { EditComponent } from './edit/edit.component'
     MatFormFieldModule,
     MatButtonModule,
     MatCardModule,
+    MatDialogModule,
     MatIconModule,
     QuillModule.forRoot()
    

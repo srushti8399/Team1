@@ -1,7 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute, Router } from '@angular/router';
 import { EditorChangeContent, EditorChangeSelection } from 'ngx-quill';
+import { AddErrorDialogComponent } from '../dialog/add-error.dialogue';
+
+import { EditSuccessDialogComponent } from '../dialog/edit-success.dialogue';
 import { InterviewExperienceDBService } from '../intexp.db.service';
 
 @Component({
@@ -11,7 +15,7 @@ import { InterviewExperienceDBService } from '../intexp.db.service';
 })
 export class EditComponent implements OnInit {
 
-  constructor(private _fb:FormBuilder,private _route:ActivatedRoute,private _db:InterviewExperienceDBService
+  constructor(private _dialog:MatDialog,private _fb:FormBuilder,private _route:ActivatedRoute,private _db:InterviewExperienceDBService
     ,private _router:Router) { }
 
   interviewExperienceForm!:FormGroup
@@ -49,11 +53,24 @@ export class EditComponent implements OnInit {
   }
 
   submit(){
-    this._db.editInterviewExperience(this.interviewExperienceForm.value,this.postId).subscribe({
-      next:(res)=>{
-        alert("Edited Successfully")
-        
-      }
-    })
+
+    if(this.interviewExperienceForm.value.authorName!='' &&
+    this.interviewExperienceForm.value.title!='' &&
+    this.interviewExperienceForm.value.company!='' &&
+    this.interviewExperienceForm.value.description!=''){
+
+      this._db.editInterviewExperience(this.interviewExperienceForm.value,this.postId).subscribe({
+        next:(res)=>{
+
+            this._dialog.open(EditSuccessDialogComponent)
+          
+        }
+      })
+    }
+    else{
+      this._dialog.open(AddErrorDialogComponent) 
+    }
+
+    
   }
 }
