@@ -20,7 +20,7 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatRadioModule} from '@angular/material/radio';
 import { MatNativeDateModule } from '@angular/material/core';
 import { AppRoutingModule } from '../app-routing.module';
-
+import {MatIconModule} from '@angular/material/icon'
 @NgModule({
   declarations: [
     MockComponent,
@@ -31,7 +31,7 @@ import { AppRoutingModule } from '../app-routing.module';
   imports: [
     CommonModule,FormsModule,MatSelectModule,ReactiveFormsModule,
     MatInputModule,MatButtonModule,MatTableModule,MatDatepickerModule,MatRadioModule,
-    MatNativeDateModule,AppRoutingModule
+    MatNativeDateModule,AppRoutingModule,MatIconModule
   ],
   exports:[
     MockComponent,ScheduleComponent,BookSessionComponent
