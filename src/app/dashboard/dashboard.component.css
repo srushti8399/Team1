@@ -143,118 +143,15 @@ html,body{
   /* min-height: 200px; */
   /* width: 50vw; */
   /* margin: 100px auto; */
-  /* background: white; */
+  background: white;
   border-radius: 5px;
-  background: url(https://files.codingninjas.com/cdn-cgi/image/width=136/group-3429-9844.png) no-repeat bottom 0 left 0,linear-gradient(90.02deg,#343b89 -1.1%,#4d4899 99.97%);
-    position: relative;
-    z-index: 2;
-    width: 100%;
-    /* color:rgb(21, 109, 196);border: 3px solid rgb(21, 109, 196);border-radius: 30px; */
-}
-.box h1{
-  font: 700 32px/42px Mulish,Roboto,Helvetica Neue,sans-serif;
-}
-.box p{
-  font: 600 16px/24px Mulish,Roboto,Helvetica Neue,sans-serif;
-  width: 73%;
-  color: #e1e1e3;
-}
-
-
-/* about us */
- /* top header */
- .static-section-three{
-  display: flex;
--webkit-box-orient: vertical;
--webkit-box-direction: normal;
-flex-direction: column;
--webkit-box-pack: center;
-justify-content: center;
--webkit-box-align: center;
-align-items: center;
-
-max-width: 70rem;
-/* margin: 5rem; */
-height: 400px;
-margin-top: 50px;
-margin-left: 5rem;
-margin-right: 5rem;
-margin-bottom: 5rem;
-padding: 6rem 5rem;
-border-radius: 1.6rem;
-background: #fff;
-border: 1px solid #D2D2D6;
-}
-
-.static-section-list {
-  
-  display: flex;
-  -webkit-box-pack: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  position: relative;
-}
-
-.static-section-three__container {
-  
-  display: flex;
-}
-
-.static-section-three__heading {
-  font-size: 2.5rem;
-  font-weight: 600;
-  color: #000;
-  line-height: 2.9rem;
-  font-weight: 400;
-  margin: 0 0 2rem 0;
-}
-
-.static-section-three__content p  { 
-  font-size: 1rem;
-    line-height: 1.6rem;
-    margin-left: -31px;
-}
-
-.static-section-three__description {
-  font-size: 2rem;
-  font-weight: 600;
-  color: #506b6a;
-  line-height: 3.3rem;
-  font-weight: 300;
-  margin: 2rem 0 5rem 0;
-}
-.static-section-three__banner {
-  width: 143%;
-}
-.static-section-three__banner img {
-  height: 77%;
-  width: 122%;
-}
-
-.static-section-three__logo {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-}
-
-
-.para{
- color:  hsl(229, 6%, 66%);
-}
-.name{
-  margin-left: 35px;
-  margin-top: 8px;
-}
-.colorchange{
-  padding: 17px;
 }
 
 .text{
   color:rgb(21, 109, 196) !important ;
 
 }
-
+ 
 .name{
   color:rgb(81, 157, 233) !important ;
 
@@ -263,3 +160,16 @@ border: 1px solid #D2D2D6;
 .high{
   height:470px !important;
 }
+
+
+@media only screen and (max-width: 765px) {
+  .imptwo{
+    position: absolute;
+  }
+	.impone{
+    position:relative;
+    top:120%;
+    width: 80%;
+    margin-left: 10%;
+  }
+  } 
