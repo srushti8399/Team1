@@ -11,6 +11,7 @@ import { CompanyDbService } from '../company.db.service';
 export class DialogDeleteComponent {
   viewCompany:any={}
   companyid:string='';
+  
   constructor(public dialog: MatDialog,private companyService:CompanyDbService,private router:Router,private route:ActivatedRoute,
     @Inject(MAT_DIALOG_DATA) public data:any) {}
   ngOnInit(): void {
