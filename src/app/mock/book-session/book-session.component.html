@@ -1,5 +1,5 @@
 <!-- <p>book-session works!</p> -->
-<div class=" p-2 text-dark bg-opacity-10 high">
+<div class=" p-2 text-dark bg-opacity-10 high" style="    margin-top: 21px;">
 
 
   
@@ -51,7 +51,7 @@
                   <mat-label>Middle Name</mat-label>
                   <input matInput placeholder="Ex. Pizza" value="" formControlName="middleName">
                   <mat-error *ngIf="bookSession.get('middleName')!.errors!==null && bookSession.get('middleName')!.errors!['required']">
-                    Name is required
+                    Middle name is required
                     </mat-error>
                 </mat-form-field>
               </div>
@@ -61,7 +61,7 @@
                   <mat-label>Last Name</mat-label>
                   <input matInput placeholder="Ex. Pizza" value="" formControlName="lastName">
                   <mat-error *ngIf="bookSession.get('lastName')!.errors!==null && bookSession.get('lastName')!.errors!['required']">
-                    code is required
+                    last name is required
                     </mat-error>
                 </mat-form-field>
               </div>

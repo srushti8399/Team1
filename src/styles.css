@@ -11,8 +11,8 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     margin-top: 68px;
     height: 22%;
     border-radius: 8px;
-    width: 94%;
-    margin-left: 34px;
+    /* width: 94%;
+    margin-left: 34px; */
     background-color: #0A2541;
     background-image: url(https://classroom.codingninjas.com/banner-overlay.32948467e4c0a8257463.svg);
     background-repeat: no-repeat;

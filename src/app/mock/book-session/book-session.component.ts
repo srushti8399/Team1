@@ -48,12 +48,12 @@ export class BookSessionComponent implements OnInit {
       fistName: new FormControl(null, Validators.required),
       middleName: new FormControl('', Validators.required),
       lastName: new FormControl('', Validators.required),
-      designation: new FormControl(),
-      college: new FormControl(),
-      branch: new FormControl(),
-      mentor: new FormControl(),
-      slot: new FormControl(),
-      topic: new FormControl(),
+      designation: new FormControl('', Validators.required),
+      college: new FormControl('', Validators.required),
+      branch: new FormControl('', Validators.required),
+      mentor: new FormControl('', Validators.required),
+      slot: new FormControl('', Validators.required),
+      topic: new FormControl('', Validators.required),
       
 
     });
