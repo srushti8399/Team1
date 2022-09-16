@@ -294,65 +294,7 @@
       "topic": "",
       "id": 14
     },
-    {
-      "fistName": null,
-      "middleName": "",
-      "lastName": "",
-      "designation": "",
-      "college": "",
-      "branch": "",
-      "mentor": "",
-      "slot": "",
-      "topic": "",
-      "id": 15
-    },
-    {
-      "fistName": null,
-      "middleName": "",
-      "lastName": "",
-      "designation": "",
-      "college": "",
-      "branch": "",
-      "mentor": "",
-      "slot": "",
-      "topic": "",
-      "id": 16
-    },
-    {
-      "fistName": null,
-      "middleName": "",
-      "lastName": "",
-      "designation": "",
-      "college": "",
-      "branch": "",
-      "mentor": "",
-      "slot": "",
-      "topic": "",
-      "id": 17
-    },
-    {
-      "fistName": null,
-      "middleName": "",
-      "lastName": "",
-      "designation": "",
-      "college": "",
-      "branch": "",
-      "mentor": "",
-      "slot": "",
-      "topic": "",
-      "id": 18
-    },
-    {
-      "fistName": null,
-      "middleName": "",
-      "lastName": "",
-      "designation": "",
-      "college": "",
-      "branch": "",
-      "mentor": "",
-      "slot": "",
-      "topic": "",
-      "id": 19
-    }
+  
+    
   ]
 }

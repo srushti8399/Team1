@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute } from '@angular/router';
+import { AddReqFieldDialogComponent } from '../dialog/add-reqfilled.dialogue';
+import { AddedSuccessDialogComponent } from '../dialog/added-success.dialogue';
 import { MockDbService } from '../mock.db.service';
 @Component({
   selector: 'app-book-session',
@@ -36,7 +39,8 @@ export class BookSessionComponent implements OnInit {
   ];
   product!: any;
   bookSession!: FormGroup
-  constructor(private _route: ActivatedRoute, private mockdbService: MockDbService) { }
+  constructor(private _dialog:MatDialog,private _route: ActivatedRoute, private mockdbService: MockDbService) { }
+ 
   proCode!: string | null;
   ngOnInit(): void {
     // this.proCode=this._route.snapshot.paramMap.get('code');
@@ -65,17 +69,35 @@ export class BookSessionComponent implements OnInit {
 
   submit() {
     console.log(this.bookSession.value);
-    this.mockdbService.postMock(this.bookSession.value).subscribe({
-      next: (res) => {
-        alert("added successfully")
-        //this.companyForm.reset();
 
-      },
-      error: () => {
-        alert("wrong")
-      }
-    })
-    window.location.reload();
+    if(this.bookSession.value.fistName!='' &&
+      this.bookSession.value.middleName!='' &&
+      this.bookSession.value.lastName!='' &&
+      this.bookSession.value.designation!=''&&
+      this.bookSession.value.college!=''&&
+        this.bookSession.value.branch!=''&&
+        this.bookSession.value.mentor!=''&&
+        this.bookSession.value.slot!=''&&
+        this.bookSession.value.topic!=''){
+
+          this.mockdbService.postMock(this.bookSession.value).subscribe({
+            next: (res) => {
+              // alert("added successfully")
+              //this.companyForm.reset();
+              this._dialog.open(AddedSuccessDialogComponent);
+              // window.location.reload();
+
+            },
+            error: () => {
+              alert("wrong")
+            }
+          })
+         
+        }else{
+          // console.log("required");
+          this._dialog.open(AddReqFieldDialogComponent) 
+        }
+    
 
   }
   
