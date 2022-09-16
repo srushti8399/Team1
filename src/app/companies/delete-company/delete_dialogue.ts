@@ -11,6 +11,7 @@ import { CompanyDbService } from '../company.db.service';
 export class DialogDeleteComponent {
   viewCompany:any={}
   companyid:string='';
+  
   constructor(public dialog: MatDialog,private companyService:CompanyDbService,private router:Router,private route:ActivatedRoute,
     @Inject(MAT_DIALOG_DATA) public data:any) {}
   ngOnInit(): void {
@@ -25,11 +26,16 @@ export class DialogDeleteComponent {
   confirmDelete(){
     this.companyService.DeleteCompany(this.data).subscribe({
       next:(res)=>{
-        alert("Details deleted Successfully")
+        //alert("Details deleted Successfully")
+        this.router.navigate(['/company'])
       },
       error:()=>{
        alert("Error while deleting the details")}
     })
+    this.dialog.closeAll()
+  }
+  Nobutton(){
+    this.router.navigate(['/company'])
     this.dialog.closeAll()
   }
 }

@@ -33,10 +33,11 @@
     background-color: rgb(119, 245, 119);
   }
   .space {
-	width: 2px;
+	width: 4px;
 	height: auto;
 	display: inline-block;
   }
+  .button5 {border-radius: 40%;}
 
 
   /* page heading card */
