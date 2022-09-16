@@ -18,7 +18,7 @@ body{margin-top:20px;
     max-width: 130rem;
     /* margin: 5rem; */
     height: 334px;
-    margin-top: 50px;
+    margin-top: 27px;
     margin-left: 5rem;
     margin-right: 5rem;
     margin-bottom: 5rem;
@@ -89,7 +89,7 @@ body{margin-top:20px;
         z-index: 1;
         border-radius: 15px;
         -webkit-box-shadow: 0 0.25rem 1rem 0 rgba(47, 91, 234, 0.125);
-        box-shadow: 0 0.25rem 1rem 0 rgba(47, 91, 234, 0.125);
+        box-shadow: 0 0.25rem 1rem 0 rgba(3, 4, 8, 0.125);
     }
     .single_advisor_profile .advisor_thumb {
         position: relative;
@@ -351,3 +351,6 @@ body{margin-top:20px;
         }
         
     }
+
+
+ 
