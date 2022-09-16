@@ -14,6 +14,10 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatDialogModule} from '@angular/material/dialog';
 import { DialogDeleteComponent } from './delete-company/delete_dialogue';
 import { EditCompanyComponent } from './edit-company/edit-company.component';
+import { UpdateErrorDialogueComponent } from './edit-company/updateerrordialoguecomponent';
+import { UpdateDialogueComponent } from './edit-company/updatedialoguecomponent';
+import { AddDialogueComponent } from './add-company/adddialoguecomponent';
+import { ErrorAddDialogueComponent } from './add-company/erroradddialoguecomponent';
 
 
 
@@ -24,7 +28,11 @@ import { EditCompanyComponent } from './edit-company/edit-company.component';
     ViewCompanyComponent,
     DeleteCompanyComponent,
     DialogDeleteComponent,
-    EditCompanyComponent
+    EditCompanyComponent,
+    UpdateErrorDialogueComponent,
+    UpdateDialogueComponent,
+    AddDialogueComponent,
+    ErrorAddDialogueComponent
   ],
   imports: [
     CommonModule,
@@ -44,7 +52,11 @@ import { EditCompanyComponent } from './edit-company/edit-company.component';
     ViewCompanyComponent,
     DeleteCompanyComponent,
     DialogDeleteComponent,
-    EditCompanyComponent
+    EditCompanyComponent,
+    UpdateErrorDialogueComponent,
+    UpdateDialogueComponent,
+    AddDialogueComponent,
+    ErrorAddDialogueComponent
 
   ]
 })

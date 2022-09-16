@@ -1,7 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 import { CompanyDbService } from '../company.db.service';
+import { AddDialogueComponent } from './adddialoguecomponent';
+import { ErrorAddDialogueComponent } from './erroradddialoguecomponent';
 
 @Component({
   selector: 'app-add-company',
@@ -10,7 +13,7 @@ import { CompanyDbService } from '../company.db.service';
 })
 export class AddCompanyComponent implements OnInit {
      companyForm!:FormGroup
-  constructor(private fb:FormBuilder, private companydbservice:CompanyDbService, private router:Router) { }
+  constructor(private fb:FormBuilder, private companydbservice:CompanyDbService, private router:Router,private dialog:MatDialog) { }
 
   ngOnInit(): void {
     this.companyForm=this.fb.group({
@@ -33,11 +36,13 @@ export class AddCompanyComponent implements OnInit {
     {viewValue:2,Text:"Fresher"} 
   ];
   submit(){
-   console.log(this.companyForm)
+   //console.log(this.companyForm)
+   if(this.companyForm.value.cname!="" && this.companyForm.value.description !="" && this.companyForm.value.jobtitle !="" && this.companyForm.value.experience !="" && this.companyForm.value.authorityname !="" && this.companyForm.value.package !="" && this.companyForm.value.qualification !="" && this.companyForm.value.link !="" && this.companyForm.value.type !=""){
    this.companydbservice.postCompany(this.companyForm.value).subscribe({
     next:(res)=>{
-      alert("added successfully")
-      //this.companyForm.reset();
+      this.dialog.open(AddDialogueComponent)
+      //alert("added successfully")
+     // this.companyForm.reset();
       
 
     },
@@ -45,7 +50,10 @@ export class AddCompanyComponent implements OnInit {
       alert("wrong")
     }
    })
-   window.location.reload();
+  }else{
+    this.dialog.open(ErrorAddDialogueComponent)
+  }
+   //window.location.reload();
    
 
   }
@@ -54,3 +62,4 @@ export class AddCompanyComponent implements OnInit {
   }
 
 }
+
