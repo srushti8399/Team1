@@ -20,8 +20,8 @@ margin-left: 71px;">
     <div class="content" style="">
         <div fxLayout="row wrap" fxLayoutGap="16px grid">
             <div class="wrap" fxFlex="50%" *ngFor="let obj of interviewExpArray">
-                <div class="shadow p-2 mb-2 bg-white rounded" style="">
-                    <mat-card class="example-card box">
+                <div class=" p-2 mb-2 bg-white rounded" style="">
+                    <mat-card class="example-card box" style="border: 1px solid grey">
                         <mat-card-title>
                             <div class="row">
                                 <div class="col-md-10">
@@ -33,7 +33,7 @@ margin-left: 71px;">
                                         <mat-icon>edit</mat-icon>
                                     </button>
                                     <button mat-icon-button  class="red" class="btn btn-danger button5"
-                                        (click)="delete(obj.id)">
+                                        (click)="delete(obj)">
                                         <mat-icon>delete</mat-icon>
                                     </button>
 
