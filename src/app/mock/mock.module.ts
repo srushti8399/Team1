@@ -21,20 +21,31 @@ import {MatRadioModule} from '@angular/material/radio';
 import { MatNativeDateModule } from '@angular/material/core';
 import { AppRoutingModule } from '../app-routing.module';
 import {MatIconModule} from '@angular/material/icon'
+import { AddedSuccessDialogComponent } from './dialog/added-success.dialogue';
+import {MatDialogModule} from '@angular/material/dialog';
+import { AddReqFieldDialogComponent } from './dialog/add-reqfilled.dialogue';
+import { StarRatingComponent } from './dialog/starRatingDialogue/star-rating.dialogue';
+// import {StarRatingModule} from 'angular-star-rating';
+
 @NgModule({
   declarations: [
     MockComponent,
     ScheduleComponent,
     BookSessionComponent,
+    AddedSuccessDialogComponent,
+ AddReqFieldDialogComponent,StarRatingComponent
+    
+  
 
   ],
   imports: [
     CommonModule,FormsModule,MatSelectModule,ReactiveFormsModule,
     MatInputModule,MatButtonModule,MatTableModule,MatDatepickerModule,MatRadioModule,
-    MatNativeDateModule,AppRoutingModule,MatIconModule
+    MatNativeDateModule,AppRoutingModule,MatIconModule,MatDialogModule
   ],
   exports:[
-    MockComponent,ScheduleComponent,BookSessionComponent
+    MockComponent,ScheduleComponent,BookSessionComponent,AddedSuccessDialogComponent,AddReqFieldDialogComponent,
+    StarRatingComponent
   ]
 })
 export class MockModule { }
