@@ -1,0 +1,22 @@
+.heading-container{
+    border: 1px solid;
+    margin-top: 10px;
+    height: 70%;
+    border-radius: 8px;
+    width: 150%;
+    margin-left: 34px;
+    background-color: #0A2541;
+    background-image: url(https://classroom.codingninjas.com/banner-overlay.32948467e4c0a8257463.svg);
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: auto 100%;
+  
+  }
+  
+  .banner-heading{
+    color:#FFFFFF;
+    font: 500 30px/37px Mulish,Roboto,Helvetica Neue,sans-serif;
+    margin-top: 14px;
+    margin-left: 21px;
+  
+  }
