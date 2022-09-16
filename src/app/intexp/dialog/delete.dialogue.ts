@@ -17,7 +17,8 @@ export class DeleteDialogueComponent{
     confirmDelete(){
         this._db.deleteInterviewExperience(this.data.id).subscribe({
           next:(res)=>{
-            this._dialog.open(DeleteSuccessDialogComponent)
+            window.location.reload()
+            
           },
           error:()=>{
            alert("Error while deleting the details")}

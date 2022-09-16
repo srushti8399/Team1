@@ -16,7 +16,7 @@ export class DeleteSuccessDialogComponent{
 
     backtolist(){
         this._dialog.closeAll()
-        window.location.reload()
+        // window.location.reload()
         // this._router.navigate(['/experiencelist'])
     }
 
