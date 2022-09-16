@@ -233,68 +233,7 @@
       "slot": "2022-09-14",
       "topic": "System design",
       "id": 9
-    },
-    {
-      "fistName": null,
-      "middleName": "",
-      "lastName": "",
-      "designation": "",
-      "college": "",
-      "branch": "",
-      "mentor": "",
-      "slot": "",
-      "topic": "",
-      "id": 10
-    },
-    {
-      "fistName": null,
-      "middleName": "",
-      "lastName": "",
-      "designation": "",
-      "college": "",
-      "branch": "",
-      "mentor": "",
-      "slot": "",
-      "topic": "",
-      "id": 11
-    },
-    {
-      "fistName": null,
-      "middleName": "",
-      "lastName": "",
-      "designation": "",
-      "college": "",
-      "branch": "",
-      "mentor": "",
-      "slot": "",
-      "topic": "",
-      "id": 12
-    },
-    {
-      "fistName": null,
-      "middleName": "",
-      "lastName": "",
-      "designation": "",
-      "college": "",
-      "branch": "",
-      "mentor": "",
-      "slot": "",
-      "topic": "",
-      "id": 13
-    },
-    {
-      "fistName": null,
-      "middleName": "",
-      "lastName": "",
-      "designation": "",
-      "college": "",
-      "branch": "",
-      "mentor": "",
-      "slot": "",
-      "topic": "",
-      "id": 14
-    },
-  
-    
+    }
+   
   ]
 }
