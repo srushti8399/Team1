@@ -2,22 +2,22 @@
 
      
     <div class="container-fluid" style="display:flex;align-items:flex-start;height: 100vh;">
-        <div class="remove box" style="height:100%;width: 20%;background-color:rgb(21, 109, 196);">
+        <div class="remove box" style="height:100%;width: 20%;background:linear-gradient(135deg, #6249c5 0%, #9882f3 100%)">
             <ul style="list-style:none;margin-top:34%;color:aliceblue ;">
                 <li  style="margin-bottom:10%;" ><a class="txt" routerLink="/viewprofile"style="text-decoration: none;color:aliceblue ;"><i class="fas fa-qrcode" style="margin-right:5px ;"></i>View Profile</a></li>
                 <hr style="margin-bottom:10% ;">
                 <li style="margin-bottom:10%;"><a class="txt" routerLink="/editprofile" style="text-decoration: none;color:aliceblue ;"><i class="fas fa-link" style="margin-right:5px ;"></i>Edit Profile</a></li>
                 <hr style="margin-bottom:10% ;">
-                <li style="margin-bottom:10%;"><a class="txt" href="#" style="text-decoration: none;color:aliceblue ;"><i class="fas fa-stream" style="margin-right:5px ;"></i>Forgot Password</a></li>
+                <li style="margin-bottom:10%;"><a routerLink="/company" class="txt" href="#" style="text-decoration: none;color:aliceblue ;"><i class="fas fa-stream" style="margin-right:5px ;"></i>My Jobs</a></li>
                 <hr style="margin-bottom:10% ;">
-                <li><a class="txt" style="text-decoration: none;color:aliceblue ;"><i class="fas fa-calendar-week" style="margin-right:5px ;"></i>My Interviews</a></li>
+                <li><a routerLink="/mock/schedule" class="txt" style="text-decoration: none;color:aliceblue ;"><i class="fas fa-calendar-week" style="margin-right:5px ;"></i>My Interviews</a></li>
                 
                </ul>
         </div> 
         <div  style="height:400px ;width: 80%;">
 
              <!-- test  -->
-             <div class="remove-top" style="background-color:rgb(21, 109, 196);display: flex;width: 100%;">
+             <div class="remove-top" style="background:linear-gradient(135deg, #6249c5 0%, #9882f3 100%);display: flex;width: 100%;">
                 <ul style="list-style:none;color:aliceblue;width: 100%;">
                     <li style="margin-top: 2%;margin-bottom: 2%;"  ><a routerLink="/viewprofile" style="text-decoration: none;color:aliceblue ;"><i class="fas fa-qrcode" style="margin-right:2% ;" ></i>View Profile</a></li>
                      <li style="margin-bottom: 2%;"><a routerLink="/editprofile" style="text-decoration: none;color:aliceblue ;"><i class="fas fa-link" style="margin-right:2% ;" ></i>Edit Profile</a></li>
@@ -131,7 +131,7 @@
                         </div>
                         <div class="row">
                             <div class="col-md-3">
-                                <button (click)="submit()" class="btn btn-sm p-3" style="background-color:rgb(65, 140, 214);color: aliceblue;" mat-raised-button color="accent">Submit</button>
+                                <button routerLink="/viewprofile" (click)="submit()" class="btn btn-sm p-3" style="background-color:rgb(65, 140, 214);color: aliceblue;" mat-raised-button color="accent">Submit</button>
                 
                             </div>
                         </div>

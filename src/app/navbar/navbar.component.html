@@ -35,30 +35,31 @@
       </span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav" style="width: 90%;">
-        <!-- <li class="nav-item active">
+      <ul class="navbar-nav" style="width: 100%;">
+         <!-- <li class="nav-item active">
           <a routerLink="dashboard" class="nav-link" style="color: aliceblue;">Dashboard </a>
-        </li> -->
+        </li>  -->
         <li class="nav-item">
           <a routerLink="dashboard" class="nav-link" style="font-weight: bolder;color: aliceblue;padding-left: 17px;" ><i style="padding-right:5px" class="fas fa-tachometer-alt"></i>DASHBOARD</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="company" class="nav-link" style="color: aliceblue; width: 119px;"><i style="padding-right: 5px;" class="far fa-clone"></i>COMPANIES</a>
+      </li>
+      <li class="nav-item ">
+        <a routerLink="mock" class="nav-link" href="#" style="color: aliceblue;width: 74px;"><i style="padding-right: 5px;" class="far fa-calendar-alt"></i>MOCK</a>
+      </li>
+      <li class="nav-item "> 
+        <a routerLink="experiencelist" class="nav-link"  style="color: aliceblue; width: 127px;"><i   style="padding-right: 5px;"class="far fa-chart-bar"></i>EXPERIENCES</a>
       </li>
         
       
       </ul>
       
-      <ul class="navbar-nav" style="width: 100%;margin-left:30vw;">
-        <li class="nav-item">
-          <a  class="nav-link" style="font-weight: bolder;color: aliceblue;">{{checkUserLoginStatus.username}}</a>
+      <ul class="navbar-nav" style="margin-left:-5vw;">
+        <li class="nav-item" >
+          <a  class="nav-link" style="font-weight: bolder;color: aliceblue;font-size:large;"> {{checkUserLoginStatus.name}} </a>
         </li>
-        <li class="nav-item">
-          <a routerLink="company" class="nav-link" style="color: aliceblue; width: 119px;"><i style="padding-right: 5px;" class="far fa-clone"></i>COMPANIES</a>
-        </li>
-        <li class="nav-item ">
-          <a routerLink="mock" class="nav-link" href="#" style="color: aliceblue;width: 74px;"><i style="padding-right: 5px;" class="far fa-calendar-alt"></i>MOCK</a>
-        </li>
-        <li class="nav-item "> 
-          <a routerLink="experiencelist" class="nav-link"  style="color: aliceblue; width: 127px;"><i   style="padding-right: 5px;"class="far fa-chart-bar"></i>EXPERIENCES</a>
-        </li>
+        
         <li class="nav-item">
           <a class="nav-link">
 
@@ -96,7 +97,8 @@
 </div>
 
 <div *ngIf="!checkUserLoginStatus.status">
-  <nav class="navbar navbar-expand-lg navbar-light box" style="background-color:#4d4899;">
+  <!-- <nav class="navbar navbar-expand-lg navbar-light box" style="background-color:#4d4899;"> -->
+  <nav class="navbar navbar-expand-lg navbar-light box" style="background:linear-gradient(135deg, #6249c5 0%, #9882f3 100%);">
     <div class="image-cont">
       <img src="https://uploads-ssl.webflow.com/6209eec94ae14d8343731fcd/620b2de1bd235d0874b83a8d_interviewkickstart-logo.svg" alt="">
     </div>

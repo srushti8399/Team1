@@ -1,75 +1,102 @@
 
-
-
 <div class="test">
 	
-<div class="container" id="container">
-	<div class="form-container sign-up-container">
-		<form action="#">
-			<h1>Create Account</h1>
-			<div class="social-container">
-				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-			</div>
-			<span>or use your email for registration</span>
-			<input type="text" placeholder="Name" />
-			<input type="email" placeholder="Email" />
-			<input type="password" placeholder="Password" />
-			<button>Sign Up</button>
-		</form>
-	</div>
-	<div class="form-container sign-in-container">
-		<form #personForm="ngForm" (ngSubmit)="savePerson(personForm)">
-			<h1 style="margin-top:3% ;margin-left:11%;color: rgb(21, 109, 196);">Register</h1>
-
-			<mat-form-field>
-				<mat-label   style="color: rgb(21, 109, 196);">Email Id</mat-label>
-				<br>
-				<input class="inneruser" required id="username" email type="email" #emailControl="ngModel"  name="username" [(ngModel)]="username" matInput >
-				<mat-error *ngIf="emailControl.invalid && emailControl.value==''">
-					Email is <strong>required</strong>
-				  </mat-error>
-				  <mat-error *ngIf="emailControl.errors?.['email']">
-					Email is <strong>incorrect</strong>
-				  </mat-error>
-			  </mat-form-field>
-			  <mat-form-field  >
-				<mat-label  style="color: rgb(21, 109, 196);">Password</mat-label>
-				<br>
-
-				<input class="inneruser" required id="password" email type="password" #passwordControl="ngModel"  name="password" [(ngModel)]="password" matInput >
-				<mat-error *ngIf="passwordControl.invalid && passwordControl.value==''">
-					Password is <strong>required</strong>
-				  </mat-error>
-				 
-			  </mat-form-field>
-			<!-- test -->
-			<button style="margin-top: 2%;">Sign Up</button>
-			
-		</form>
-	</div>
-	<div class="overlay-container" >
-		<div class="overlay">
-			<div class="overlay-panel overlay-left">
-				
-				<h1>Welcome Back!</h1>
-				<p>To keep connected with us please login with your personal info</p>
-				<button class="ghost" id="signIn">Sign In</button>
-			</div>
-			<div class="overlay-panel overlay-right" >
-				<div style="background-image: url( 'https://assets.interviewbit.com/assets/ibpp/SAT-2a8bf1f7f36e5528324b05cba08730e687a5c6a1db6449b2e25e497b2da43771.svg.gz' ) !important;background-repeat: no-repeat;height: 30%;width: 100%;margin-bottom: 2%;">
-
+	<div class="container" id="container">
+	
+	
+	
+		<div class="form-container sign-up-container">
+			<form action="#">
+				<h1>Create Account</h1>
+				<div class="social-container">
+					<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+					<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+					<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
 				</div>
-				<h1>Career KickStart</h1>
-				<p>Enter your personal details and start journey with us</p>
-				<button routerLink="login" class="ghost" id="signUp">
-					<a style="color:white ;" href="/login">Sign In</a>
-					</button>
-			</div>
-		</div>
-	</div>
-</div>
-</div>
+				<span>or use your email for bfbregistration</span>
+				<input type="text" placeholder="Name" />
+				<input type="email" placeholder="Email" />
+				<input type="password" placeholder="Password" />
+				<button>Sign Up</button>
+			</form>
+		</div> 
+		<div class="form-container sign-in-container">
+			<form #personForm="ngForm" (ngSubmit)="savePerson(personForm)">
+				<div [ngStyle]="{'height': dis ? '70px' : '0px'}"></div>
 
-<div style="height:10%;"></div>
+				<h1 style="margin-top:3% ;margin-left:11%;color: rgb(21, 109, 196);">Register</h1>
+	
+				<mat-form-field class=""  >
+					<!-- <mat-label style="color: rgb(21, 109, 196);">Email Id</mat-label> -->
+					<!-- <br> -->
+					<p style="margin: 0px;color: rgb(21, 109, 196);">Username</p>
+					<input required  class="inneruser"  id="username"   type="email" #emailControl="ngModel"  name="username" [(ngModel)]="username" matInput >
+					 <mat-error>Email is <strong>required</strong></mat-error>
+					<!-- <mat-error class="err" *ngIf="emailControl.invalid && emailControl.value==''">
+						Email is <strong>required</strong>
+					  </mat-error>
+					  <mat-error *ngIf="emailControl.errors?.['email']">
+						Email is <strong>incorrect</strong>
+					  </mat-error> -->
+				  </mat-form-field>
+				  <mat-form-field  class="dist">
+					<!-- <mat-label  style="color: rgb(21, 109, 196);">Password</mat-label> -->
+					<!-- <br> -->
+					<p style="margin: 0px;color: rgb(21, 109, 196);">Password</p>
+					<input class="inneruser " required id="password"  email type="password" #passwordControl="ngModel"  name="password" [(ngModel)]="password" matInput >
+					<mat-error class="err" *ngIf="passwordControl.invalid && passwordControl.value==''">
+						Password is <strong>required</strong>
+					  </mat-error>
+					 
+				  </mat-form-field>
+				<!-- test -->
+				<button style="background-color: #856af4;">Sign Up</button>
+				<!-- <p *ngIf="message==''" style="color:#ea7f37 ;font-size:medium ;" [ngStyle]="{'display': dis ? 'block' : 'none'}">Please try again with right credentials</p> -->
+			<p *ngIf="message!=''" style="color:#ea7f37 ;font-size:medium ;padding-top: 0px;" [ngStyle]="{'display': dis ? 'block' : 'none'}">{{message}}</p>
+				
+			</form> 
+		</div>
+		<div class="overlay-container">
+			<div class="overlay">
+				<div class="overlay-panel overlay-left">
+					
+					<h1>Welcome Back!</h1>
+					<p>To keep connected with us please login with your personal info</p>
+					<button class="ghost" id="signIn">Sign In</button>
+				</div>
+				<div class="overlay-panel overlay-right">
+					<div style="background-image: url( 'https://assets.interviewbit.com/assets/ibpp/SAT-2a8bf1f7f36e5528324b05cba08730e687a5c6a1db6449b2e25e497b2da43771.svg.gz' ) !important;background-repeat: no-repeat;height: 30%;width: 100%;margin-bottom: 2%;">
+
+					</div>
+					<h1>Career KickStart</h1>
+					<p>Enter your personal details and start journey with us</p>
+					<button routerLink="register" class="ghost"  id="signUp">
+						
+							<a style="color:white" href="/login">
+								Sign In
+							</a>
+						</button>
+						
+						
+	
+						
+				</div>
+				
+				
+			</div>
+			
+			<br>
+					
+		</div> 
+		
+		
+	</div>
+	
+	
+	</div>
+	
+	<div style="height:80px ;">
+	
+	</div>
+	
+	

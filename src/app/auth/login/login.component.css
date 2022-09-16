@@ -168,9 +168,9 @@ input {
 }
 
 .overlay {
-	background: #FF416C;
-	background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
-	background: linear-gradient(to right, #FF4B2B, #FF416C);
+	background: #856af4;
+	background: -webkit-linear-gradient(to right, #856af4, #856af4);
+	background: linear-gradient(to right, #856af4, #856af4);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0 0;
@@ -261,7 +261,8 @@ footer a {
 
 .overlay-panel{
 	/* background-color:#333; */
-	background-color:rgb(21, 109, 196);
+	margin-top: 10% !important;
+	background-color:#856af4;
 	background-image: url( 'https://assets.interviewbit.com/assets/ibpp/banner-large-figure-b0a3ed9907d90e08b1c0132cf6cca0ddb5fae5ad74fe96bc3551b0f6dc1e7333.svg.gz' );
 	background-repeat: no-repeat;
 }
@@ -293,11 +294,31 @@ footer a {
   } 
 
   .inneruser{
-	border: 2px solid rgb(21, 109, 196) !important; 
-	background-color:whitesmoke ;
+	/* border: 2px solid rgb(21, 109, 196) !important;  */
+	background-color:white ;
 	border-radius: 20px;
-}
-
+	margin: 0px !important;
+	
+} 
+/* 
+.err{
+  margin-left: 5% !important;	
+} */
+/* 
 ::ng-deep .mat-form-field-underline {
     display: none;
+} */
+
+.dist {
+	margin-bottom: 4%;
 }
+
+
+input{
+    padding: 0px !important;
+   }
+
+
+   #cred{
+	display: none;
+   }
