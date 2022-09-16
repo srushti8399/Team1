@@ -1,7 +1,9 @@
 /* .example-card {
     max-width: 400px;
   } */
-
+ 
+ 
+/* material card */
 .materialcard{
   box-shadow: 10px 10px 5px lightblue;
   border: 1px solid grey;
