@@ -38,11 +38,16 @@
 	display: inline-block;
   }
 
+  .box:hover {
+    /* box-shadow: 0 0 22px rgba(33,33,33,.2); */
+    box-shadow: 0 0 20px grey;
+    
+  }
 
   /* page heading card */
   .heading-container{
     border: 1px solid;
-    margin-top: 50px;
+    margin-top: 20px;
     height: 25%;
     border-radius: 8px;
     width: 89%;

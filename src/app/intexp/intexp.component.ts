@@ -33,10 +33,10 @@ export class IntexpComponent implements OnInit {
     this.interviewExpArray[id-1].like = this.interviewExpArray[id-1].like +1;
   }
   
-  delete(id:any){
+  delete(obj:any){
 
     this._dialogue.open(DeleteDialogueComponent,{
-      data:id
+      data:obj
     })
   }
 
