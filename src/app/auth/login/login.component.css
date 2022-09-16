@@ -168,9 +168,9 @@ input {
 }
 
 .overlay {
-	background: #FF416C;
-	background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
-	background: linear-gradient(to right, #FF4B2B, #FF416C);
+	background: #856af4;
+	background: -webkit-linear-gradient(to right, #856af4, #856af4);
+	background: linear-gradient(to right, #856af4, #856af4);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0 0;
@@ -261,6 +261,7 @@ footer a {
 
 .overlay-panel{
 	/* background-color:#333; */
+	margin-top: 10% !important;
 	background-color:#856af4;
 	background-image: url( 'https://assets.interviewbit.com/assets/ibpp/banner-large-figure-b0a3ed9907d90e08b1c0132cf6cca0ddb5fae5ad74fe96bc3551b0f6dc1e7333.svg.gz' );
 	background-repeat: no-repeat;

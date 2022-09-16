@@ -134,6 +134,8 @@ html,body{
 
   .colorchange{
     color:rgb(21, 109, 196) !important ;
+    margin-left: 3% !important;
+
   }
 
   
@@ -160,6 +162,8 @@ html,body{
  
 .name{
   color:rgb(81, 157, 233) !important ;
+  margin-bottom: 5px !important;
+  margin-left: 3% !important;
 
 }
 

@@ -1,5 +1,6 @@
 <div class="container-fluid" style="display:flex;align-items: center;height: 100vh;">
-    <div class="remove box" style="height:100%;width: 20%;background:linear-gradient(135deg, #6249c5 0%, #9882f3 100%);">
+    <div class="remove box"
+        style="height:100%;width: 20%;background:linear-gradient(135deg, #6249c5 0%, #9882f3 100%);">
         <ul style="list-style:none;margin-top:34%;color:aliceblue ;">
             <li style="margin-bottom:10%;"><a class="txt" routerLink="/viewprofile"
                     style="text-decoration: none;color:aliceblue ;"><i class="fas fa-qrcode"
@@ -20,7 +21,8 @@
     <div style="height:400px ;width: 80%;">
 
         <!-- test  -->
-        <div class="remove-top" style="background:linear-gradient(135deg, #6249c5 0%, #9882f3 100%);display: flex;width: 100%;margin-left: 10%;">
+        <div class="remove-top"
+            style="background:linear-gradient(135deg, #6249c5 0%, #9882f3 100%);display: flex;width: 100%;margin-left: 10%;">
             <ul style="list-style:none;color:aliceblue;width: 100%;">
                 <li style="margin-top: 2%;margin-bottom: 2%;"><a routerLink="/viewprofile"
                         style="text-decoration: none;color:aliceblue ;"><i class="fas fa-qrcode"
@@ -38,16 +40,14 @@
 
         <!-- test  -->
 
-        <div class="container">
+        <div class="container" >
 
-            <div class="row" style="width:30% ;">
-
-            </div>
+           
             <div class="row">
                 <div class="col-md-1">
 
                 </div>
-                <div class="col-md-11">
+                <div class="col-md-10">
 
                     <div class="container">
 
@@ -63,231 +63,57 @@
                                         <div class="shadow mb-3 bg-white rounded">
                                             <div class="card" style="border-radius: 15px; width: 100% !important;">
                                                 <div class="card-body p-5">
-                                                   
-
-                                                    <div class="container">
-                                                        <div class="col-md-6 padd">
-
-                                                            <h2 class="text-uppercase  mb-3">Profile Details</h2>
-
-                                                        </div>
-                                                        <div class="row">
-
-                                                            <div class="col-md-1">
-
-                                                            </div>
-                                                            <div class="col-md-10">
-                                                                <div class="row">
-                                                                    
-                                                                    <div class="col-md-6 padd">
-                                                                        
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-1">
-                                                               
-
-                                                            </div>
 
 
+                                                    
+                                                    <!-- test -->
+                                                    <table class="table table-hover">
+                                                        <thead>
+                                                          <tr>
+                                                           
+                                                            <th scope="col">Name</th>
+                                                            <th scope="col">{{dataTofill.name}}</th>
+                                                            
+                                                          </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                          <tr>
+                                                            <td>Email</td>
+                                                            <td>{{dataTofill.email}}</td>
+                                                          </tr>
+                                                          <tr>
+                                                            <td>Mobile</td>
+                                                            <td>{{dataTofill.mobile}}</td>
+                                                          </tr>
+                                                          <tr>
+                                                            <td>College</td>
+                                                            <td>{{dataTofill.college}}</td>
+                                                          </tr>
+                                                          <tr>
+                                                            <td>Branch</td>
+                                                            <td>{{dataTofill.branch}}</td>
+                                                          </tr>
+                                                          <tr>
+                                                            <td>Batch</td>
+                                                            <td>{{dataTofill.batch}}</td>
+                                                          </tr>
+                                                          <tr>
+                                                            <td>Skills</td>
+                                                            <td>{{dataTofill.skills}}</td>
+                                                          </tr>
+                                                          <!-- <tr>
+                                                            <td colspan="2">Larry the Bird</td>
+                                                          </tr> -->
+                                                        </tbody>
+                                                      </table>
 
+                                                      <button mat-icon-button
+                                                      routerLink="/editprofile" class="blue"
+                                                      class="btn mt-3 btn-primary button5">
+                                                      <mat-icon>edit</mat-icon>
+                                                  </button>
+                                                    <!-- test -->
 
-                                                            <div class="col-md-1">
-
-                                                            </div>
-                                                            <div class="col-md-10">
-                                                                <div class="row">
-                                                                    <div class="col-md-6 padd">
-
-                                                                      
-                                                                        <div class="row">
-                                                                            <div class="col-md-4">
-                                                                                <h3>
-                                                                                    <strong> Name:</strong> 
-                                                                                </h3>
-                                                                            </div>
-                                                                            <div class="col-md-8">
-                                                                                <h3>
-                                                                                  {{dataTofill.name}}
-                                                                                </h3>
-                                                                            </div>
-                                                                        </div>
-
-                                                                        
-
-                                                                    </div>
-                                                                    <div class="col-md-6 padd">
-
-                                                                        <div class="row">
-                                                                            <div class="col-md-4">
-                                                                                <h3>
-                                                                                    <strong> College:</strong> 
-                                                                                </h3>
-                                                                            </div>
-                                                                            <div class="col-md-8">
-                                                                                <h3>
-                                                                                  {{dataTofill.college}}
-                                                                                </h3>
-                                                                            </div>
-                                                                        </div>
-                                                                      
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-1">
-                                                               
-
-                                                            </div>
-
-                                                            <!-- row 2 -->
-                                                            <div class="col-md-1">
-
-                                                            </div>
-                                                            <div class="col-md-10">
-                                                                <div class="row">
-                                                                    <div class="col-md-6 padd">
-
-                                                                        <div class="row">
-                                                                            <div class="col-md-4">
-                                                                                <h3>
-                                                                                    <strong> Branch:</strong> 
-                                                                                </h3>
-                                                                            </div>
-                                                                            <div class="col-md-8">
-                                                                                <h3>
-                                                                                  {{dataTofill.branch}}
-                                                                                </h3>
-                                                                            </div>
-                                                                        </div>
-
-                                                                        
-
-                                                                    </div>
-                                                                    <div class="col-md-6 padd">
-
-                                                                        <div class="row">
-                                                                            <div class="col-md-4">
-                                                                                <h3>
-                                                                                    <strong> Mobile:</strong> 
-                                                                                </h3>
-                                                                            </div>
-                                                                            <div class="col-md-8">
-                                                                                <h3>
-                                                                                  {{dataTofill.mobile}}
-                                                                                </h3>
-                                                                            </div>
-                                                                        </div>
-                                                                       
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-1">
-                                                               
-
-                                                            </div>
-
-
-                                                            <!-- row 3  -->
-                                                            <div class="col-md-1">
-
-                                                            </div>
-                                                            <div class="col-md-10">
-                                                                <div class="row">
-                                                                    <div class="col-md-6 padd">
-                                                                        <div class="row">
-                                                                            <div class="col-md-4">
-                                                                                <h3>
-                                                                                    <strong> Email:</strong> 
-                                                                                </h3>
-                                                                            </div>
-                                                                            <div class="col-md-8">
-                                                                                <h3>
-                                                                                  {{dataTofill.email}}
-                                                                                </h3>
-                                                                            </div>
-                                                                        </div>
-                                                                       
-                                                                    </div>
-                                                                    <div class="col-md-6 padd">
-                                                                        <div class="row">
-                                                                            <div class="col-md-4">
-                                                                                <h3>
-                                                                                    <strong> Batch:</strong> 
-                                                                                </h3>
-                                                                            </div>
-                                                                            <div class="col-md-8">
-                                                                                <h3>
-                                                                                  {{dataTofill.batch}}
-                                                                                </h3>
-                                                                            </div>
-                                                                        </div>
-                                                                       
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-1">
-                                                               
-
-                                                            </div>
-
-                                                            <!-- row 4  -->
-                                                            <div class="col-md-1">
-
-                                                            </div>
-                                                            <div class="col-md-10">
-                                                                <div class="row">
-                                                                    <div class="col-md-6 padd">
-                                                                        <div class="row">
-                                                                            <div class="col-md-4">
-                                                                                <h3>
-                                                                                    <strong> Skills:</strong> 
-                                                                                </h3>
-                                                                            </div>
-                                                                            <div class="col-md-8">
-                                                                                <h3>
-                                                                                  {{dataTofill.skills}}
-                                                                                </h3>
-                                                                            </div>
-                                                                        </div>
-
-                                                                       
-
-                                                                    </div>
-                                                                    
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-1">
-                                                               
-
-                                                            </div>
-
-                                                            <!-- row 5  -->
-                                                            <div class="col-md-1">
-
-                                                            </div>
-                                                            <div class="col-md-10">
-                                                                <div class="row">
-                                                                    <div class="col-md-6 padd">
-
-                                                                        <h3>
-                                                                            <!-- <button class="btn btn-sm"
-                                                                            style="background-color:rgb(65, 140, 214);color: aliceblue;padding: 10px;"
-                                                                            mat-raised-button color="accent">Edit</button> -->
-                                                                            <!-- <button mat-icon-button routerLink="/editprofile"  class="blue" class="btn btn-outline-primary" >
-                                                                                <mat-icon class="m-3">edit</mat-icon>
-                                                                              </button> -->
-                                                                        </h3>
-
-                                                                    </div>
-                                                                  
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-1">
-                                                               
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
 
 
 
@@ -297,7 +123,7 @@
                                     </div>
                                 </div>
 
-                               
+
 
                             </div>
 
@@ -306,4 +132,6 @@
                     </div>
                 </div>
             </div>
+        </div>
+
         </div>

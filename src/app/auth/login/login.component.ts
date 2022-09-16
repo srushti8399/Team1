@@ -22,7 +22,11 @@ export class LoginComponent implements OnInit {
 
   username: string = "";
   password: string = "";
+
+  isPass:boolean=false;
   dis: boolean = false;
+
+  message:string="";
   
 
 
@@ -37,8 +41,27 @@ export class LoginComponent implements OnInit {
 
   savePerson(form: NgForm) {
 
+    
+   if(this.username=="" && this.password=="")
+   {
+    this.message="username and password is empty"
+   }
+   else
+   if(this.username=="")
+   {
+    this.message = "username is empty"
+    this.dis=true;
+   }
+   else
+   if(this.password=="")
+   {
+    this.message = "password is empty"
+    this.dis=true;
+   }
+   else 
+   {
     this.obj.dosomething(this.username, this.password).subscribe((item:any) => {
-      
+    
       console.log(item);
       
        if (item.username != "" && item.status == true) {
@@ -49,11 +72,13 @@ export class LoginComponent implements OnInit {
       }
       else {
         this.dis=true;
+        this.message = ""
         // alert("wrong credentials")
         localStorage.clear();
         this.router.navigate(['/login'])
       }
     });
+   }
 
     
 

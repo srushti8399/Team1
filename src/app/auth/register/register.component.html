@@ -19,9 +19,11 @@
 				<input type="password" placeholder="Password" />
 				<button>Sign Up</button>
 			</form>
-		</div>
+		</div> 
 		<div class="form-container sign-in-container">
 			<form #personForm="ngForm" (ngSubmit)="savePerson(personForm)">
+				<div [ngStyle]="{'height': dis ? '70px' : '0px'}"></div>
+
 				<h1 style="margin-top:3% ;margin-left:11%;color: rgb(21, 109, 196);">Register</h1>
 	
 				<mat-form-field class=""  >
@@ -48,7 +50,9 @@
 					 
 				  </mat-form-field>
 				<!-- test -->
-				<button>Sign Up</button>
+				<button style="background-color: #856af4;">Sign Up</button>
+				<!-- <p *ngIf="message==''" style="color:#ea7f37 ;font-size:medium ;" [ngStyle]="{'display': dis ? 'block' : 'none'}">Please try again with right credentials</p> -->
+			<p *ngIf="message!=''" style="color:#ea7f37 ;font-size:medium ;padding-top: 0px;" [ngStyle]="{'display': dis ? 'block' : 'none'}">{{message}}</p>
 				
 			</form> 
 		</div>

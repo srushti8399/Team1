@@ -71,6 +71,7 @@ body{
   background-clip: border-box;
   border: 0 solid rgba(0,0,0,.125);
   border-radius: .25rem;
+
 }
 
 .card-body {
@@ -106,11 +107,18 @@ body{
 .blue{
   color: rgb(45, 144, 236);
 }
-
+/* 
 h3{
   color: rgb(25, 134, 236) !important;
 }
 
 h2{
   color: rgb(12, 122, 225);
+} */
+
+
+.button5{
+  
+   border-radius: 40%;
+   padding: 2%;
 }

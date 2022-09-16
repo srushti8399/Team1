@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
+import { DeleteDialogueComponent } from './dialog/delete.dialogue';
 import { InterviewExperienceDBService } from './intexp.db.service';
 
 @Component({
@@ -11,7 +13,7 @@ export class IntexpComponent implements OnInit {
 
   interviewExpArray:any[] = [];
   
-  constructor(private _db:InterviewExperienceDBService,private _route:Router)
+  constructor(private _dialogue:MatDialog,private _db:InterviewExperienceDBService,private _route:Router)
    { }
 
   ngOnInit(): void {
@@ -32,14 +34,13 @@ export class IntexpComponent implements OnInit {
   }
   
   delete(id:any){
-    this._db.deleteInterviewExperience(id).subscribe({
-      next:(res)=>{
-        alert("deleted successfully")
-      }
+
+    this._dialogue.open(DeleteDialogueComponent,{
+      data:id
     })
-    window.location.reload()
   }
 
+  
   edit(id:any){
     this._route.navigate(['/edit',id])
   }
