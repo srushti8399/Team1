@@ -1,5 +1,5 @@
 <div class="container-fluid" style="display:flex;align-items: center;height: 100vh;">
-    <div class="remove box" style="height:100%;width: 20%;background-color:rgb(21, 109, 196);">
+    <div class="remove box" style="height:100%;width: 20%;background:linear-gradient(135deg, #6249c5 0%, #9882f3 100%);">
         <ul style="list-style:none;margin-top:34%;color:aliceblue ;">
             <li style="margin-bottom:10%;"><a class="txt" routerLink="/viewprofile"
                     style="text-decoration: none;color:aliceblue ;"><i class="fas fa-qrcode"
@@ -20,7 +20,7 @@
     <div style="height:400px ;width: 80%;">
 
         <!-- test  -->
-        <div class="remove-top" style="background-color:rgb(21, 109, 196);display: flex;width: 100%;margin-left: 10%;">
+        <div class="remove-top" style="background:linear-gradient(135deg, #6249c5 0%, #9882f3 100%);display: flex;width: 100%;margin-left: 10%;">
             <ul style="list-style:none;color:aliceblue;width: 100%;">
                 <li style="margin-top: 2%;margin-bottom: 2%;"><a routerLink="/viewprofile"
                         style="text-decoration: none;color:aliceblue ;"><i class="fas fa-qrcode"
@@ -66,6 +66,11 @@
                                                    
 
                                                     <div class="container">
+                                                        <div class="col-md-6 padd">
+
+                                                            <h2 class="text-uppercase  mb-3">Profile Details</h2>
+
+                                                        </div>
                                                         <div class="row">
 
                                                             <div class="col-md-1">
@@ -73,11 +78,7 @@
                                                             </div>
                                                             <div class="col-md-10">
                                                                 <div class="row">
-                                                                    <div class="col-md-6 padd">
-
-                                                                        <h2 class="text-uppercase  mb-3">Profile Details</h2>
-
-                                                                    </div>
+                                                                    
                                                                     <div class="col-md-6 padd">
                                                                         
                                                                     </div>
@@ -98,14 +99,38 @@
                                                                 <div class="row">
                                                                     <div class="col-md-6 padd">
 
-                                                                        <h3>
-                                                                            <strong> Name:</strong> {{dataTofill.name}}
-                                                                        </h3>
+                                                                      
+                                                                        <div class="row">
+                                                                            <div class="col-md-4">
+                                                                                <h3>
+                                                                                    <strong> Name:</strong> 
+                                                                                </h3>
+                                                                            </div>
+                                                                            <div class="col-md-8">
+                                                                                <h3>
+                                                                                  {{dataTofill.name}}
+                                                                                </h3>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        
 
                                                                     </div>
                                                                     <div class="col-md-6 padd">
-                                                                        <h3><strong>College:</strong>
-                                                                            {{dataTofill.colege}}</h3>
+
+                                                                        <div class="row">
+                                                                            <div class="col-md-4">
+                                                                                <h3>
+                                                                                    <strong> College:</strong> 
+                                                                                </h3>
+                                                                            </div>
+                                                                            <div class="col-md-8">
+                                                                                <h3>
+                                                                                  {{dataTofill.college}}
+                                                                                </h3>
+                                                                            </div>
+                                                                        </div>
+                                                                      
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -122,14 +147,37 @@
                                                                 <div class="row">
                                                                     <div class="col-md-6 padd">
 
-                                                                        <h3>
-                                                                            <strong> Branch:</strong> {{dataTofill.branch}}
-                                                                        </h3>
+                                                                        <div class="row">
+                                                                            <div class="col-md-4">
+                                                                                <h3>
+                                                                                    <strong> Branch:</strong> 
+                                                                                </h3>
+                                                                            </div>
+                                                                            <div class="col-md-8">
+                                                                                <h3>
+                                                                                  {{dataTofill.branch}}
+                                                                                </h3>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        
 
                                                                     </div>
                                                                     <div class="col-md-6 padd">
-                                                                        <h3><strong>Mobile:</strong>
-                                                                            {{dataTofill.mobile}}</h3>
+
+                                                                        <div class="row">
+                                                                            <div class="col-md-4">
+                                                                                <h3>
+                                                                                    <strong> Mobile:</strong> 
+                                                                                </h3>
+                                                                            </div>
+                                                                            <div class="col-md-8">
+                                                                                <h3>
+                                                                                  {{dataTofill.mobile}}
+                                                                                </h3>
+                                                                            </div>
+                                                                        </div>
+                                                                       
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -146,15 +194,34 @@
                                                             <div class="col-md-10">
                                                                 <div class="row">
                                                                     <div class="col-md-6 padd">
-
-                                                                        <h3>
-                                                                            <strong> Email:</strong> {{dataTofill.email}}
-                                                                        </h3>
-
+                                                                        <div class="row">
+                                                                            <div class="col-md-4">
+                                                                                <h3>
+                                                                                    <strong> Email:</strong> 
+                                                                                </h3>
+                                                                            </div>
+                                                                            <div class="col-md-8">
+                                                                                <h3>
+                                                                                  {{dataTofill.email}}
+                                                                                </h3>
+                                                                            </div>
+                                                                        </div>
+                                                                       
                                                                     </div>
                                                                     <div class="col-md-6 padd">
-                                                                        <h3><strong>Batch:</strong>
-                                                                            {{dataTofill.batch}}</h3>
+                                                                        <div class="row">
+                                                                            <div class="col-md-4">
+                                                                                <h3>
+                                                                                    <strong> Batch:</strong> 
+                                                                                </h3>
+                                                                            </div>
+                                                                            <div class="col-md-8">
+                                                                                <h3>
+                                                                                  {{dataTofill.batch}}
+                                                                                </h3>
+                                                                            </div>
+                                                                        </div>
+                                                                       
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -169,11 +236,21 @@
                                                             </div>
                                                             <div class="col-md-10">
                                                                 <div class="row">
-                                                                    <div class="col-md-12 padd">
+                                                                    <div class="col-md-6 padd">
+                                                                        <div class="row">
+                                                                            <div class="col-md-4">
+                                                                                <h3>
+                                                                                    <strong> Skills:</strong> 
+                                                                                </h3>
+                                                                            </div>
+                                                                            <div class="col-md-8">
+                                                                                <h3>
+                                                                                  {{dataTofill.skills}}
+                                                                                </h3>
+                                                                            </div>
+                                                                        </div>
 
-                                                                        <h3>
-                                                                            <strong> Skills:</strong> {{dataTofill.skills}}
-                                                                        </h3>
+                                                                       
 
                                                                     </div>
                                                                     

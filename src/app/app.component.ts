@@ -21,6 +21,8 @@ export class AppComponent implements OnInit {
     username: "",
     status: false
   }
+
+  dat: any = {};
  
   ngOnInit(): void {
   } 
@@ -29,7 +31,9 @@ export class AppComponent implements OnInit {
   {
     if(localStorage.getItem("islogin")=="true")
     {
-      this.temp.username = localStorage.getItem("userM");
+      this.dat = localStorage.getItem("profile");
+      this.dat = JSON.parse(this.dat);
+      this.temp.name = this.dat.name;
       this.temp.status = true;
     } 
     return this.temp;

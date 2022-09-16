@@ -21,25 +21,31 @@
 		</form>
 	</div>
 	<div class="form-container sign-in-container">
+		
 		<form #personForm="ngForm" (ngSubmit)="savePerson(personForm)">
+			<p [ngStyle]="{'display': dis ? 'block' : 'none'}">Plese provide right credentials</p>
 			<h1 style="margin-top:3% ;margin-left:11%;color: rgb(21, 109, 196);">Login</h1>
 
 			<mat-form-field class="user"  >
-				<mat-label style="color: rgb(21, 109, 196);">Email Id</mat-label>
-				<br>
+				<!-- <mat-label style="color: rgb(21, 109, 196);">Email Id</mat-label> -->
+				<!-- <br> -->
+				<p style="margin: 0px;color: rgb(21, 109, 196);">Username</p>
+
 				<input class="inneruser" required id="username" email type="email" #emailControl="ngModel"  name="username" [(ngModel)]="username" matInput >
-				<mat-error *ngIf="emailControl.invalid && emailControl.value==''">
+				<mat-error class="err" *ngIf="emailControl.invalid && emailControl.value==''">
 					Email is <strong>required</strong>
 				  </mat-error>
 				  <mat-error *ngIf="emailControl.errors?.['email']">
 					Email is <strong>incorrect</strong>
 				  </mat-error>
 			  </mat-form-field>
-			  <mat-form-field  >
-				<mat-label  style="color: rgb(21, 109, 196);">Password</mat-label>
-				<br>
+			  <mat-form-field  class="dist">
+				<!-- <mat-label  style="color: rgb(21, 109, 196);">Password</mat-label> -->
+				<!-- <br> -->
+				<p style="margin: 0px;color: rgb(21, 109, 196);">Password</p>
+
 				<input class="inneruser" required id="password" email type="password" #passwordControl="ngModel"  name="password" [(ngModel)]="password" matInput >
-				<mat-error *ngIf="passwordControl.invalid && passwordControl.value==''">
+				<mat-error class="err" *ngIf="passwordControl.invalid && passwordControl.value==''">
 					Password is <strong>required</strong>
 				  </mat-error>
 				 

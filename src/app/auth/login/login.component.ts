@@ -18,8 +18,12 @@ import { ErrorStateMatcher } from '@angular/material/core';
 export class LoginComponent implements OnInit {
 
 
-  username: string = "dell@gmail.com";
-  password: string = "dell";
+
+
+  username: string = "";
+  password: string = "";
+  dis: boolean = false;
+  
 
 
 
@@ -44,7 +48,8 @@ export class LoginComponent implements OnInit {
        
       }
       else {
-        alert("wrong credentials")
+        this.dis=true;
+        // alert("wrong credentials")
         localStorage.clear();
         this.router.navigate(['/login'])
       }
