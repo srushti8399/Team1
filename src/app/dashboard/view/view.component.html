@@ -10,10 +10,10 @@
                     style="text-decoration: none;color:aliceblue ;"><i class="fas fa-link"
                         style="margin-right:5px ;"></i>Edit Profile</a></li>
             <hr style="margin-bottom:10% ;">
-            <li style="margin-bottom:10%;"><a class="txt" href="#" style="text-decoration: none;color:aliceblue ;"><i
-                        class="fas fa-stream" style="margin-right:5px ;"></i>Forgot Password</a></li>
+            <li routerLink="/company" style="margin-bottom:10%;"><a class="txt" href="#" style="text-decoration: none;color:aliceblue ;"><i
+                        class="fas fa-stream" style="margin-right:5px ;"></i>My jobs</a></li>
             <hr style="margin-bottom:10% ;">
-            <li><a class="txt" style="text-decoration: none;color:aliceblue ;"><i class="fas fa-calendar-week"
+            <li><a routerLink="/mock/schedule" class="txt" style="text-decoration: none;color:aliceblue ;"><i class="fas fa-calendar-week"
                         style="margin-right:5px ;"></i>My Interviews</a></li>
 
         </ul>
@@ -49,7 +49,7 @@
                 </div>
                 <div class="col-md-10">
 
-                    <div class="container">
+                    <div class="container tmp" >
 
                         <div class="row">
 
@@ -83,23 +83,39 @@
                                                           </tr>
                                                           <tr>
                                                             <td>Mobile</td>
-                                                            <td>{{dataTofill.mobile}}</td>
+                                                            <td  *ngIf="dataTofill.mobile!=''">{{dataTofill.mobile}}</td>
+                                                            <td *ngIf="dataTofill.mobile==''">
+                                                              <i style="color:red ;">not provided</i>
+                                                            </td>
                                                           </tr>
                                                           <tr>
                                                             <td>College</td>
-                                                            <td>{{dataTofill.college}}</td>
+                                                            <td *ngIf="dataTofill.college!=''" >{{dataTofill.college}}</td>
+                                                            <td *ngIf="dataTofill.college==''">
+                                                              <i style="color:red ;">not provided</i>
+                                                            </td>
+
                                                           </tr>
                                                           <tr>
                                                             <td>Branch</td>
-                                                            <td>{{dataTofill.branch}}</td>
+                                                            <td  *ngIf="dataTofill.branch!=''">{{dataTofill.branch}}</td>
+                                                            <td *ngIf="dataTofill.branch==''">
+                                                              <i style="color:red ;">not provided</i>
+                                                            </td>
                                                           </tr>
                                                           <tr>
                                                             <td>Batch</td>
-                                                            <td>{{dataTofill.batch}}</td>
+                                                            <td  *ngIf="dataTofill.batch!=''">{{dataTofill.batch}}</td>
+                                                            <td *ngIf="dataTofill.batch==''">
+                                                              <i style="color:red ;">not provided</i>
+                                                            </td>
                                                           </tr>
                                                           <tr>
                                                             <td>Skills</td>
-                                                            <td>{{dataTofill.skills}}</td>
+                                                            <td  *ngIf="dataTofill.skills!=''">{{dataTofill.skills}}</td>
+                                                            <td *ngIf="dataTofill.skills==''">
+                                                              <i style="color:red ;">not provided</i>
+                                                            </td>
                                                           </tr>
                                                           <!-- <tr>
                                                             <td colspan="2">Larry the Bird</td>

@@ -18,6 +18,10 @@
 	.remove-top{
     display: none !important;
   }
+  .tmp 
+  {
+    margin-top:-5% ;
+  }
   
   } 
 
