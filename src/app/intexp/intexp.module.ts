@@ -17,6 +17,7 @@ import { DeleteDialogueComponent } from './dialog/delete.dialogue';
 import { AddSuccessDialogComponent } from './dialog/add-success.dialogue';
 import { AddErrorDialogComponent } from './dialog/add-error.dialogue';
 import { EditSuccessDialogComponent } from './dialog/edit-success.dialogue';
+import { DeleteSuccessDialogComponent } from './dialog/delete-success.dialog';
 
 
 @NgModule({
@@ -30,6 +31,7 @@ import { EditSuccessDialogComponent } from './dialog/edit-success.dialogue';
     AddSuccessDialogComponent,
     AddErrorDialogComponent,
     EditSuccessDialogComponent,
+    DeleteSuccessDialogComponent
   ],
   imports: [
     CommonModule,

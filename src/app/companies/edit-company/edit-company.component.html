@@ -1,4 +1,15 @@
-<h2 class="text-uppercase text-center mb-5 padding" style="margin-top: 30px;">Job Details</h2>
+<div class="row">
+  <div class="col-md-1"></div>
+  <div class="col-md-7">
+
+<h2 class="text-uppercase  mb-5 padding" style="margin-top: 30px; font-size: 2rem; text-transform: uppercase;
+color: #7f22ea; font-family: monospace;">Job Details</h2>
+</div>
+<div class="col-md-2" style="margin-left: 60px;">
+
+  <button class="btn btn-outline-dark btn-lg button5 mb-5" style="margin-top: 30px;"  type="button" name="submitbutton1" (click)="BackToCompany()" >Back</button>
+</div>
+</div>
 <form class="center padding-table" [formGroup]="companyForm"  >
    
  <div class="row" style="width:100%">
@@ -120,8 +131,8 @@
   
   
  <button class="btn btn-primary btn-lg" type="button" name="submitbutton" (click)="submit()" >Update</button>
- <div class="space"></div>
- <button class="btn btn-outline-dark btn-lg" type="button" name="submitbutton1" (click)="BackToCompany()" >Back</button>
+ <!-- <div class="space"></div>
+ <button class="btn btn-outline-dark btn-lg" type="button" name="submitbutton1" (click)="BackToCompany()" >Back</button> -->
   
   
   
