@@ -1,22 +1,28 @@
 .heading-container{
     border: 1px solid;
-    margin-top: 10px;
-    height: 70%;
+    margin-top: 50px;
+    height: 22%;
     border-radius: 8px;
-    width: 150%;
+    width: 94%;
     margin-left: 34px;
     background-color: #0A2541;
     background-image: url(https://classroom.codingninjas.com/banner-overlay.32948467e4c0a8257463.svg);
     background-repeat: no-repeat;
     background-position: 100%;
     background-size: auto 100%;
-  
-  }
-  
-  .banner-heading{
+
+}
+
+.banner-heading{
     color:#FFFFFF;
     font: 500 30px/37px Mulish,Roboto,Helvetica Neue,sans-serif;
     margin-top: 14px;
     margin-left: 21px;
-  
-  }
+
+}
+.banner-para{
+    color: #e1e1e3;
+    font: 400 16px/22px Mulish,Roboto,Helvetica Neue,sans-serif;
+    margin-top: -15px;
+    margin-left: 21px;
+}

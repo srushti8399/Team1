@@ -57,3 +57,7 @@ body{
     display: inline-block;
     }
     .button5 {border-radius: 10%;}
+
+    .row1{
+        margin-left: 30px;
+    }

@@ -1,7 +1,24 @@
+<div class="heading-container mb-24" style="height: 98px;">
+   <div class="heading-button" style=" margin-top: 17px;">
+    <h1 class="banner-heading mb-4" style="display: inline;">
+        {{postList.title}}
+    </h1>
+
+    <button style="float: right;float: right;
+    color: white;
+    height: 39px;
+    margin-right: 13px;
+    border-color: wheat;" class="btn btn-outline-dark"  name="submitbutton" (click)="BackToList()" ><mat-icon>arrow_back</mat-icon></button>
+</div>
+    <p class="banner-para" style="padding-top: 15px;
+    padding-left: 4px;">
+        Created By:- {{postList.authorName}} || {{postList.date|date:'yyyy-MM-dd'}}
+    </p>
+</div>
 <div class="row" style="width: 100%;margin-top: 30px;" >
     <div class="col-md-1"></div>
     <div class="col-md-8">
-        <h1 style="font-weight: bold;font-size: xx-large;">{{postList.title}}</h1>
+        <!-- <h1 style="font-weight: bold;font-size: xx-large;">{{postList.title}}</h1> -->
     </div>
     
         <!-- <button style="margin-right:100px;float: right;" mat-icon-button class="blue" (click)="edit(postList.id)"
@@ -10,7 +27,7 @@
         </button>
      -->
     <div class="col-md-1">
-        <button style="float: right;" class="btn btn-outline-dark"  name="submitbutton" (click)="BackToList()" >Back</button>
+        <!-- <button style="float: right;" class="btn btn-outline-dark"  name="submitbutton" (click)="BackToList()" >Back</button> -->
     </div>
 </div>
 
