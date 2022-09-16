@@ -13,7 +13,7 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	height: 100vh;
 	margin: -20px 0 50px;
-	
+
 }
 
 h1 {
@@ -47,7 +47,7 @@ a {
 button {
 	border-radius: 20px;
 	border: 1px solid #FF4B2B;
-	background-color:rgb(21, 109, 196);
+	background-color: rgb(21, 109, 196);
 	color: #FFFFFF;
 	font-size: 12px;
 	font-weight: bold;
@@ -107,14 +107,19 @@ input {
 	top: 0;
 	height: 100%;
 	transition: all 0.6s ease-in-out;
+	
 }
 
-.sign-up-container {
+
+	
+
+
+.sign-in-container {
 	left: 0;
 	width: 50%;
 	z-index: 2;
-
-	
+	background-image: url( 'https://assets.interviewbit.com/assets/ibpp/SAT-2a8bf1f7f36e5528324b05cba08730e687a5c6a1db6449b2e25e497b2da43771.svg.gz' ) !important;
+    background-repeat: no-repeat;
 }
 
 .container.right-panel-active .sign-in-container {
@@ -180,7 +185,6 @@ input {
 
 .container.right-panel-active .overlay {
   	transform: translateX(50%);
-	 
 }
 
 .overlay-panel {
@@ -196,7 +200,6 @@ input {
 	width: 50%;
 	transform: translateX(0);
 	transition: transform 0.6s ease-in-out;
-	
 }
 
 .overlay-left {
@@ -220,7 +223,7 @@ input {
 	margin: 20px 0;
 }
 
-.social-container a { 
+.social-container a {
 	border: 1px solid #DDDDDD;
 	border-radius: 50%;
 	display: inline-flex;
@@ -241,7 +244,6 @@ footer {
     right: 0;
     text-align: center;
     z-index: 999;
-	
 }
 
 footer p {
@@ -258,8 +260,12 @@ footer a {
 }
 
 .overlay-panel{
-	/* background-color:black; */
-	background-color:rgb(21, 109, 196);
+	/* background-color:#333; */
+	/* background:linear-gradient(135deg, #6249c5 0%, #9882f3 100%) !important; */
+
+	background-color:#856af4;
+	/* background-image: url( 'https://assets.interviewbit.com/assets/ibpp/SAT-2a8bf1f7f36e5528324b05cba08730e687a5c6a1db6449b2e25e497b2da43771.svg.gz' );  */
+	 /* background-repeat: no-repeat;  */
 }
 
 
@@ -283,17 +289,68 @@ footer a {
 	  display: flex;
 	justify-content: center;
 	color: green;
+	
 	margin-top: 10%;
 	}
   } 
 
-  
   .inneruser{
-	border: 2px solid rgb(21, 109, 196) !important; 
-	background-color:whitesmoke ;
-	border-radius: 20px;
+	/* border: 1px solid rgb(21, 109, 196) !important;  */
+	background-color:white ;
+	/* border-radius: 20px; */
+	margin: 0px !important;
+	/* color: white !important; */
+	width: 80% !important;
+	
+} 
+
+.err{
+  margin-left: 5% !important;	
 }
 
-::ng-deep .mat-form-field-underline {
+/* ::ng-deep .mat-form-field-underline {
     display: none;
+} */
+
+.dist {
+	margin-bottom: 4%;
+}
+
+.user {
+	position: relative;
+	top:-4%;
+}
+
+.mat-form-field-infix{
+	margin-bottom: 0px !important;
+	padding-bottom: 0px !important;
+}
+
+.inneruser:active {
+	border: none !important;
+    outline:none !important;
+}
+
+.inneruser {
+	border: none !important;
+    outline:none !important;
+}
+
+
+::placeholder {
+	color: white !important;
+	opacity: 1; /* Firefox */
+  }
+
+   .mat-input-placeholder {
+	color: #856af4 !important;
+	box-sizing: border-box;
+  }
+
+  input{
+    padding: 0px !important;
+   }
+
+   .dist {
+	margin-bottom: 4%;
 }

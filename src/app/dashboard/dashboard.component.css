@@ -29,19 +29,21 @@ html,body{
   
 }
 .card{
-  height: 280px;
+  height: 470px;
   max-width: 350px;
   margin: 0 20px;
-  background: white;
+  /* background: white; */
   transition: 0.4s;
   box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
 }
 .card:hover{
   height: 470px;
   box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+  /* background-color: rgb(21, 109, 196); */
 }
 .card .img{
   height: 200px;
+  padding: 4%;
   width: 100%;
 }
 .card .img img{
@@ -66,11 +68,14 @@ html,body{
 .card .bottom-text{
   padding: 0 20px 10px 20px;
   margin-top: 5px;
-  background: white;
-  opacity: 0;
-  visibility: hidden;
+  /* background: white; */
+
+  /* opacity: 0; */
+  /* visibility: hidden; */
   transition: 0.1s;
 }
+
+
 .card:hover .bottom-text{
   opacity: 1;
   visibility: visible;
@@ -93,6 +98,7 @@ html,body{
 }
 .card .bottom-text .btn a:hover{
   transform: scale(0.9);
+  /* background-color: rgb(21, 109, 196); */
 }
 @media screen and (max-width: 978px) {
   .container{
@@ -128,6 +134,8 @@ html,body{
 
   .colorchange{
     color:rgb(21, 109, 196) !important ;
+    margin-left: 3% !important;
+
   }
 
   
@@ -154,6 +162,8 @@ html,body{
  
 .name{
   color:rgb(81, 157, 233) !important ;
+  margin-bottom: 5px !important;
+  margin-left: 3% !important;
 
 }
 
@@ -168,8 +178,10 @@ html,body{
   }
 	.impone{
     position:relative;
-    top:120%;
+    top:150%;
     width: 80%;
     margin-left: 10%;
   }
   } 
+
+

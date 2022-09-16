@@ -78,7 +78,9 @@ export class ProfileComponent implements OnInit {
 
     this.auth.storeProfiletoDB(this.personForm.value).subscribe((res)=>{
       console.log(res);
-      alert("profile edited successfully")
+      // alert("profile edited successfully")
+      window.location.reload()
+      
     })
 
     // console.log(this.personForm.get('name')!.errors!['maxLength']);
