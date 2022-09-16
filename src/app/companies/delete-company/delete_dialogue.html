@@ -3,7 +3,9 @@
   Are you sure to delete the job details?
 </div>
 <div mat-dialog-actions>
-    <div class="row col-md-12">
+    <button mat-raised-button (click)="confirmDelete()" class="btn btn-danger">YES</button>
+    <button mat-raised-button  class="btn btn-primary" (click)="Nobutton()">NO</button>
+    <!-- <div class="row col-md-12">
         <div class="col-md-6"></div>
         <div class="col-md-3 mb-4">
             <button mat-raised-button (click)="confirmDelete()" class="btn btn-danger">YES</button>
@@ -12,5 +14,5 @@
         <div class="col-md-3 mb-4">
             <button mat-raised-button  class="btn btn-primary" (click)="Nobutton()">NO</button>
         </div>
-    </div>
+    </div> -->
 </div>
