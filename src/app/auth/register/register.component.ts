@@ -40,18 +40,18 @@ savePerson(form:NgForm){
 
   if(this.username=="" && this.password=="")
    {
-    this.message="username and password is empty"
+    this.message="username and password are required"
    }
    else
    if(this.username=="")
    {
-    this.message = "username is empty"
+    this.message = "username is required"
     this.dis=true;
    }
    else
    if(this.password=="")
    {
-    this.message = "password is empty"
+    this.message = "password is required"
     this.dis=true;
    }
    else 
@@ -65,7 +65,7 @@ savePerson(form:NgForm){
     else 
     if(this.username.length<2)
     {
-      this.message = "username legth must be 2 or more"
+      this.message = "username legth must be 5 or more"
       this.dis=true;
     }
     else 

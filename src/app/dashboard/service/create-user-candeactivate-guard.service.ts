@@ -1,14 +1,14 @@
 import { Injectable } from "@angular/core";
 import { ActivatedRouteSnapshot, CanDeactivate, RouterStateSnapshot, UrlTree } from "@angular/router";
 import { Observable } from "rxjs";
-import { CreateComponent } from "../create/create.component";
+import { ProfileComponent } from "../profile/profile.component";
 
  
 @Injectable()
 export class CreateUserCanDeactivateGuardService implements
- CanDeactivate<CreateComponent> {
+ CanDeactivate<ProfileComponent> {
     constructor(){}
-    canDeactivate(component: CreateComponent):boolean{
+    canDeactivate(component: ProfileComponent):boolean{
       console.log(component.personForm)
 
        if(component.personForm.dirty)

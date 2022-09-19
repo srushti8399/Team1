@@ -25,6 +25,9 @@ import { HomeModule } from './home/home.module';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatRadioModule} from '@angular/material/radio';
 import { MockDbService } from './mock/mock.db.service';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import { CreateUserCanDeactivateGuardService } from './dashboard/service/create-user-candeactivate-guard.service';
+import { DashService } from './auth/authservice/dash.service';
 
 @NgModule({
   declarations: [
@@ -51,12 +54,13 @@ import { MockDbService } from './mock/mock.db.service';
     FormsModule,
     ReactiveFormsModule,
     CompaniesModule,
+    MatProgressSpinnerModule,
     HttpClientModule,
     FooterModule,
     HomeModule,MatDatepickerModule,MatRadioModule
     
   ],
-  providers: [NavbarComponent,AuthService,InterviewExperienceDBService,CompanyDbService,MockDbService],
+  providers: [NavbarComponent,AuthService,InterviewExperienceDBService,CompanyDbService,MockDbService,CreateUserCanDeactivateGuardService,DashService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
