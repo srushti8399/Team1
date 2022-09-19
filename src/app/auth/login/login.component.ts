@@ -44,18 +44,18 @@ export class LoginComponent implements OnInit {
     
    if(this.username=="" && this.password=="")
    {
-    this.message="username and password is empty"
+    this.message="username and password are required"
    }
    else
    if(this.username=="")
    {
-    this.message = "username is empty"
+    this.message = "username is required"
     this.dis=true;
    }
    else
    if(this.password=="")
    {
-    this.message = "password is empty"
+    this.message = "password is required"
     this.dis=true;
    }
    else 

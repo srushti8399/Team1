@@ -20,41 +20,30 @@ import { AuthService } from './auth/authservice/auth.service';
 import { ViewProfileComponent } from './dashboard/view/view.component';
 import { BookSessionComponent } from './mock/book-session/book-session.component';
 import { HomeComponent } from './home/home.component';
+import { CreateUserCanDeactivateGuardService } from './dashboard/service/create-user-candeactivate-guard.service';
+import { DashService } from './auth/authservice/dash.service';
 
 const routes: Routes = [
-  {path:"login",component:LoginComponent},
-  {path:"register",component:RegisterComponent},
+
+  {path:"login",component:LoginComponent,canActivate:[DashService]},
+  {path:"register",component:RegisterComponent,canActivate:[DashService]},
   {path:"dashboard",component:DashboardComponent,canActivate:[AuthService]},
-  {path:"editprofile",component:ProfileComponent,canActivate:[AuthService]},
+  {path:"editprofile",component:ProfileComponent,canActivate:[AuthService], canDeactivate: [CreateUserCanDeactivateGuardService]},
   {path:"viewprofile",component:ViewProfileComponent,canActivate:[AuthService]},
 
   
-  {path:"home",component:HomeComponent},
-
+  {path:"home",component:HomeComponent,canActivate:[DashService]},
   {path:'mock', component:MockComponent,canActivate:[AuthService]},
   {path:'mock/schedule', component:ScheduleComponent,canActivate:[AuthService]},
   {path:'mock/schedule/book-session', component:BookSessionComponent,canActivate:[AuthService]},
 
-// const routes: Routes = [
-//   {path:'mock', component:MockComponent},
-//   {path:'mock/schedule', component:ScheduleComponent},
-// {path:'mockInterview',
-//   loadChildren:()=>import('./mock/mock.module').then(x=>x.MockModule)
-//   },
 
 
   {path:'create',component:CreateintexpComponent,canActivate:[AuthService]},
   {path:'experiencelist',component:IntexpComponent,canActivate:[AuthService]},
   {path:'view/:id',component:ViewComponent,canActivate:[AuthService]},
   {path:'edit/:id',component:EditComponent,canActivate:[AuthService]},
- // {path:'',redirectTo:'experiencelist',pathMatch:'full'}
-
-  // {
-  //   path: 'experience',
-  //   loadChildren: () => import('./intexp/intexp.module').then(x => x.IntexpModule)
-
-  // },
-
+ 
 
   {path:'addcompany',component:AddCompanyComponent,canActivate:[AuthService]},
   {path:'company',component:CompaniesComponent,canActivate:[AuthService]},
@@ -62,7 +51,7 @@ const routes: Routes = [
   {path:'editcompany/:id',component:EditCompanyComponent,canActivate:[AuthService]},
   {path:'deletecompany/:id',component:DeleteCompanyComponent,canActivate:[AuthService]},
   {path:'deletecompanydialogue/:id',component:DialogDeleteComponent,canActivate:[AuthService]},
-  {path:'',component:HomeComponent},
+  {path:'',component:HomeComponent,canActivate:[DashService]},
    {path:"**",component:DashboardComponent,canActivate:[AuthService]}
 ];
 @NgModule({

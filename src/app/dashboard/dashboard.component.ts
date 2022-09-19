@@ -12,6 +12,18 @@ import { AuthService } from '../auth/authservice/auth.service';
 export class DashboardComponent implements OnInit {
 
   checkUserLoginStatus:any={};
+  loadingone: boolean = true
+  loadingtwo: boolean = true
+  loadingthree: boolean = true
+onLoadOne() {
+    this.loadingone = false;
+}
+onLoadTwo() {
+  this.loadingtwo = false;
+}
+onLoadThree() {
+  this.loadingthree = false;
+}
 
   constructor(private route:Router,private obj:AuthService) { 
   

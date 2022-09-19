@@ -1,23 +1,10 @@
- <!-- <app-navbar [checkUserLoginStatus]="checkIfLogin()"></app-navbar> -->
-
-
-<!-- 
- <div>
-   
-    <div class="welcome">
-      <h1 style="font-size:xx-large ;font-weight: bolder;">Welcome to globallogic</h1>
-    </div>
-     
- </div> -->
-
-
-
  <div class="container mt-5 high imptwo" >
    <div class="row">
       <div class="col-md-4 col-sm-12">
          <div class="card"> 
             <div class="img">
-               <img src="../../assets/bg.jpg" />
+               <mat-spinner style="position:absolute;top:20%;left:30%" *ngIf="loadingone" class="spinner" [diameter]="40" ></mat-spinner>
+               <img [hidden]="loadingone" (load)="onLoadOne()" src="../../assets/bg.jpg" />
             </div>
             <div class="top-text">
                <div class="name"> 
@@ -42,7 +29,9 @@
       <div class="col-md-4 col-sm-12">
          <div class="card">
             <div class="img">
-               <img src="../../assets/b.jpg">
+               <mat-spinner style="position:absolute;top:20%;left:30%" *ngIf="loadingtwo" class="spinner" [diameter]="40" ></mat-spinner>
+
+               <img [hidden]="loadingtwo" (load)="onLoadTwo()" src="../../assets/b.jpg">
             </div>
             <div class="top-text">
                <div class="name">
@@ -65,7 +54,9 @@
       <div class="col-md-4 col-sm-12">
          <div class="card">
             <div class="img">
-               <img src="../../assets/a.jpg">
+               <mat-spinner style="position:absolute;top:20%;left:30%" *ngIf="loadingthree" class="spinner" [diameter]="40" ></mat-spinner>
+
+               <img [hidden]="loadingthree" (load)="onLoadThree()" src="../../assets/a.jpg">
             </div>
             <div class="top-text">
                <div class="name">

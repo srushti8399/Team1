@@ -25,7 +25,6 @@ export class AuthService implements CanActivate {
 
     userlongarray: any[] = [];
 
-    // userlongURL: string = 'api/users'; //this will work out
     userlongURL: string = 'http://localhost:3000/users/'; //this will work out
     constructor(private _http: HttpClient, private router: Router) { }
 

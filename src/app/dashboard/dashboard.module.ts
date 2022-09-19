@@ -12,6 +12,8 @@ import { ViewProfileComponent } from './view/view.component';
 import { RouterModule } from '@angular/router';
 import { MatIconModule } from '@angular/material/icon';
 import { FooterModule } from '../footer/footer.module';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import { CreateUserCanDeactivateGuardService } from './service/create-user-candeactivate-guard.service';
 
 @NgModule({
   declarations: [
@@ -29,6 +31,8 @@ import { FooterModule } from '../footer/footer.module';
     MatSelectModule,
     RouterModule,
     MatIconModule,
-  ]
+    MatProgressSpinnerModule
+  ],
+  providers:[CreateUserCanDeactivateGuardService]
 })
 export class DashboardModule { }
