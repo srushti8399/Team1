@@ -17,6 +17,7 @@ export class DeleteCompanyComponent implements OnInit {
 
   ngOnInit(): void {
     this.companyid=this.route.snapshot.paramMap.get('id')!;
+    //get id of data to delete that particular details using paramMap method
     this.companyservice.getCompanyById(this.companyid).subscribe((item)=>{
       this.viewCompany=item;
     })
@@ -25,6 +26,7 @@ export class DeleteCompanyComponent implements OnInit {
   BackToCompany(){
     this.router.navigate(['/company'])
   }
+  //Initiate the dialogue box
   deleteCompanyDetails(element:any) {
      this.dialog.open(DialogDeleteComponent,{
       data:element

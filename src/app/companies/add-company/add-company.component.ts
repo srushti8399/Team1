@@ -35,14 +35,14 @@ export class AddCompanyComponent implements OnInit {
     {viewValue:1,Text:"Experienced"},
     {viewValue:2,Text:"Fresher"} 
   ];
+  //Submit function for taking values from form to register company and posting it in db.json
   submit(){
-   //console.log(this.companyForm)
+   
    if(this.companyForm.value.cname!="" && this.companyForm.value.description !="" && this.companyForm.value.jobtitle !="" && this.companyForm.value.experience !="" && this.companyForm.value.authorityname !="" && this.companyForm.value.package !="" && this.companyForm.value.qualification !="" && this.companyForm.value.link !="" && this.companyForm.value.type !=""){
    this.companydbservice.postCompany(this.companyForm.value).subscribe({
     next:(res)=>{
       this.dialog.open(AddDialogueComponent)
-      //alert("added successfully")
-     // this.companyForm.reset();
+      
       
 
     },
@@ -53,8 +53,8 @@ export class AddCompanyComponent implements OnInit {
   }else{
     this.dialog.open(ErrorAddDialogueComponent)
   }
-   //window.location.reload();
    
+   //Go back to module home-page
 
   }
   BackToCompany(){
